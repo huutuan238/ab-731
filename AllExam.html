@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quiz App</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.card {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#progress {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#questionImage {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.option {
+    margin-bottom: 12px;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option label:hover {
+    border-color: #2563eb;
+    background: #f8fbff;
+}
+
+.option input {
+    width: 18px;
+    height: 18px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#submitBtn {
+    background: #2563eb;
+    color: white;
+}
+
+#submitBtn:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+#nextBtn {
+    background: #10b981;
+    color: white;
+    display: none;
+}
+
+#nextBtn:hover {
+    background: #059669;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.correct {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.wrong {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+#summary {
+    display: none;
+    text-align: center;
+}
+
+#score h3 {
+    font-size: 40px;
+    color: #2563eb;
+}
+</style>
+</head>
+
+<body>
+
+<div id="quiz" class="card">
+
+    <div id="progress"></div>
+
+    <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <div id="question" class="question"></div>
+
+    <img id="questionImage">
+
+    <div id="options"></div>
+
+    <button id="submitBtn">Submit</button>
+    <button id="nextBtn">Next</button>
+
+    <div id="result"></div>
+</div>
+
+<div id="summary" class="card">
+    <h2>Kết quả</h2>
+    <div id="score"></div>
+
+    <button onclick="location.reload()">
+        Làm lại
+    </button>
+</div>
+
+<script>
+
+// ================= DATA =================
+const questions = [
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "monitor network traffic and alerts in real time",
+      "create a Microsoft Word document",
+      "create a list in Microsoft SharePoint",
+      "modify administrative permissions for Microsoft SharePoint files"
+    ],
+    "answers": [
+      "create a Microsoft Word document"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q16.png"
+  },
+  {
+    "question": "DRAG DROP -\nMatch the Microsoft responsible AI principles to the appropriate descriptions.\nTo answer, drag the principle from the column on the left to its description on the right. Each principle may be used once, more than once, or not at all.\nNOTE: Each correct match is worth one point.",
+    "options": [
+      "Privacy and security-Transparency-Inclusiveness-Accountability",
+      "Inclusiveness-Accountability-Privacy and security-Transparency",
+      "Transparency-Privacy and security-Inclusiveness-Accountability"
+    ],
+    "answers": [
+      "Privacy and security-Transparency-Inclusiveness-Accountability",
+    ],
+    "image": "./Exam Results — CertLab_1_files/q24.png"
+  },
+  {
+    "question": "6 HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "configure and deploy AI models in the organization's Azure environment.",
+      "guide AI strategy, ensure responsible AI oversight, and promote alignment across business units.",
+      "manage day-to-day model training and labeling tasks for AI development teams."
+    ],
+    "answers": [
+      "guide AI strategy, ensure responsible AI oversight, and promote alignment across business units."
+    ],
+    "image": "./Exam Results — CertLab_1_files/q6.png"
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No"
+    ],
+    "answers": [
+      "Yes - Yes -No"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q35.png"
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "ensure that AI models deliver consistent and equitable results",
+      "help organizations increase trust in fully autonomous AI systems",
+      "promote the ethical and accountable use of AI.",
+      "standardize model development practices across AI teams"
+    ],
+    "answers": [
+      "promote the ethical and accountable use of AI."
+    ],
+    "image": "./Exam Results — CertLab_1_files/q19.png"
+  },
+  {
+    "question": "Your company creates a custom Azure Machine Learning model that uses a generative AI assistant.\nThe model initially delivers strong results. However, six months later, the model predictions become noticeably less accurate.\nWhat is a possible cause of the issue?",
+    "options": [
+      "The model requires additional compute resources.",
+      "The input data changed over time.",
+      "The model was trained incorrectly."
+    ],
+    "answers": [
+      "The input data changed over time."
+    ]
+  },
+  {
+    "question": "Your company stores thousands of reports and documents across multiple systems. You recommend using Azure AI Search as part of a new generative AI solution to improve information discovery. What is a key benefit of using Azure AI Search in this scenario?",
+    "options": [
+      "generates responses to customer questions without referencing the existing data",
+      "queries and retrieves information from large collections of data by using natural language",
+      "automates document workflows based on the document content",
+      "improves model accuracy by fine-tuning organizational data"
+    ],
+    "answers": [
+      "queries and retrieves information from large collections of data by using natural language"
+    ]
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "yes-yes-no",
+      "no-yes-no",
+      "yes-no-no"
+    ],
+    "answers": [
+      "yes-yes-no"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q2.png"
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "Batch API",
+      "Provisioned (PTUs)",
+      "Standard (On-Demand)"
+    ],
+    "answers": [
+      "Provisioned (PTUs)"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q20.png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - No - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes - No",
+      "No - No - Yes"
+    ],
+    "answers": [
+      "No - No - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q11.png"
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "prescriptive",
+      "predictive",
+      "generative"
+    ],
+    "answers": [
+      "generative"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q8.png"
+  },
+  {
+    "question": "Your company stores hundreds of internal business reports.\nYou need to recommend a generative AI solution that uses an agent to answer questions based on the content in the reports.\nWhat should you include in the recommendation?",
+    "options": [
+      "natural language processing",
+      "Azure Machine Learning",
+      "Retrieval Augmented Generation (RAG)",
+      "Generative Adversarial Network (GAN)"
+    ],
+    "answers": [
+      "Retrieval Augmented Generation (RAG)"
+    ]
+  },
+  {
+    "question": "1 HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No",
+      "No - No - Yes"
+    ],
+    "answers": [
+      "No - No - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q1.png"
+  },
+  {
+    "question": "What is a key feature of Microsoft 365 Copilot that aligns with the Microsoft responsible AI principles of transparency, reliability, and safety?",
+    "options": [
+      "Automatically approves AI-generated content for company-wide publishing.",
+      "Removes the need for a human to review AI-generated outputs.",
+      "Provides grounded, verifiable responses based on organizational data.",
+      "Enables users to select from an authorized catalog of AI models."
+    ],
+    "answers": [
+      "Provides grounded, verifiable responses based on organizational data."
+    ]
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "ensures that all responses are factually accurate.",
+      "increases performance of an AI model",
+      "improves the accuracy and reliability of the predictions and outputs of AI",
+      "increases the amount of storage required to host an AI model"
+    ],
+    "answers": [
+      "improves the accuracy and reliability of the predictions and outputs of AI"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q12.png"
+  },
+  {
+    "question": "Your company uses a generative AI solution. You need to improve the quality of responses by using grounding. Which statement accurately describes how grounding improves accuracy and relevancy?",
+    "options": [
+      "references a diverse set of people, disciplines, and perspectives",
+      "explains how and why AI models generate content",
+      "anchors the responses in specific data sources",
+      "specifies the strengths and weaknesses of the AI model"
+    ],
+    "answers": [
+      "anchors the responses in specific data sources"
+    ]
+  },
+  {
+    "question": "Which business requirement most closely relates to grounding a generative AI model?",
+    "options": [
+      "supporting multiple languages",
+      "measuring the number of user interactions per day",
+      "enabling users to interact by using natural language queries",
+      "D.ensuring that verified company data sources are used for response generation"
+    ],
+    "answers": [
+      "D.ensuring that verified company data sources are used for response generation"
+    ]
+  },
+  {
+    "question": "Your company uses a fine-tuned generative AI solution trained on data that is representative of the general population. You discover that some of the generated responses include inappropriate or exclusionary language based on ableist assumptions. You need to prevent the inappropriate responses. Your solution must minimize costs. What should you do?",
+    "options": [
+      "Apply a newer version of the generative AI model.",
+      "Apply a content-moderation filter.",
+      "Create a new version of the solution that is trained on only inclusive and representative content.",
+      "Create a new version of the solution that is trained on only exclusionary content."
+    ],
+    "answers": [
+      "Apply a content-moderation filter."
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "Microsoft Foundry",
+      "Microsoft Power Platform",
+      "Azure Machine Learning"
+    ],
+    "answers": [
+      "Azure Machine Learning"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q37.png"
+  },
+  {
+    "question": "DRAG DROP -\nMatch the business processes to the appropriate Microsoft Copilot solutions.\nTo answer, drag the Copilot solution from the column on the left to its business process on the right. Each solution may be used once, more than once, or not at all.\nNOTE: Each correct match is worth one point.",
+    "options": [
+      "Microsoft 365 Copilot-Microsoft Copilot Studio",
+      "Microsoft Copilot Studio-Microsoft 365 Copilot",
+      "Microsoft Copilot Studio-Github Copilot",
+    ],
+    "answers": [
+      "Microsoft 365 Copilot-Microsoft Copilot Studio"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q34.png"
+  },
+  {
+    "question": "You need to create a custom Azure Machine Learning model. The data used to train the model is consistent and uniform. What should you do first?",
+    "options": [
+      "Prepare the training data.",
+      "Evaluate the model.",
+      "Train the model.",
+      "Tune hyperparameters.",
+      "Deploy the model."
+    ],
+    "answers": [
+      "Prepare the training data."
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - yes - yes",
+      "No - yes - no",
+      "No - no - yes",
+      "yes - yes - yes"
+    ],
+    "answers": [
+      "No - yes - yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q23.png"
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - Yes - No",
+      "Yes - No - No",
+      "Yes - No -Yes"
+    ],
+    "answers": [
+      "Yes - No - No"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q30.png"
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "Azure AI Search",
+      "Microsoft Graph",
+      "Microsoft Purview",
+      "Microsoft SharePoint"
+    ],
+    "answers": [
+      "Microsoft Graph"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q8(1).png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - No - Yes",
+      "No - No - Yes",
+      "No - Yes - Yes"
+    ],
+    "answers": [
+      "Yes - No - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q19(1).png"
+  },
+  {
+    "question": "Your company is reviewing a new AI solution before deploying it. The company wants to ensure that the solution follows Microsoft responsible AI principles.\nWhat is the best approach to achieve the goal? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "Design the AI solution to automatically approve or reject customer loan applications.",
+      "Test the AI solution to identify and mitigate potential unfair or inconsistent outcomes in its outputs.",
+      "Prioritize model performance when tuning the AI solution.",
+      "Enable the AI solution to collect and store personal data."
+    ],
+    "answers": [
+      "Test the AI solution to identify and mitigate potential unfair or inconsistent outcomes in its outputs."
+    ]
+  },
+  {
+    "question": "Your company uses Microsoft 365 Copilot.\nYou identify several business processes that require custom workflows and specialized automation.\nYou need to recommend a solution that extends Copilot capabilities while minimizing development effort and costs.\nWhat should you recommend?",
+    "options": [
+      "Create an agent by using Microsoft Foundry.",
+      "Deploy a Copilot connector.",
+      "Build a custom agent by using the full experience of Microsoft Copilot Studio.",
+      "Build a declarative agent by using the lite experience of Microsoft Copilot Studio."
+    ],
+    "answers": [
+      "Build a declarative agent by using the lite experience of Microsoft Copilot Studio."
+    ]
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "compiles background research for a new market or initiative",
+      "enables you to generate audio summaries of select references",
+      "uses a conversational agent to answer employee FAQs.",
+      "uses structured data and provides insights by using text, charts, tables, and other visuals"
+    ],
+    "answers": [
+      "uses structured data and provides insights by using text, charts, tables, and other visuals"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q3.png"
+  },
+  {
+    "question": "Your company sells hiking and camping gear online.\nYou need a generative AI solution that can interact with customers, ask questions about their needs, and escalate to a human agent if necessary.\nWhat solution should you use?",
+    "options": [
+      "a chatbot",
+      "predictive AI",
+      "a recommendation engine",
+      "computer vision"
+    ],
+    "answers": [
+      "a chatbot"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - Yes - Yes",
+      "Yes - No - Yes",
+      "Yes - No -No"
+    ],
+    "answers": [
+      "Yes - Yes - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q31.png"
+  },
+  {
+    "question": "Your company plans to adopt AI across multiple business units.You need to ensure that all AI projects align with the company’s business strategy and are implemented responsibly.What is the best approach to achieve the goal? More than one answer choice may achieve the goal.\nSelect the BEST answer.",
+    "options": [
+      "Allow each department to deploy its own AI tools and workflows.",
+      "Delegate AI decision-making to the company’s IT department.",
+      "Outsource AI development to an external vendor.",
+      "Establish an AI council to provide guidance, oversight, and coordination."
+    ],
+    "answers": [
+      "Establish an AI council to provide guidance, oversight, and coordination."
+    ]
+  },
+  {
+    "question": "8 HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "Prescriptive",
+      "Predictive",
+      "Generative"
+    ],
+    "answers": [
+      "Generative"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q8(2).png"
+  },
+  {
+    "question": "Your company plans to adopt AI across multiple business units.You need to ensure that all AI projects align with the company’s business strategy and are implemented responsibly.What is the best approach to achieve the goal? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "Allow each department to deploy its own AI tools and workflows.",
+      "Delegate AI decision-making to the company’s IT department.",
+      "Outsource AI development to an external vendor",
+      "Establish an AI council to provide guidance, oversight, and coordination"
+    ],
+    "answers": [
+      "Establish an AI council to provide guidance, oversight, and coordination"
+    ]
+  },
+  {
+    "question": "HOTSPOT -For each of the following statements, select Yes if the statement is true. Otherwise, select No.NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - Yes - Yes",
+      "Yes - Yes -No",
+      "No - Yes - Yes"
+    ],
+    "answers": [
+      "No - Yes - Yes"
+    ]
+  },
+  {
+    "question": "9 Your company is deploying Microsoft 365 Copilot. The deployment must provide users with access to the Researcher agent to search across data in Microsoft SharePoint. You need to recommend a licensing plan for the solution. What should you recommend?",
+    "options": [
+      "a Microsoft 365 Copilot per-user add-on license",
+      "pay-as-you-go",
+      "a Microsoft 365 subscription entitlement",
+      "a usage-based consumption license in Azure"
+    ],
+    "answers": [
+      "a Microsoft 365 Copilot per-user add-on license"
+    ]
+  },
+  {
+    "question": "Your company plans to build a generative AI solution based on internal data.You recommend using Microsoft Foundry as a starting point to develop and manage the solution.What is a key benefit of using Microsoft Foundry for this project?",
+    "options": [
+      "Provides a scalable platform for developing and deploying generative AI solutions.",
+      "Removes the need to select or configure the underlying AI model.",
+      "Enables business users to build generative AI solutions.",
+      "Offers a low-code platform for developing generative AI solutions."
+    ],
+    "answers": [
+      "Provides a scalable platform for developing and deploying generative AI solutions."
+    ]
+  },
+  {
+    "question": "Your company has a Microsoft 365 subscription and uses Microsoft 365 Copilot Chat. Some users need to build and use declarative agents that can access work data. Which type of license should you recommend for the users?",
+    "options": [
+      "a Microsoft 365 Copilot add-on license",
+      "Microsoft Copilot Studio user license",
+      "a Copilot Chat pay-as-you-go plan"
+    ],
+    "answers": [
+      "a Microsoft 365 Copilot add-on license"
+    ]
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - No - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes - No",
+      "No - Yes - Yes"
+    ],
+    "answers": [
+      "Yes - Yes - No"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q9.png"
+  },
+  {
+    "question": "Your company uses a non-reasoning generative AI model to create textual content. You discover that the model’s responses are inconsistent and do NOT meet expectations. You need to improve the prompts. What should you do? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "Provide the prompts with extensive examples of the expected output.",
+      "Add the context, sources, and expectations to the prompts.",
+      "Use technical terms in the prompts to enhance AI comprehension.",
+      "Add only a single concise requirement to the prompts."
+    ],
+    "answers": [
+      "Add the context, sources, and expectations to the prompts."
+    ]
+  },
+  {
+    "question": "You need to recommend a service that supports indexing information and knowledge mining by extracting insights from documents. What should you recommend?",
+    "options": [
+      "Microsoft Foundry",
+      "Azure Vision in Foundry Tools",
+      "Azure Document Intelligence in Foundry Tools",
+      "Azure AI Search"
+    ],
+    "answers": [
+      "Azure AI Search"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nYou need to recommend an AI solution for each task. The solutions must use prebuilt AI capabilities to reduce development time.\nWhat should you recommend for each task? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Azure Document Intelligence in Foundry ToolsAzure Speech in Foundry ToolsAzure Language in Foundry Tools",
+      "Azure AI SearchAzure Content Understanding in Foundry ToolsAzure Machine Learning",
+      "Azure Machine LearningAzure Document Intelligence in Foundry ToolsAzure Machine Learning",
+      "Azure AI SearchAzure Speech in Foundry ToolsAzure Document Intelligence in Foundry Tools"
+    ],
+    "answers": [
+      "Azure Document Intelligence in Foundry ToolsAzure Speech in Foundry ToolsAzure Language in Foundry Tools"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q26.png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes-yes-no",
+      "Yes-no-no",
+      "no-yes-no",
+      "no-yes-yes"
+    ],
+    "answers": [
+      "Yes-yes-no"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q7.png"
+  },
+  {
+    "question": "Your company is evaluating the use of Microsoft Copilot Studio to support business process automation and employee self-service.\nWhich two capabilities are directly supported in Copilot Studio? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "drafting and summarizing files in Microsoft Word and PowerPoint",
+      "customizing agent behavior and responses",
+      "using agents to identify and respond to security incidents",
+      "building agents that connect to business data and automate user interactions",
+      "configuring document security"
+    ],
+    "answers": [
+      "customizing agent behavior and responses",
+      "building agents that connect to business data and automate user interactions"
+    ]
+  },
+  {
+    "question": "Your company is preparing to adopt Microsoft 365 Copilot and wants to follow Microsoft responsible AI principles. As a business leader, you propose establishing an AI governance council to ensure alignment with the responsible AI principles. What is the primary purpose of the council? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "to monitor user behavior and enforce compliance with internal IT policies",
+      "to train employees on how to use Copilot features effectively",
+      "to oversee implementation, manage technical performance, and ensure successful AI deployment",
+      "to guide strategy, provide oversight, and ensure cross-functional alignment for responsible AI adoption"
+    ],
+    "answers": [
+      "to guide strategy, provide oversight, and ensure cross-functional alignment for responsible AI adoption"
+    ]
+  },
+  {
+    "question": "HOTSPOT -For each of the following statements, select Yes if the statement is true. Otherwise, select No.NOTE: Each correct selection is worth one point.",
+    "options": [
+      "NO - NO - YES",
+      "NO - YES - YES",
+      "YES - NO - YES",
+      "NO - YES- NO"
+    ],
+    "answers": [
+      "NO - YES - YES"
+    ]
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No"
+    ],
+    "answers": [
+      "Yes - Yes - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q10.png"
+  },
+  {
+    "question": "Your company’s HR department spends a large amount time answering repetitive questions and updating policy documents.\nYou need a solution that can automate employee interactions, respond to HR-related questions, and connect to internal business data sources.\nWhat solution should you recommend?",
+    "options": [
+      "Microsoft Security Copilot",
+      "Microsoft Copilot Studio",
+      "Microsoft 365 Copilot",
+      "Microsoft Copilot in Azure"
+    ],
+    "answers": [
+      "Microsoft Copilot Studio"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "launch an internal campaign to promote AI awareness",
+      "offer a self-paced online training course for employees",
+      "define performance metrics for AI tool usage",
+      "establish a champions program for your company"
+    ],
+    "answers": [
+      "establish a champions program for your company"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q17.png"
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - yes- yes",
+      "no -yes-no",
+      "no -no-no",
+      "yes -yes-no"
+    ],
+    "answers": [
+      "no -yes-no"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q26(1).png"
+  },
+  {
+    "question": "Select the answer that correctly completes the sentence.",
+    "options": [
+      "data classification",
+      "data compliance",
+      "data loss prevention (DLP)",
+      "data security"
+    ],
+    "answers": [
+      "data security"
+    ],
+    "image": "./Exam Results — CertLab_1_files/1781279270766.png"
+  },
+  {
+    "question": "DRAG DROP - Match the business scenario to the appropriate AI solution design approach. To answer, drag the AI solution from the column on the left to its business scenario on the right. Each solution may be used once, more than once, or not at all. NOTE: Each correct match is worth one point",
+    "options": [
+      "Ô 1:Use Microsoft 365 CopilotÔ 2:Build with Microsoft Copilot StudioÔ 3:Build with Azure Machine LearningÔ 4:Extend with Microsoft 365 Copilot connectors",
+      "Ô 1:Use Microsoft 365 CopilotÔ 2:Build with Microsoft Copilot StudioÔ 3:Extend with Microsoft 365 Copilot connectorsÔ 4:Build with Azure Machine Learning",
+      "Ô 1:Extend with Microsoft 365 Copilot connectorsÔ 2:Build with Azure Machine LearningÔ 3:Build with Microsoft Copilot StudioÔ 4:Use Microsoft 365 Copilot"
+    ],
+    "answers": [
+      "Ô 1:Use Microsoft 365 CopilotÔ 2:Build with Microsoft Copilot StudioÔ 3:Build with Azure Machine LearningÔ 4:Extend with Microsoft 365 Copilot connectors"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q15.png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "No - Yes -No",
+      "Yes - Yes - Yes"
+    ],
+    "answers": [
+      "No - Yes - Yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q19(2).png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - No",
+      "No - No - Yes",
+      "Yes - No - Yes",
+      "Yes - No - No"
+    ],
+    "answers": [
+      "No - Yes - No"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q7(1).png"
+  },
+  {
+    "question": "HOTSPOT - What should you use for each task? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Dòng 1: Chọn Azure Document Intelligence in Foundry ToolsDòng 2: Chọn Azure Language in Foundry ToolsDòng 3: Chọn Azure Vision in Foundry Tools",
+      "Dòng 1: Chọn Azure Vision in Foundry ToolsDòng 2: Chọn Azure Document Intelligence in Foundry ToolsDòng 3: Chọn Azure Language in Foundry Tools",
+      "Dòng 1: Chọn Azure Language in Foundry ToolsDòng 2: Chọn Azure Document Intelligence in Foundry ToolsDòng 3: Chọn Azure Vision in Foundry Tools",
+      "Dòng 1: Chọn Azure Vision in Foundry ToolsDòng 2: Chọn Azure Vision in Foundry ToolsDòng 3: Chọn Azure Language in Foundry Tools"
+    ],
+    "answers": [
+      "Dòng 1: Chọn Azure Document Intelligence in Foundry ToolsDòng 2: Chọn Azure Language in Foundry ToolsDòng 3: Chọn Azure Vision in Foundry Tools"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q6(1).png"
+  },
+  {
+    "question": "You are exploring how Microsoft 365 Copilot uses Microsoft Graph to deliver AI-powered experiences. Which information in Microsoft Graph can Copilot use by default?",
+    "options": [
+      "emails, files, meetings, and chats in Microsoft 365",
+      "data stored in a file share",
+      "social media activity",
+      "content from public websites"
+    ],
+    "answers": [
+      "emails, files, meetings, and chats in Microsoft 365"
+    ]
+  },
+  {
+    "question": "Which statement accurately describes the difference between a pretrained generative AI model and a fine-tuned generative AI model?",
+    "options": [
+      "A pretrained model requires labeled data, while a fine-tuned model does not.",
+      "A pretrained model is faster to train than a fine-tuned model because the pretrained model uses fewer parameters.",
+      "A pretrained model is trained on broad datasets, while a fine-tuned model is adapted to perform well on a narrower, domain-specific dataset.",
+      "A pretrained model is optimized for a specific task, while a fine-tuned model is designed for general-purpose use."
+    ],
+    "answers": [
+      "A pretrained model is trained on broad datasets, while a fine-tuned model is adapted to perform well on a narrower, domain-specific dataset."
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - yes - no",
+      "no -yes-no",
+      "yes-yes-yes",
+      "no -no -no"
+    ],
+    "answers": [
+      "yes-yes-yes"
+    ],
+    "image": "./Exam Results — CertLab_1_files/q20(1).png"
+  },
+  {
+    "question": "Your company plans to use generative AI to help summarize and analyze internal business documents.\nYou need to recommend a solution to prevent generative AI from accessing confidential or classified information.\nWhat should you include in the recommendation?",
+    "options": [
+      "an information barrier (IB) policy",
+      "communication monitoring",
+      "a data retention policy",
+      "data governance"
+    ],
+    "answers": [
+      "data governance"
+    ]
+  },
+  {
+    "question": "Your company plans to implement a proof of concept (PoC) agent that uses Azure OpenAI.The solution must start small and provide flexibility to scale usage as demand grows.Which pricing model should you use?",
+    "options": [
+      "Microsoft 365 Copilot",
+      "Batch API",
+      "Provisioned (PTUs)",
+      "Standard (On-Demand)"
+    ],
+    "answers": [
+      "Standard (On-Demand)"
+    ]
+  },
+  {
+    "question": "Your company is building a portfolio of AI-powered business solutions.\nCompany executives want to understand how Microsoft responsible AI principles can support the company’s long-term goals.\nWhich benefit best demonstrates the importance of responsible AI? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "reduces the need for executive oversight in AI decision-making",
+      "enhances stakeholder trust and fosters sustainable AI adoption throughout the organization",
+      "guarantees that AI models provide accurate and relevant responses",
+      "reduces the need for data protection policies and governance"
+    ],
+    "answers": [
+      "enhances stakeholder trust and fosters sustainable AI adoption throughout the organization"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - no - yes",
+      "yes - no - yes",
+      "No - yes - yes",
+      "yes - no -no"
+    ],
+    "answers": [
+      "No - no - yes"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q24.png"
+  },
+  {
+    "question": "Your company uses generative AI to assist with content creation and customer interactions.\nYou need to evaluate whether Azure Machine Learning can add value to the current customer management.\nFor which use case should you use Machine Learning?",
+    "options": [
+      "predicting customer retention",
+      "creating product descriptions from images",
+      "generating marketing campaigns",
+      "summarizing customer service transcripts"
+    ],
+    "answers": [
+      "predicting customer retention"
+    ]
+  },
+  {
+    "question": "Your company purchases Microsoft 365 Copilot for its sales department.\nThe sales department needs to find and summarize information across internal documents quickly.\nFrom which two data sources can the sales department obtain results by default? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Microsoft OneDrive",
+      "an on-premises file share",
+      "Microsoft SharePoint",
+      "Microsoft Sway",
+      "a custom customer relationship management (CRM) system"
+    ],
+    "answers": [
+      "Microsoft OneDrive",
+      "Microsoft SharePoint"
+    ]
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "integrating AI-powered tools into business workflows",
+      "identifying and fixing errors in AI-generated content",
+      "designing, developing, and training generative AI models to produce contextually relevant content.",
+      "crafting clear instructions to guide generative AI solutions in generating context-appropriate content"
+    ],
+    "answers": [
+      "crafting clear instructions to guide generative AI solutions in generating context-appropriate content"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q13.png"
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No"
+    ],
+    "answers": [
+      "Yes - Yes -No"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q13(1).png"
+  },
+  {
+    "question": "Your company is developing an AI-powered customer support agent. You need to ensure that the solution follows Microsoft responsible AI principles. Which two actions should you perform? Select the two BEST answers. Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Retain all customer conversations.",
+      "Test the agent to ensure that responses are inclusive and culturally sensitive.",
+      "Enable the agent to operate independently.",
+      "Ensure that the agent can be used for multiple purposes.",
+      "Provide a clear disclaimer that users are interacting with an AI solution."
+    ],
+    "answers": [
+      "Test the agent to ensure that responses are inclusive and culturally sensitive.",
+      "Provide a clear disclaimer that users are interacting with an AI solution."
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No"
+    ],
+    "answers": [
+      "No - Yes - Yes"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q28.png"
+  },
+  {
+    "question": "Your company manages a website that publishes daily news articles.\nYou need to recommend an AI solution that can analyze text and identify the main people, locations, and companies mentioned in the articles.\nWhat should you include in the recommendation?",
+    "options": [
+      "Azure Language in Foundry Tools",
+      "Azure Vision in Foundry Tools",
+      "Content Safety in Foundry Control Plane",
+      "Azure Speech in Foundry Tools"
+    ],
+    "answers": [
+      "Azure Language in Foundry Tools"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "documents",
+      "requests",
+      "tokens",
+      "words"
+    ],
+    "answers": [
+      "tokens"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q27.png"
+  },
+  {
+    "question": "Your company plans to use an AI-powered solution to analyze customer feedback for insights related to future product designs.\nYou need to mitigate the privacy risks associated with the solution.\nWhat is the best approach to achieve the goal? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "Delete all the feedback data immediately after analysis.",
+      "Ensure that feedback is attributable to the customer so that it can be deleted upon request.",
+      "Limit privacy reviews to the final stage of the AI project lifecycle.",
+      "Anonymize the source data to remove customer Personally Identifiable Information (PII) from the feedback."
+    ],
+    "answers": [
+      "Anonymize the source data to remove customer Personally Identifiable Information (PII) from the feedback."
+    ]
+  },
+  {
+    "question": "In which scenario is Azure Machine Learning most likely to deliver strategic value for an organization?",
+    "options": [
+      "Using historical sales data to forecast demand across product categories.",
+      "Digitizing a paper-based process to reduce errors.",
+      "Entering customer feedback into a spreadsheet to understand sentiment.",
+      "Sending personalized emails to customers based on the customer location."
+    ],
+    "answers": [
+      "Using historical sales data to forecast demand across product categories."
+    ]
+  },
+  {
+    "question": "HOTSPOT -Select the answer that correctly completes the sentence.",
+    "options": [
+      "Azure Machine Learning",
+      "Azure AI Search",
+      "Azure OpenAI",
+      "Microsoft Foundry"
+    ],
+    "answers": [
+      "Azure Machine Learning"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "storage capacity required for AI data",
+      "training time required for generative AI models",
+      "accuracy and relevance of AI-generated responses"
+    ],
+    "answers": [
+      "accuracy and relevance of AI-generated responses"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q27(1).png"
+  },
+  {
+    "question": "Your company deploys an AI-powered loan approval solution that enables applicants to request an explanation as to why their loan application was denied. Which Microsoft responsible AI principle is this an example of?",
+    "options": [
+      "fairness",
+      "privacy and security",
+      "transparency",
+      "inclusiveness"
+    ],
+    "answers": [
+      "transparency"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "uses a smaller dataset",
+      "produces more accurate results",
+      "can produce new and original content."
+    ],
+    "answers": [
+      "can produce new and original content."
+    ],
+    "image": "./Exam Results — CertLab_2_files/q30.png"
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "to analyze trends and classify data sources",
+      "to create new content, such as text, images, or code.",
+      "to make predictions based on historical data."
+    ],
+    "answers": [
+      "to create new content, such as text, images, or code."
+    ],
+    "image": "./Exam Results — CertLab_2_files/q11.png"
+  },
+  {
+    "question": "Your company receives thousands of scanned invoices each month. You need to recommend an AI solution that can automatically extract key details, such as invoice numbers, vendor names, and total amounts. What is the best solution to recommend? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "Azure Document Intelligence in Foundry Tools",
+      "Azure Vision in Foundry Tools",
+      "Azure AI Search",
+      "Azure Machine Learning"
+    ],
+    "answers": [
+      "Azure Document Intelligence in Foundry Tools"
+    ]
+  },
+  {
+    "question": "Your company discovers that several employees use personal ChatGPT accounts to assist with work tasks. You are concerned about proprietary data being shared externally. You need to evaluate the business value of rolling out Microsoft 365 Copilot. Which capability is a key benefit of using Copilot instead of a personal ChatGPT account?",
+    "options": [
+      "analyzing and producing reports based on complex data",
+      "generating ideas and solving issues",
+      "drafting documents, emails, presentations, and marketing materials",
+      "accessing internal data in accordance with existing Microsoft 365 policies"
+    ],
+    "answers": [
+      "accessing internal data in accordance with existing Microsoft 365 policies"
+    ]
+  },
+  {
+    "question": "Your company sells hiking and camping gear online. You need a generative AI solution that can interact with customers and ask questions about their needs. What should you include in the solution?",
+    "options": [
+      "a chatbot",
+      "predictive AI",
+      "computer vision",
+      "a recommendation engine"
+    ],
+    "answers": [
+      "a chatbot"
+    ]
+  },
+  {
+    "question": "14 HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No"
+    ],
+    "answers": [
+      "Yes - Yes - Yes"
+    ]
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - No - No",
+      "Yes - Yes - No",
+      "No - Yes - No"
+    ],
+    "answers": [
+      "Yes - No - No"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q17(1).png"
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "Azure Language in Foundry Tools",
+      "Azure AI Search",
+      "Azure Vision in Foundry Tools",
+      "Azure Document Intelligence in Foundry Tools"
+    ],
+    "answers": [
+      "Azure Language in Foundry Tools"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q32.png"
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "data leakage",
+      "model inaccuracy",
+      "overreliance",
+      "prompt injection"
+    ],
+    "answers": [
+      "model inaccuracy"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q14.png"
+  },
+  {
+    "question": "You have a large language model (LLM) that was pretrained by using public data.\nYou want the LLM to generate responses that incorporate frequently updated proprietary content, such as internal documents and knowledge bases.\nYou need to recommend a solution to ensure that the LLM uses the most current information without retraining the model.\nWhat should you include in the recommendation?",
+    "options": [
+      "Retrieval Augmented Generation (RAG)",
+      "prompt engineering",
+      "content filtering",
+      "model fine-tuning"
+    ],
+    "answers": [
+      "Retrieval Augmented Generation (RAG)"
+    ]
+  },
+  {
+    "question": "HOTSPOT - Select the answer that correctly completes the sentence.",
+    "options": [
+      "creates visual dashboards from structured data in Microsoft Excel and Power BI",
+      "generates a pivot table and performs time series forecasting",
+      "performs complex, multi-step, data analysis and code execution tasks over arbitrary datasets",
+      "uses reasoning capabilities to generate deep insights based on organizational data and the web"
+    ],
+    "answers": [
+      "uses reasoning capabilities to generate deep insights based on organizational data and the web"
+    ],
+    "image": "./Exam Results — CertLab_2_files/q5.png"
+  },
+  {
+    "question": "You have a business unit that uses an AI solution to process loan applications.\nYou discover that the solution rejects the application of all applicants that are older than 60 years of age.\nWhich Microsoft responsible AI principle is this violating?",
+    "options": [
+      "accountability",
+      "transparency",
+      "reliability and safety",
+      "fairness"
+    ],
+    "answers": [
+      "fairness"
+    ]
+  },
+  {
+    "question": "Your company has an AI solution that uses a prebuilt Azure OpenAI model to generate content.\nYou need to reduce the cost of solution while minimizing the impact on the quality of the generated output.\nWhich two actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Switch to an alternate model.",
+      "Apply content moderation.",
+      "Optimize the prompts.",
+      "Decrease the number of hosting hours for the model.",
+      "Fine-tune the existing model."
+    ],
+    "answers": [
+      "Switch to an alternate model.",
+      "Optimize the prompts."
+    ]
+  },
+  {
+    "question": "Your company manages an online catalog of office supplies. You plan to use a generative AI solution to create product descriptions for your company’s website. The solution must meet the following requirements: Ensure that the descriptions can be posted immediately after they are created. Enable the selection and inclusion of product details in each description. Be fast and simple for non-technical staff to use. What is the best type of solution to use? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "custom Azure Machine Learning model",
+      "the Researcher agent in Microsoft 365 Copilot",
+      "an interactive AI agent",
+      "a fine-tuned large language model (LLM)"
+    ],
+    "answers": [
+      "an interactive AI agent"
+    ]
+  },
+  {
+    "question": "You plan to meet with a group of stakeholders to discuss how generative AI can benefit your company. You need to provide the stakeholders with a relevant description of generative AI during the meeting. Which description should you use?",
+    "options": [
+      "Generative AI is designed to generate responses based on a user’s natural language prompts.",
+      "Generative AI is designed to translate documents into other languages.",
+      "Generative AI is designed to predict future trends based on historical data.",
+      "Generative AI is designed to recommend products based on user behavior."
+    ],
+    "answers": [
+      "Generative AI is designed to generate responses based on a user’s natural language prompts."
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes - yes - yes",
+      "Yes - yes -no",
+      "Yes - no - yes",
+      "no - yes - yes"
+    ],
+    "answers": [
+      "Yes - yes -no"
+    ],
+    "image": "./Exam Results — CertLab_3_files/q22.png"
+  },
+  {
+    "question": "An organization needs an AI tool to analyze and summarize lengthy customer feedback text transcripts. You need to choose a Google foundation model with a large context window. What foundation model should the organization choose?",
+    "options": [
+      "Gemini",
+      "CodeGemma",
+      "Imagen",
+      "Chirp"
+    ],
+    "answers": [
+      "Gemini"
+    ]
+  },
+  {
+    "question": "HOTSPOT-Select the answer that correctly completes the sentence.",
+    "options": [
+      "data classification",
+      "data compliance",
+      "data loss prevention (DLP)",
+      "data security"
+    ],
+    "answers": [
+      "data security"
+    ]
+  },
+  {
+    "question": "What is considered a best practice when forming an AI adoption team in an enterprise environment?",
+    "options": [
+      "Include primarily IT and project management staff initially to streamline deployment, adding governance and compliance roles later.",
+      "Include procurement and vendor management specialists early to evaluate AI tools, involving business teams once a platform is selected.",
+      "Include representatives from legal, leadership, and business units to align AI initiatives with organizational priorities.",
+      "Include only data scientists and engineers at first to validate technical feasibility, then add other stakeholders later."
+    ],
+    "answers": [
+      "Include representatives from legal, leadership, and business units to align AI initiatives with organizational priorities."
+    ]
+  },
+  {
+    "question": "You have a historical dataset that contains 1,000 records. You need an AI solution that can analyze the data to identify patterns and predict future outcomes. What should you include in the solution?",
+    "options": [
+      "Microsoft Foundry",
+      "Azure Document Intelligence in Foundry Tools",
+      "Azure Machine Learning",
+      "Azure Content Understanding in Foundry Tools"
+    ],
+    "answers": [
+      "Azure Machine Learning"
+    ]
+  },
+  {
+    "question": "HOTSPOT - For each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "No - No - Yes",
+      "No - No - No",
+      "Yes - No - No"
+    ],
+    "answers": [
+      "No - Yes - Yes"
+    ],
+    "image": "./Exam Results — CertLab_4_files/q17.png"
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "Yes-no-no",
+      "yes -yes-yes",
+      "yes-no-yes",
+      "no - no - yes"
+    ],
+    "answers": [
+      "yes-no-yes"
+    ],
+    "image": "./Exam Results — CertLab_5_files/q28.png"
+  },
+  {
+    "question": "Your company plans to use generative AI to help build a website that will showcase various existing products.\nWhich capability best describes a benefit of using generative AI for this project? More than one answer choice may achieve the goal. Select the BEST answer.",
+    "options": [
+      "creating product descriptions based on product specifications",
+      "designing a new product based on customer requirements",
+      "translating product descriptions into a different language",
+      "analyzing product sales to identify patterns and trends"
+    ],
+    "answers": [
+      "creating product descriptions based on product specifications"
+    ]
+  },
+  {
+    "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+    "options": [
+      "technical teams responsible for designing advanced analytics solutions to track adoption.",
+      "users who advocate for the value of AI by learning, sharing, and identifying use cases",
+      "users who are dedicated to building the infrastructure required to support AI across the organization.",
+      "users who come together and define the organization's overall AI strategy."
+    ],
+    "answers": [
+      "users who advocate for the value of AI by learning, sharing, and identifying use cases"
+    ],
+    "image": "./Exam Results — CertLab_5_files/q22(1).png"
+  },
+  {
+    "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "No - Yes - Yes",
+      "Yes - Yes - Yes",
+      "Yes - Yes -No",
+      "Yes - No -No"
+    ],
+    "answers": [
+      "Yes - No -No"
+    ],
+    "image": "./Exam Results — CertLab_6_files/q20(1).png"
+  },
+  {
+    "question": "Your company plans to use generative AI to help project managers and engineers work with construction blueprints stored as PDF files. You need to recommend a generative AI solution that meets the following business requirements:\nProcesses both images and text - Summarizes the design of a building Answers user questions about a building’s design Extracts information from blueprints, such as the location of electrical, heating, and plumbing systems What should you recommend?",
+    "options": [
+      "a multi-modal solution",
+      "an optical character recognition (OCR) solution",
+      "a text completion solution",
+      "a document summarization solution"
+    ],
+    "answers": [
+      "a multi-modal solution"
+    ]
+  }
+]
+function shuffle(array) {
+    const result = [...array];
+    for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+}
+
+// ================= INIT =================
+let quizQuestions = shuffle(
+    questions.map(q => ({
+        ...q,
+        options: shuffle(q.options)
+    }))
+).slice(0);
+// filter question has image
+// quizQuestions = quizQuestions.filter(item => 'image' in item);
+
+let currentIndex = 0;
+let score = 0;
+
+// ================= ELEMENTS =================
+const questionEl = document.getElementById("question");
+const optionsEl = document.getElementById("options");
+const resultEl = document.getElementById("result");
+const progressEl = document.getElementById("progress");
+const progressFill = document.getElementById("progressFill");
+const imgEl = document.getElementById("questionImage");
+
+const submitBtn = document.getElementById("submitBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// ================= LOAD =================
+function loadQuestion() {
+
+    const q = quizQuestions[currentIndex];
+
+    progressEl.textContent =
+        `Câu ${currentIndex + 1}/${quizQuestions.length}`;
+
+    progressFill.style.width =
+        ((currentIndex + 1) / quizQuestions.length) * 100 + "%";
+
+    questionEl.textContent = q.question;
+
+    // IMAGE
+    if (q.image) {
+        imgEl.src = q.image;
+        imgEl.style.display = "block";
+    } else {
+        imgEl.style.display = "none";
+    }
+
+    // RENDER OPTIONS (radio or checkbox)
+    const inputType = q.answers.length > 1 ? "checkbox" : "radio";
+
+    optionsEl.innerHTML = q.options.map(opt => `
+        <div class="option">
+            <label>
+                <input type="${inputType}" name="answer" value="${opt}">
+                <span>${opt}</span>
+            </label>
+        </div>
+    `).join("");
+
+    resultEl.innerHTML = "";
+
+    submitBtn.disabled = false;
+    nextBtn.style.display = "none";
+}
+
+// ================= SUBMIT =================
+function submitAnswer() {
+
+    const q = quizQuestions[currentIndex];
+
+    let selected = [...optionsEl.querySelectorAll("input:checked")]
+        .map(x => x.value)
+        .sort();
+
+    if (selected.length === 0) {
+        alert("Vui lòng chọn đáp án");
+        return;
+    }
+
+    const correct = [...q.answers].sort();
+
+    const isCorrect =
+        JSON.stringify(selected) === JSON.stringify(correct);
+
+    if (isCorrect) {
+        score++;
+        resultEl.className = "correct";
+        resultEl.innerHTML = "✓ Chính xác";
+    } else {
+        resultEl.className = "wrong";
+        resultEl.innerHTML =
+            "✗ Sai. Đáp án đúng: " + q.answers.join(", ");
+    }
+
+    optionsEl.querySelectorAll("input")
+        .forEach(x => x.disabled = true);
+
+    submitBtn.disabled = true;
+    nextBtn.style.display = "inline-block";
+}
+
+// ================= NEXT =================
+function nextQuestion() {
+
+    currentIndex++;
+
+    if (currentIndex >= quizQuestions.length) {
+        finishQuiz();
+        return;
+    }
+
+    loadQuestion();
+}
+
+// ================= FINISH =================
+function finishQuiz() {
+
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("summary").style.display = "block";
+
+    const percent =
+        Math.round(score * 100 / quizQuestions.length);
+
+    document.getElementById("score").innerHTML = `
+        <h3>${score}/${quizQuestions.length}</h3>
+        <p>Đúng: ${percent}%</p>
+    `;
+}
+
+// ================= EVENTS =================
+submitBtn.addEventListener("click", submitAnswer);
+nextBtn.addEventListener("click", nextQuestion);
+
+// ================= START =================
+loadQuestion();
+
+</script>
+
+</body>
+</html>
