@@ -542,28 +542,6 @@ const questions = [
     "explanation": "Google Cloud promotes an open and flexible approach to its AI offerings, supporting open standards, open- source initiatives (like TensorFlow, Kubernetes, and Gemma), and providing various integration options. This helps alleviate vendor lock-in concerns by giving customers choice and control over their technology stack. ________________________________________"
   },
   {
-    "question": "A company wants to create an AI-powered educational solution that provides personalized learning experiences for students. This platform will assess a student's knowledge, recommend relevant learning materials, and generate personalized exercises. The application would provide the structure for lessons and track progress. What type of AI solution should they use?",
-    "options": [
-      "A learning management system (LMS)",
-      "A customized learning agent",
-      "A large language model fine-tuned on educational content",
-      "An AI-powered recommendation system for learning resources"
-    ],
-    "answer": "A customized learning agent",
-    "explanation": "The request goes beyond just recommendations or content generation. It involves assessing knowledge, recommending materials, generating personalized exercises, providing lesson structure, and tracking progress. This implies a more comprehensive, intelligent system that acts as an assistant or tutor for the student, which is best described as a customized learning agent. This agent would likely leverage LLMs and recommendation systems as components, but the overall solution is an agent. ________________________________________"
-  },
-  {
-    "question": "A company wants to use generative AI to create a chatbot that can answer customer questions about their products and services. They need to ensure that the chatbot only uses information from the company's official documentation. What should the company do?",
-    "options": [
-      "Use prompt chaining.",
-      "Use grounding.",
-      "Adjust the temperature parameter.",
-      "Use role prompting."
-    ],
-    "answer": "Use grounding.",
-    "explanation": "Grounding is the technique of \"grounding\" the LLM's responses in specific, authoritative data sources (like the company's official documentation). This prevents the model from \"hallucinating\" or providing information outside of the approved knowledge base, ensuring accuracy and relevance to the company's specific products and services. ________________________________________"
-  },
-  {
     "question": "A company wants to choose a generative AI (gen AI) use case that will be successful and have the most impact. What key factor should they determine first according to Google Cloud-recommended practices?",
     "options": [
       "The number of employees who will be trained to use the new gen AI tools.",
@@ -584,39 +562,6 @@ const questions = [
     ],
     "answer": "Security Command Center",
     "explanation": "Security Command Center is Google Cloud's comprehensive security management and data risk platform. It provides centralized visibility into security posture, identifies vulnerabilities, detects threats, and helps manage compliance across the entire Google Cloud environment, includingservices and deployments like generative AI. ________________________________________"
-  },
-  {
-    "question": "A learning and development team wants to quickly create a new hire training video with a custom avatar and voiceover that matches their company's branding and key messaging. They did not receive any money to spend on the production. What should they do?",
-    "options": [
-      "Create a video with Google Vids.",
-      "Train a model with Vertex AI and produce a video.",
-      "Prompt the Gemini app to create a video.",
-      "Generate the video frames with Imagen."
-    ],
-    "answer": "Create a video with Google Vids.",
-    "explanation": "The scenario requires quick creation of a training video using a custom avatar and voiceover while adhering to zero cost for production. Google Vids is an AI-powered video creation app (part of Google Workspace/Gemini features) designed to make video creation accessible for teams without the overhead of traditional production. It specifically offers features like AI avatars and voiceovers for content such as trainings, demos, and onboarding videos. This directly addresses the need for a low-cost, fast solution for a new hire training video with custom branding elements (custom avatars and voiceovers are a key feature of the tool). Option A, Imagen, is a Google foundation model specialized for image generation, not the creation of structured, narrated training videos with avatars. Option B, using the Gemini app, is primarily for text, code, and multimodal chat/generation, and is not the dedicated Google application for video production. Option C, training a model with Vertex AI, is a highly technical, time-consuming, and expensive endeavor that violates the need for a quick and zero-cost solution. Therefore, using the purpose-built, gen AI-enabled Google Vids application is the correct and most efficient choice."
-  },
-  {
-    "question": "A company wants to create an AI-powered educational solution that provides personalized learning experiences for students. This platform will assess a student's knowledge, recommend relevant learning materials, and generate personalized exercises. The application would provide the structure for lessons and track progress. What type of AI solution should they use?",
-    "options": [
-      "A learning management system (LMS)",
-      "A customized learning agent",
-      "A large language model fine-tuned on educational content",
-      "An AI-powered recommendation system for learning resources"
-    ],
-    "answer": "A customized learning agent",
-    "explanation": "The request goes beyond just recommendations or content generation. It involves assessing knowledge, recommending materials, generating personalized exercises, providing lesson structure, and tracking progress. This implies a more comprehensive, intelligent system that acts as an assistant or tutor for the student, which is best described as a customized learning agent. This agent would likely leverage LLMs and recommendation systems as components, but the overall solution is an agent. ________________________________________"
-  },
-  {
-    "question": "An organization wants to use generative AI to create a marketing campaign. They need to ensure that the AI model generates text that is appropriate for the target audience. What should the organization do?",
-    "options": [
-      "Use few-shot prompting.",
-      "Use role prompting.",
-      "Use prompt chaining.",
-      "Adjust the temperature parameter."
-    ],
-    "answer": "Use role prompting.",
-    "explanation": "Role prompting is a technique where you instruct the generative AI model to \"act as\" a specific persona or character. By assigning the model a role (e.g., \"Act as a marketing expert writing for a young, tech-savvy audience\"), you can guide its tone, style, and content to be appropriate for the target audience of the marketing campaign. ________________________________________"
   },
   {
     "question": "A customer service team wants to use generative AI to improve the quality and consistency of their email responses to customer inquiries. They need a solution that can guide the AI to adopt a helpful, empathetic tone while adhering to company policies. Which prompting technique should they use?",
@@ -740,17 +685,6 @@ const questions = [
     "explanation": "To ensure fairness and build trust, especially in sensitive areas like job applications, transparency in how AI evaluates applications and uses data is paramount. This involves understanding potential biases, explaining decisions (where possible), and ensuring human oversight. ________________________________________"
   },
   {
-    "question": "What is a primary benefit of using a multi-agent system?",
-    "options": [
-      "To simplify the most basic and repetitive rule-based tasks.",
-      "To manage complex tasks that demand coordinated AI functions.",
-      "To consolidate all unique AI functions into a single, undifferentiated model.",
-      "To serve as a platform for hosting traditional, non-AI applications."
-    ],
-    "answer": "To manage complex tasks that demand coordinated AI functions.",
-    "explanation": "Multi-agent systems are designed to tackle complex problems by breaking them down into sub-tasks, where each agent specializes in a specific function. These agents then coordinate and collaborate to achieve a larger, more intricate goal that a single, monolithic AI model might struggle with. ________________________________________"
-  },
-  {
     "question": "A national bank is overwhelmed by customer inquiries across multiple channels and needs an AI- powered solution to provide seamless, consistent support, empower customer support agents, and improve service quality. What Google Cloud product should the bank use?",
     "options": [
       "Vertex AI Search",
@@ -848,17 +782,6 @@ const questions = [
     ],
     "answer": "Create a video with Google Vids.",
     "explanation": "The scenario requires quick creation of a training video using a custom avatar and voiceover while adhering to zero cost for production. Google Vids is an AI-powered video creation app (part of Google Workspace/Gemini features) designed to make video creation accessible for teams without the overhead of traditional production. It specifically offers features like AI avatars and voiceovers for content such as trainings, demos, and onboarding videos. This directly addresses the need for a low-cost, fast solution for a new hire training video with custom branding elements (custom avatars and voiceovers are a key feature of the tool)."
-  },
-  {
-    "question": "A company is trying to decide which platform to use to optimize its generative AI (gen AI) solutions. Why should the company use Vertex AI Platform?",
-    "options": [
-      "It provides a mechanism for efficient analysis and exploration of large datasets used in machine learning.",
-      "It provides gen AI coding assistance with enterprise security and privacy protection.",
-      "It provides scalable and cost-effective object storage for data used in machine learning workflows.",
-      "It provides a unified platform of tools for building, deploying, and managing machine learning."
-    ],
-    "answer": "It provides a unified platform of tools for building, deploying, and managing machine learning.",
-    "explanation": "Vertex AI is Google Cloud's core, end-to-end Machine Learning Operations (MLOps) platform, designed to cover the entire ML lifecycle. The key benefit of Vertex AI, particularly for generative AI, is that it provides a unified platform (D) where all stages of AI development--from accessing foundation models in Model Garden, testing in Vertex AI Studio, training and tuning (via tools like Reinforcement Learning from Human Feedback), to deploying, and monitoring models in production--can be managed from a single service. This significantly reduces complexity, improves collaboration between teams (data scientists, engineers, business leaders), and ensures enterprise-grade governance and scalability necessary for production Gen AI solutions."
   },
   {
     "question": "A podcast hosting service at example.com plans a feature that composes a fresh 45 second intro and outro for each show by analyzing the episode outline, the speaker energy and the desired mood so that the music aligns with the pacing. Which category of generative AI best describes this capability?",
@@ -1136,17 +1059,6 @@ const questions = [
     "explanation": "Given the tasks involve researching threats and creating detection rules, the most appropriate and specialized agent would be a Security agent. This type of agent would be pre-configured or easily adaptable to understand security-specific contexts, data, and actions within a CISO's domain."
   },
   {
-    "question": "What is a primary benefit of using a multi-agent system?",
-    "options": [
-      "To simplify the most basic and repetitive rule-based tasks.",
-      "To consolidate all unique AI functions into a single, undifferentiated model.",
-      "To serve as a platform for hosting traditional, non-AI applications.",
-      "To manage complex tasks that demand coordinated AI functions."
-    ],
-    "answer": "To manage complex tasks that demand coordinated AI functions.",
-    "explanation": "Multi-agent systems are designed to tackle complex problems by breaking them down into sub- tasks, where each agent specializes in a specific function. These agents then coordinate and collaborate to achieve a larger, more intricate goal that a single, monolithic AI model might struggle with."
-  },
-  {
     "question": "Pike and Rowan Law uses a generative AI system to produce first draft contract clauses for its clients. To ensure accuracy and compliance, a licensed attorney must review, edit, and approve each AI draft before any client sees it. This addition of expert oversight within the AI workflow represents which recommended practice?",
     "options": [
       "Vertex AI Guardrails",
@@ -1211,17 +1123,6 @@ const questions = [
     ],
     "answer": "Prompt engineering",
     "explanation": "The scenario describes crafting a more specific and contextual request in order to steer the model toward better outputs which is exactly what Prompt engineering does. By deliberately specifying the product details, audience, desired tone, and key attributes, the team shapes the input so the model can produce more relevant and engaging taglines. This is the practice of designing prompts with clear instructions and constraints to guide the model."
-  },
-  {
-    "question": "An organization wants to use generative AI to create a marketing campaign. They need to ensure that the AI model generates text that is appropriate for the target audience. What should the organization do?",
-    "options": [
-      "Use role prompting.",
-      "Use prompt chaining.",
-      "Use few-shot prompting.",
-      "Adjust the temperature parameter."
-    ],
-    "answer": "Use role prompting.",
-    "explanation": "Role prompting is a technique where you instruct the generative AI model to \"act as\" a specific persona or character. By assigning the model a role (e.g., \"Act as a marketing expert writing for a young, tech-savvy audience\"), you can guide its tone, style, and content to be appropriate for the target audience of the marketing campaign."
   },
   {
     "question": "An organization is collecting data to train a generative AI model for customer service. They want to ensure security throughout the ML lifecycle. What is a critical consideration at this stage?",
@@ -1299,17 +1200,6 @@ const questions = [
     ],
     "answer": "To ground LLM responses with first-party data, third-party data, and Google's knowledge graph.",
     "explanation": "Vertex AI Search is designed to enable powerful search experiences over an organization's own data (first-party), external data (third-party), and can leverage Google's knowledge graph to provide more relevant and accurate responses, especially when grounding Large Language Models (LLMs). It does not index the entire public web like Google Search."
-  },
-  {
-    "question": "A company wants to use generative AI to create a chatbot that can answer customer questions about their products and services. They need to ensure that the chatbot only uses information from the company's official documentation. What should the company do?",
-    "options": [
-      "Use role prompting.",
-      "Adjust the temperature parameter.",
-      "Use prompt chaining.",
-      "Use grounding."
-    ],
-    "answer": "Use grounding.",
-    "explanation": "The core requirement is to guarantee that the chatbot only uses information from the company's official documentation and does not rely on its general knowledge base. This is crucial for ensuring factual accuracy, relevance to the company's specific products, and preventing the generation of fabricated or incorrect information (hallucinations). The specific technique designed to address this challenge is Grounding. Grounding is the process of connecting the Large Language Model's (LLM's) responses to a trusted, verifiable source of information, such as an organization's internal documents, databases, or live data feeds. When an LLM is grounded, it is forced to base its answers only on the provided context, effectively preventing it from drawing on its broad, generalized training data. Grounding is often implemented using a method called Retrieval-Augmented Generation (RAG), particularly with tools like Google Cloud's Vertex AI Search, which indexes the official documentation and feeds the relevant snippets to the model."
   },
   {
     "question": "A nonprofit news analytics lab is building a generative AI platform and wants the freedom to combine open-source models and tooling with managed Google Cloud services. They want to minimize vendor lock-in and benefit from innovations created by the wider AI community. Which characteristic of Google Cloud's generative AI strategy would most appeal to this lab?",
