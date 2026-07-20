@@ -1,0 +1,10795 @@
+[
+  {
+    "id": "u_nguyenhuuhuan_195",
+    "data": {
+      "label": "NGUYỄN HỮU HUẤN",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Mất: 12/10, Mộ tìm được tháng 6, năm 2022 ở vệ Vườn, xóm Nam Đình)"
+    },
+    "rels": {
+      "spouses": [
+        "u_nguyenhuuhuan_195_vo1"
+      ],
+      "children": [
+        "u_huutap_1991",
+        "u_thithanh_2632",
+        "u_thilu_518",
+        "u_thisang_2894",
+        "u_huusieu_8035",
+        "u_thisach_4675",
+        "u_huutuu_7989",
+        "u_huumy_9721"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenhuuhuan_195_vo1",
+    "data": {
+      "label": "Phan Thị Bính (02/2, Mộ ở vườn Hữu Hùng Xóm Bắc Đình)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "u_nguyenhuuhuan_195"
+      ],
+      "children": [
+        "u_huutap_1991",
+        "u_thithanh_2632",
+        "u_thilu_518",
+        "u_thisang_2894",
+        "u_huusieu_8035",
+        "u_thisach_4675",
+        "u_huutuu_7989",
+        "u_huumy_9721"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_2632",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "21/7"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_huutuu_7989",
+    "data": {
+      "label": "Hữu Tựu",
+      "last name": "",
+      "gender": "M",
+      "notes": "16/4"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thisach_4675",
+    "data": {
+      "label": "Thị Sách",
+      "last name": "",
+      "gender": "F",
+      "notes": "28/4"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilu_518",
+    "data": {
+      "label": "Thị Lữ",
+      "last name": "",
+      "gender": "F",
+      "notes": "02/2"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thisang_2894",
+    "data": {
+      "label": "Thị Sáng",
+      "last name": "",
+      "gender": "F",
+      "notes": "04/4"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_huusieu_8035",
+    "data": {
+      "label": "Hữu Siêu",
+      "last name": "",
+      "gender": "M",
+      "notes": "27/8"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ],
+      "children": [
+        "u_huumich1810moxuconti_8829"
+      ]
+    }
+  },
+  {
+    "id": "u_huumich1810moxuconti_8829",
+    "data": {
+      "label": "Hữu Mịch (18/10, Mộ xứ Cồn Tình, xóm 3)",
+      "last name": "",
+      "gender": "M",
+      "notes": "(sinh được 7 trai, 1 gái lấy chồng họ Công)"
+    },
+    "rels": {
+      "parents": [
+        "u_huusieu_8035"
+      ],
+      "spouses": [
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "children": [
+        "n7",
+        "n2",
+        "n4",
+        "n6",
+        "n5",
+        "n1",
+        "n3"
+      ]
+    }
+  },
+  {
+    "id": "u_huumich1810moxuconti_8829_vo1",
+    "data": {
+      "label": "Nguyễn Thị  Dựng",
+      "last name": "",
+      "gender": "F",
+      "notes": "(05/2, mộ Ngọc Long Hạ)"
+    },
+    "rels": {
+      "spouses": [
+        "u_huumich1810moxuconti_8829"
+      ],
+      "children": [
+        "n7",
+        "n2",
+        "n4",
+        "n6",
+        "n5",
+        "n1",
+        "n3"
+      ]
+    }
+  },
+  {
+    "id": "u_huutap_1991",
+    "data": {
+      "label": "Hữu Tập",
+      "last name": "",
+      "gender": "M",
+      "notes": "04/7"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_huumy_9721",
+    "data": {
+      "label": "Hữu My",
+      "last name": "",
+      "gender": "M",
+      "notes": "20/4"
+    },
+    "rels": {
+      "parents": [
+        "u_nguyenhuuhuan_195",
+        "u_nguyenhuuhuan_195_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4",
+    "data": {
+      "label": "4 HỮU SỬ",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Trước là Ưu binh, Y dược, Tư văn, Trùm trưởng, đăng hương trung thọ. Mất 30/01); Sinh hạ 4 trai, 5 gái"
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "spouses": [
+        "n4_vo1"
+      ],
+      "children": [
+        "u_5gaigomchaotuongcuon_6648",
+        "n4_2",
+        "n4_1",
+        "n4_3",
+        "u_huugioimatsom_4138"
+      ]
+    }
+  },
+  {
+    "id": "n4_vo1",
+    "data": {
+      "label": "NGUYỄN THỊ HẠO (08/12)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4"
+      ],
+      "children": [
+        "u_5gaigomchaotuongcuon_6648",
+        "n4_2",
+        "n4_1",
+        "n4_3",
+        "u_huugioimatsom_4138"
+      ]
+    }
+  },
+  {
+    "id": "n2",
+    "data": {
+      "label": "2 Hữu Hiến",
+      "last name": "",
+      "gender": "M",
+      "notes": "(0)"
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n3",
+    "data": {
+      "label": "3 Hữu Thùy",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Mất sớm)"
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n7",
+    "data": {
+      "label": "7 Nguyễn Hữu Hầm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trước là chức dịch kiêm lão thọ trong hương, tên thụy là Chất Phác, tự là Đăng Đệ. Mất  06/9."
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "spouses": [
+        "n7_vo1"
+      ],
+      "children": [
+        "n7_7",
+        "n7_3",
+        "n7_6",
+        "n7_1",
+        "n7_2",
+        "n7_4",
+        "n7_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_vo1",
+    "data": {
+      "label": "Hồ Thị Lơi, mất 06/7",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n7"
+      ],
+      "children": [
+        "n7_7",
+        "n7_3",
+        "n7_6",
+        "n7_1",
+        "n7_2",
+        "n7_4",
+        "n7_5"
+      ]
+    }
+  },
+  {
+    "id": "n6",
+    "data": {
+      "label": "6 Hữu Trạch",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Sưu"
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "children": [
+        "n6_1"
+      ]
+    }
+  },
+  {
+    "id": "n5",
+    "data": {
+      "label": "5 Hữu Ngung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thốn"
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "children": [
+        "n5_2",
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n1",
+    "data": {
+      "label": "1 Hữu Chương 08/10",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "u_huumich1810moxuconti_8829",
+        "u_huumich1810moxuconti_8829_vo1"
+      ],
+      "children": [
+        "u_huupho0_2928"
+      ]
+    }
+  },
+  {
+    "id": "u_huupho0_2928",
+    "data": {
+      "label": "Hữu Phố (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": "(05/10)"
+    },
+    "rels": {
+      "parents": [
+        "n1"
+      ]
+    }
+  },
+  {
+    "id": "u_5gaigomchaotuongcuon_6648",
+    "data": {
+      "label": "5 gái gồm: Chão, Tưởng, Cương, Chưởng, ...",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4",
+        "n4_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1",
+    "data": {
+      "label": "4.1 Hữu Giảng",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Xã tê kiêm Hương mục, lý trưởng bản thôn, cai khoán, cai hội); Mất 21/12 mộ tại Đồng Mười"
+    },
+    "rels": {
+      "parents": [
+        "n4",
+        "n4_vo1"
+      ],
+      "spouses": [
+        "n4_1_vo1"
+      ],
+      "children": [
+        "n4_1_2",
+        "n4_1_1",
+        "u_7nguoicongai_4191",
+        "n4_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_vo1",
+    "data": {
+      "label": "Nguyễn Thị Chưởng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1"
+      ],
+      "children": [
+        "n4_1_2",
+        "n4_1_1",
+        "u_7nguoicongai_4191",
+        "n4_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3",
+    "data": {
+      "label": "4.1.3 Hữu Chiu (Chiếu)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Xường"
+    },
+    "rels": {
+      "parents": [
+        "n4_1",
+        "n4_1_vo1"
+      ],
+      "children": [
+        "n4_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_1",
+    "data": {
+      "label": "4.1.1 Hữu Viễn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Thiêm;Thị Cảnh;; Thị Hười"
+    },
+    "rels": {
+      "parents": [
+        "n4_1",
+        "n4_1_vo1"
+      ],
+      "children": [
+        "n4_1_1_1",
+        "n4_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2",
+    "data": {
+      "label": "4.1.2 Hữu Liên (Liện)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Thùy; Thị Thạnh"
+    },
+    "rels": {
+      "parents": [
+        "n4_1",
+        "n4_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_1",
+        "n4_1_2_3",
+        "n4_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3",
+    "data": {
+      "label": "4.3 Hữu Phảng (Thảng)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4",
+        "n4_vo1"
+      ],
+      "spouses": [
+        "n4_3_vo1"
+      ],
+      "children": [
+        "n4_3_2",
+        "n4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_vo1",
+    "data": {
+      "label": "Thị Liệt",
+      "last name": "",
+      "gender": "F",
+      "notes": "Thị Phẩm"
+    },
+    "rels": {
+      "spouses": [
+        "n4_3"
+      ],
+      "children": [
+        "n4_3_2",
+        "n4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_2",
+    "data": {
+      "label": "4.3.2 Hữu Liên (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3",
+        "n4_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1",
+    "data": {
+      "label": "4.3.1 Hữu Niêng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Trơc"
+    },
+    "rels": {
+      "parents": [
+        "n4_3",
+        "n4_3_vo1"
+      ],
+      "children": [
+        "n4_3_1_3",
+        "n4_3_1_1",
+        "n4_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_huugioimatsom_4138",
+    "data": {
+      "label": "Hữu Giới (mất sớm)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4",
+        "n4_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2",
+    "data": {
+      "label": "4.2 Hữu Phẳng (Phảng)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4",
+        "n4_vo1"
+      ],
+      "spouses": [
+        "n4_2_vo1"
+      ],
+      "children": [
+        "n4_2_3",
+        "n4_2_2",
+        "n4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_vo1",
+    "data": {
+      "label": "Nguyễn Thị Thiệp",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2"
+      ],
+      "children": [
+        "n4_2_3",
+        "n4_2_2",
+        "n4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1",
+    "data": {
+      "label": "4.2.1 Hữu Bảng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2",
+        "n4_2_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_4",
+        "n4_2_1_3",
+        "n4_2_1_1",
+        "n4_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_vo1",
+    "data": {
+      "label": "Thị Thiết",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1"
+      ],
+      "children": [
+        "n4_2_1_4",
+        "n4_2_1_3",
+        "n4_2_1_1",
+        "n4_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3",
+    "data": {
+      "label": "4.2.3 Hữu Trường",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Địch"
+    },
+    "rels": {
+      "parents": [
+        "n4_2",
+        "n4_2_vo1"
+      ],
+      "children": [
+        "n4_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_2",
+    "data": {
+      "label": "4.2.2 Hữu Tràng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2",
+        "n4_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_7nguoicongai_4191",
+    "data": {
+      "label": "7 người con gái",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1",
+        "n4_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1",
+    "data": {
+      "label": "4.1.3.1 Hữu Khiến",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3"
+      ],
+      "spouses": [
+        "n4_1_3_1_vo1",
+        "n4_1_3_1_vo2"
+      ],
+      "children": [
+        "n4_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_vo1",
+    "data": {
+      "label": "Thị Khước",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_3_1"
+      ],
+      "children": [
+        "n4_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_vo2",
+    "data": {
+      "label": "Thị Vơn",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3",
+    "data": {
+      "label": "4.1.2.3 Hữu Du",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2"
+      ],
+      "children": [
+        "u_huuthuat0_211",
+        "n4_1_2_3_1",
+        "u_huutao0_9619",
+        "u_thiphiet0_6589",
+        "u_huucan0_5309"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1",
+    "data": {
+      "label": "4.1.2.1 Hữu Toại",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2"
+      ],
+      "spouses": [
+        "n4_1_2_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_2",
+        "n4_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_vo1",
+    "data": {
+      "label": "Trần Thị Tơn",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1"
+      ],
+      "children": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_2",
+        "n4_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2",
+    "data": {
+      "label": "4.1.2.2 Hữu Dư",
+      "last name": "",
+      "gender": "M",
+      "notes": "Mất 27/10, lăng Cây Me; Thị Thự. Mất 21/12"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2"
+      ],
+      "children": [
+        "u_thiquy_6260",
+        "u_thivi_4421",
+        "u_thiquy_5351",
+        "n4_1_2_2_3",
+        "n4_1_2_2_1",
+        "u_thihao_3113",
+        "n4_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_1_2",
+    "data": {
+      "label": "4.1.1.2 Hữu Ngự",
+      "last name": "",
+      "gender": "M",
+      "notes": "không có con"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_1_1",
+    "data": {
+      "label": "4.1.1.1 Hữu Nguyên",
+      "last name": "",
+      "gender": "M",
+      "notes": "không có con"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3",
+    "data": {
+      "label": "4.1.2.1.3 Hữu Ba",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1",
+        "n4_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_3_vo1"
+      ],
+      "children": [
+        "u_thithanh_3036",
+        "n4_1_2_1_3_2",
+        "n4_1_2_1_3_1",
+        "u_thihai_900"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_vo1",
+    "data": {
+      "label": "Nguyễn T. Bảy",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_3"
+      ],
+      "children": [
+        "u_thithanh_3036",
+        "n4_1_2_1_3_2",
+        "n4_1_2_1_3_1",
+        "u_thihai_900"
+      ]
+    }
+  },
+  {
+    "id": "u_thihai_900",
+    "data": {
+      "label": "Thị Hải",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Trần"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_2",
+    "data": {
+      "label": "4.1.2.1.3.2 Hữu Tâm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Vinh; Nguyễn Thị Hải"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_3_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_3_2_2",
+        "u_thicuc_5596",
+        "u_thioanh_4950",
+        "u_thithuy_76",
+        "n4_1_2_1_3_2_1",
+        "u_thihau_7947"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_1",
+    "data": {
+      "label": "4.1.2.1.3.1 Hữu Lâm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Bá"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_3_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_3_1_1",
+        "n4_1_2_1_3_1_2",
+        "u_thibien_4483",
+        "u_thilam_4558",
+        "u_thikieu_3394"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_3036",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng xóm Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3",
+        "n4_1_2_1_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1",
+    "data": {
+      "label": "4.1.2.1.1 Hữu Hoàn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1",
+        "n4_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_vo1",
+    "data": {
+      "label": "Ng. T. Yêm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1"
+      ],
+      "children": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2",
+    "data": {
+      "label": "4.1.2.1.1.2 Hữu Dật",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1",
+        "n4_1_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_1_2_vo1",
+        "n4_1_2_1_1_2_vo2"
+      ],
+      "children": [
+        "n4_1_2_1_1_2_3",
+        "n4_1_2_1_1_2_2",
+        "n4_1_2_1_1_2_4",
+        "n4_1_2_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_vo1",
+    "data": {
+      "label": "Thị Loan",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1_2"
+      ],
+      "children": [
+        "n4_1_2_1_1_2_3",
+        "n4_1_2_1_1_2_2",
+        "n4_1_2_1_1_2_4",
+        "n4_1_2_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_vo2",
+    "data": {
+      "label": "Thị Nhật",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1",
+    "data": {
+      "label": "4.1.2.1.1.1 Hữu Phùng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1",
+        "n4_1_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_1_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_1_1_2",
+        "u_thihanh_9616",
+        "n4_1_2_1_1_1_1",
+        "u_thichau_6986",
+        "u_thidung_8873",
+        "u_thianh_9554"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_vo1",
+    "data": {
+      "label": "Nguyễn Thị Thảo",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1_1"
+      ],
+      "children": [
+        "n4_1_2_1_1_1_2",
+        "u_thihanh_9616",
+        "n4_1_2_1_1_1_1",
+        "u_thichau_6986",
+        "u_thidung_8873",
+        "u_thianh_9554"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2",
+    "data": {
+      "label": "4.1.2.1.2 Hữu San",
+      "last name": "",
+      "gender": "M",
+      "notes": "Mất: 23/02, mộ Động Cháy"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1",
+        "n4_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_2_2",
+        "u_thihoa_3197",
+        "n4_1_2_1_2_1",
+        "u_thitho0_6713"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_vo1",
+    "data": {
+      "label": "Nguyễn Thị Trang",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2"
+      ],
+      "children": [
+        "n4_1_2_1_2_2",
+        "u_thihoa_3197",
+        "n4_1_2_1_2_1",
+        "u_thitho0_6713"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_3197",
+    "data": {
+      "label": "Thị Hòa",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Đình, Động Sơn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2",
+        "n4_1_2_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_2",
+    "data": {
+      "label": "4.1.2.1.2.2 Hữu Hiền",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Thành"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2",
+        "n4_1_2_1_2_vo1"
+      ],
+      "children": [
+        "u_thinga_7735",
+        "u_thinguyet_1942",
+        "n4_1_2_1_2_2_2",
+        "n4_1_2_1_2_2_1",
+        "u_thithuy_4227"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1",
+    "data": {
+      "label": "4.1.2.1.2.1 Hữu Thìn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2",
+        "n4_1_2_1_2_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_2_1_vo1"
+      ],
+      "children": [
+        "u_thiminh_8884",
+        "n4_1_2_1_2_1_1",
+        "u_huutri_609",
+        "n4_1_2_1_2_1_3",
+        "n4_1_2_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_vo1",
+    "data": {
+      "label": "Trần T. Chính",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2_1"
+      ],
+      "children": [
+        "u_thiminh_8884",
+        "n4_1_2_1_2_1_1",
+        "u_huutri_609",
+        "n4_1_2_1_2_1_3",
+        "n4_1_2_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitho0_6713",
+    "data": {
+      "label": "Thị Thơ (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2",
+        "n4_1_2_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_1",
+    "data": {
+      "label": "4.1.2.1.1.1.1 Hữu Trung",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1",
+        "n4_1_2_1_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_1_1_1_vo1"
+      ],
+      "children": [
+        "u_thiphuong_8882",
+        "n4_1_2_1_1_1_1_1",
+        "u_thiloan_3944"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_1_vo1",
+    "data": {
+      "label": "Nguyễn T. Nga",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1_1_1"
+      ],
+      "children": [
+        "u_thiphuong_8882",
+        "n4_1_2_1_1_1_1_1",
+        "u_thiloan_3944"
+      ]
+    }
+  },
+  {
+    "id": "u_thiphuong_8882",
+    "data": {
+      "label": "Thị Phượng",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Bá cùng xóm)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_1",
+        "n4_1_2_1_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiloan_3944",
+    "data": {
+      "label": "Thị Loan",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Vịnh; xóm 13)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_1",
+        "n4_1_2_1_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_1_1",
+    "data": {
+      "label": "4.1.2.1.1.1.1.1 Hữu Đức",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_1",
+        "n4_1_2_1_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thidung_8873",
+    "data": {
+      "label": "Thị Dung",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Công; xóm Bắc Đình)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1",
+        "n4_1_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_2",
+    "data": {
+      "label": "4.1.2.1.1.1.2 Hữu Phúc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3_1_1_1"
+      ],
+      "spouses": [
+        "n4_1_2_1_1_1_2_vo1"
+      ],
+      "children": [
+        "u_khanhchi_3782",
+        "u_havi_8836",
+        "u_yennhi_3740"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_1_2_vo1",
+    "data": {
+      "label": "Thị Tâm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_1_1_2"
+      ],
+      "children": [
+        "u_khanhchi_3782",
+        "u_havi_8836",
+        "u_yennhi_3740"
+      ]
+    }
+  },
+  {
+    "id": "u_havi_8836",
+    "data": {
+      "label": "Hà Vi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_2",
+        "n4_1_2_1_1_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_khanhchi_3782",
+    "data": {
+      "label": "Khánh Chi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_2",
+        "n4_1_2_1_1_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_yennhi_3740",
+    "data": {
+      "label": "Yên Nhi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1_2",
+        "n4_1_2_1_1_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihanh_9616",
+    "data": {
+      "label": "Thị Hạnh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn xóm Động Sơn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1",
+        "n4_1_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thianh_9554",
+    "data": {
+      "label": "Thị Anh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn xóm 14)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1",
+        "n4_1_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thichau_6986",
+    "data": {
+      "label": "Thị Châu",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn; xóm Bắc Đình)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_1",
+        "n4_1_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_4",
+    "data": {
+      "label": "4.1.2.1.1.2.4 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_3",
+    "data": {
+      "label": "4.1.2.1.1.2.3 Hữu Điệp",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_1_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_3_1",
+    "data": {
+      "label": "4.1.2.1.1.2.3.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_1",
+    "data": {
+      "label": "4.1.2.1.1.2.1 Hữu Chung",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_1_2_1_2",
+        "n4_1_2_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_1_2",
+    "data": {
+      "label": "4.1.2.1.1.2.1.2 Hữu Khánh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_1_1",
+    "data": {
+      "label": "4.1.2.1.1.2.1.1 Hữu lâm",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_1_2_2",
+    "data": {
+      "label": "4.1.2.1.1.2.2 Hữu Việt (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_1_2",
+        "n4_1_2_1_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_3",
+    "data": {
+      "label": "4.1.2.1.2.1.3 Hữu Quý",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử nhân đại học cảnh sát"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1",
+        "n4_1_2_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_2_1_3_vo1"
+      ],
+      "children": [
+        "n4_1_2_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_3_vo1",
+    "data": {
+      "label": "Phạm Thị Loan",
+      "last name": "",
+      "gender": "F",
+      "notes": "người Thái Bình"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2_1_3"
+      ],
+      "children": [
+        "n4_1_2_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_3_1",
+    "data": {
+      "label": "4.1.2.1.2.1.3.1 Hữu Thành",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_3",
+        "n4_1_2_1_2_1_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_2",
+    "data": {
+      "label": "4.1.2.1.2.1.2 Hữu Phú",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1",
+        "n4_1_2_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_2_1_2_vo1",
+        "n4_1_2_1_2_1_2_vo2"
+      ],
+      "children": [
+        "n4_1_2_1_2_1_2_1",
+        "u_diemquynh_3894",
+        "u_khanhlinh_7749"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_2_vo1",
+    "data": {
+      "label": "Thị Vịnh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2_1_2"
+      ],
+      "children": [
+        "n4_1_2_1_2_1_2_1",
+        "u_diemquynh_3894",
+        "u_khanhlinh_7749"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_2_vo2",
+    "data": {
+      "label": "Thị Nga",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_diemquynh_3894",
+    "data": {
+      "label": "Diễm Quỳnh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_2",
+        "n4_1_2_1_2_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_khanhlinh_7749",
+    "data": {
+      "label": "Khánh Linh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_2",
+        "n4_1_2_1_2_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_2_1",
+    "data": {
+      "label": "4.1.2.1.2.1.2.1 Hữu Bằng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_2",
+        "n4_1_2_1_2_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiminh_8884",
+    "data": {
+      "label": "Thị Minh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Trần Văn; cùng xóm)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1",
+        "n4_1_2_1_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_1",
+    "data": {
+      "label": "4.1.2.1.2.1.1 Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử nhân đại học, nghề dạy học"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1",
+        "n4_1_2_1_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_1_2_1_1_vo1"
+      ],
+      "children": [
+        "u_tamthao_6466",
+        "n4_1_2_1_2_1_1_2",
+        "n4_1_2_1_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_1_vo1",
+    "data": {
+      "label": "Nguyễn Thị  Lê",
+      "last name": "",
+      "gender": "F",
+      "notes": "Nghề Y"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_1_2_1_1"
+      ],
+      "children": [
+        "u_tamthao_6466",
+        "n4_1_2_1_2_1_1_2",
+        "n4_1_2_1_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_1_1",
+    "data": {
+      "label": "4.1.2.1.2.1.1.1 Hữu Mạnh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_1",
+        "n4_1_2_1_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_tamthao_6466",
+    "data": {
+      "label": "Tâm Thảo",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_1",
+        "n4_1_2_1_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_1_1_2",
+    "data": {
+      "label": "4.1.2.1.2.1.1.2 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1_1",
+        "n4_1_2_1_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_huutri_609",
+    "data": {
+      "label": "Hữu Trí",
+      "last name": "",
+      "gender": "M",
+      "notes": "(mất 1984)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_1",
+        "n4_1_2_1_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thinga_7735",
+    "data": {
+      "label": "Thị Nga",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng xóm Động Sơn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_2_1",
+    "data": {
+      "label": "4.1.2.1.2.2.1 Hữu Sỹ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nam )"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2"
+      ],
+      "children": [
+        "u_thivan_7425",
+        "u_giahan_1664",
+        "u_thily_7890"
+      ]
+    }
+  },
+  {
+    "id": "u_thivan_7425",
+    "data": {
+      "label": "Thị Vân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_giahan_1664",
+    "data": {
+      "label": "Gia Hân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thily_7890",
+    "data": {
+      "label": "Thị Ly",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thinguyet_1942",
+    "data": {
+      "label": "Thị Nguyệt",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng xóm Động Sơn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuy_4227",
+    "data": {
+      "label": "Thị Thủy",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn, Nam Đình"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_2_2",
+    "data": {
+      "label": "4.1.2.1.2.2.2 Hữu Trà",
+      "last name": "",
+      "gender": "M",
+      "notes": "Kiều Thị Linh; (Người Quỳnh Lưu)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2"
+      ],
+      "children": [
+        "n4_1_2_1_2_2_2_1",
+        "u_kieuanhthu_7095"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_2_2_2_1",
+    "data": {
+      "label": "4.1.2.1.2.2.2.1 Hữu Hưng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_kieuanhthu_7095",
+    "data": {
+      "label": "Kiều Anh Thư",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_1_2",
+    "data": {
+      "label": "4.1.2.1.3.1.2 Hữu Kỷ(0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilam_4558",
+    "data": {
+      "label": "Thị Lam",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Thái Văn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_1_1",
+    "data": {
+      "label": "4.1.2.1.3.1.1 Hữu Cương",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thùy Dương"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1"
+      ],
+      "children": [
+        "n4_1_2_1_3_1_1_1",
+        "u_hongtham_3658"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_1_1_1",
+    "data": {
+      "label": "4.1.2.1.3.1.1.1 Hữu Quang Đại",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_hongtham_3658",
+    "data": {
+      "label": "Hồng Thắm",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thikieu_3394",
+    "data": {
+      "label": "Thị Kiều",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Đình)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thibien_4483",
+    "data": {
+      "label": "Thị Biên",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng họ Thái Văn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_2_2",
+    "data": {
+      "label": "4.1.2.1.3.2.2 Hữu Thân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thanh Thúy"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ],
+      "children": [
+        "n4_1_2_1_3_2_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_2_1_2_1",
+    "data": {
+      "label": "4.1.2.1.3.2.1.2.1 Hữu Nhật Khang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thioanh_4950",
+    "data": {
+      "label": "Thị Oanh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuy_76",
+    "data": {
+      "label": "Thị Thúy",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_2_1",
+    "data": {
+      "label": "4.1.2.1.3.2.1 Hữu Thông",
+      "last name": "",
+      "gender": "M",
+      "notes": "Dương Bích Vân"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ],
+      "children": [
+        "n4_1_2_1_3_2_1_1",
+        "u_nhucam_9024"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_1_3_2_1_1",
+    "data": {
+      "label": "4.1.2.1.3.2.1.1 Hữu Nhật Phong",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_nhucam_9024",
+    "data": {
+      "label": "Như Cầm",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihau_7947",
+    "data": {
+      "label": "Thị Hậu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thicuc_5596",
+    "data": {
+      "label": "Thị Cúc",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thivi_4421",
+    "data": {
+      "label": "Thị Vị",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng về Phong Niên)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiquy_6260",
+    "data": {
+      "label": "Thị Quy",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng ở Bục Trại"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2",
+    "data": {
+      "label": "4.1.2.2.2 Hữu Dy",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ],
+      "spouses": [
+        "n4_1_2_2_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_2_2_1",
+        "u_thinhung_1911",
+        "n4_1_2_2_2_4",
+        "n4_1_2_2_2_3",
+        "u_thiduong_8144",
+        "n4_1_2_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_vo1",
+    "data": {
+      "label": "Thị Liễu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_2"
+      ],
+      "children": [
+        "n4_1_2_2_2_1",
+        "u_thinhung_1911",
+        "n4_1_2_2_2_4",
+        "n4_1_2_2_2_3",
+        "u_thiduong_8144",
+        "n4_1_2_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1",
+    "data": {
+      "label": "4.1.2.2.1 Hữu Quỵ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ],
+      "spouses": [
+        "n4_1_2_2_1_vo1"
+      ],
+      "children": [
+        "u_thixuan_7999",
+        "u_thingoc0_812",
+        "u_thilong_4349",
+        "n4_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_vo1",
+    "data": {
+      "label": "Thị Tiềm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_1"
+      ],
+      "children": [
+        "u_thixuan_7999",
+        "u_thingoc0_812",
+        "u_thilong_4349",
+        "n4_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thixuan_7999",
+    "data": {
+      "label": "Thị Xuân",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng về Nam Đình)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1",
+        "n4_1_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thingoc0_812",
+    "data": {
+      "label": "Thị ngọc (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1",
+        "n4_1_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilong_4349",
+    "data": {
+      "label": "Thị Long",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng ở xóm Lô)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1",
+        "n4_1_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1",
+    "data": {
+      "label": "4.1.2.2.1.1 Hữu Thanh (Cơ)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1",
+        "n4_1_2_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_2_1_1_vo1"
+      ],
+      "children": [
+        "u_thidung_2399",
+        "u_thilap_8916",
+        "n4_1_2_2_1_1_2",
+        "n4_1_2_2_1_1_1",
+        "u_thithu0_7545",
+        "n4_1_2_2_1_1_4",
+        "n4_1_2_2_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_vo1",
+    "data": {
+      "label": "Đậu T. Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Người Quỳnh Lưu)"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_1_1"
+      ],
+      "children": [
+        "u_thidung_2399",
+        "u_thilap_8916",
+        "n4_1_2_2_1_1_2",
+        "n4_1_2_2_1_1_1",
+        "u_thithu0_7545",
+        "n4_1_2_2_1_1_4",
+        "n4_1_2_2_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3",
+    "data": {
+      "label": "4.1.2.2.3 Hữu Thướng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ],
+      "spouses": [
+        "n4_1_2_2_3_vo1"
+      ],
+      "children": [
+        "u_thibinh_9530",
+        "n4_1_2_2_3_2",
+        "n4_1_2_2_3_1",
+        "n4_1_2_2_3_3",
+        "u_thithanh0_4747",
+        "u_thitan_3401"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_vo1",
+    "data": {
+      "label": "Thị Tâm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_3"
+      ],
+      "children": [
+        "u_thibinh_9530",
+        "n4_1_2_2_3_2",
+        "n4_1_2_2_3_1",
+        "n4_1_2_2_3_3",
+        "u_thithanh0_4747",
+        "u_thitan_3401"
+      ]
+    }
+  },
+  {
+    "id": "u_thiquy_5351",
+    "data": {
+      "label": "Thị Quý",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng họ Hồ Giáp Quán)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihao_3113",
+    "data": {
+      "label": "Thị Hào",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng ở Bục Trại)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_2",
+    "data": {
+      "label": "4.1.2.2.1.1.2 Hữu An (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilap_8916",
+    "data": {
+      "label": "Thị Lập",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Bá, Liên Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thidung_2399",
+    "data": {
+      "label": "Thị Dũng",
+      "last name": "",
+      "gender": "F",
+      "notes": "lấy chồng họ Hồ, Giáp Quán"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithu0_7545",
+    "data": {
+      "label": "Thị Thu (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_3",
+    "data": {
+      "label": "4.1.2.2.1.1.3 Hữu Việt",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Xuân; (Giai Xuân, Tân Kỳ)"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_1",
+    "data": {
+      "label": "4.1.2.2.1.1.1 Hữu Oanh",
+      "last name": "",
+      "gender": "M",
+      "notes": "cả hai là Cử nhân đại học; Dạy học ở Phú Quốc"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_2_1_1_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_2_1_1_1_1",
+        "u_thaotrinh_3537",
+        "u_thaongan_2480"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_1_vo1",
+    "data": {
+      "label": "Nguyễn T. Phương",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Can lộc, Hà Tĩnh)"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_1_1_1"
+      ],
+      "children": [
+        "n4_1_2_2_1_1_1_1",
+        "u_thaotrinh_3537",
+        "u_thaongan_2480"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_1_1",
+    "data": {
+      "label": "4.1.2.2.1.1.1.1 Hữu Trình",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1_1",
+        "n4_1_2_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thaongan_2480",
+    "data": {
+      "label": "Thảo Ngân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1_1",
+        "n4_1_2_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thaotrinh_3537",
+    "data": {
+      "label": "Thảo Trinh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1_1",
+        "n4_1_2_2_1_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_4",
+    "data": {
+      "label": "4.1.2.2.1.1.4 Hữu Quyết",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử nhân đại học làm nghề y; Nguyễn Thị Hảo"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1",
+        "n4_1_2_2_1_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_1_1_3_1",
+    "data": {
+      "label": "4.1.2.2.1.1.3.1 Hữu Huân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_3",
+    "data": {
+      "label": "4.1.2.2.2.3 Hữu Đại",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Liên"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ],
+      "children": [
+        "u_thinhan_8202",
+        "n4_1_2_2_2_3_1",
+        "n4_1_2_2_2_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_1",
+    "data": {
+      "label": "4.1.2.2.2.1 Hữu Sơn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_2_2_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_2_2_1_1",
+        "u_thisen_2247",
+        "u_thihiep_1640",
+        "n4_1_2_2_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_1_vo1",
+    "data": {
+      "label": "Ng. T. Kỳ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_2_1"
+      ],
+      "children": [
+        "n4_1_2_2_2_1_1",
+        "u_thisen_2247",
+        "u_thihiep_1640",
+        "n4_1_2_2_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thinhung_1911",
+    "data": {
+      "label": "Thị Nhung",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_2",
+    "data": {
+      "label": "4.1.2.2.2.2 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_2_2_2_vo1"
+      ],
+      "children": [
+        "u_thiha_8739",
+        "u_thihuong_5110",
+        "n4_1_2_2_2_2_1",
+        "u_thihong_6768",
+        "u_thihoa_1177"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_2_vo1",
+    "data": {
+      "label": "Ng.T. Xuân",
+      "last name": "",
+      "gender": "F",
+      "notes": "người Tân Mỹ"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_2_2"
+      ],
+      "children": [
+        "u_thiha_8739",
+        "u_thihuong_5110",
+        "n4_1_2_2_2_2_1",
+        "u_thihong_6768",
+        "u_thihoa_1177"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_4",
+    "data": {
+      "label": "4.1.2.2.2.4 Hữu Hùng (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiduong_8144",
+    "data": {
+      "label": "Thị Dương",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2",
+        "n4_1_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_1_2",
+    "data": {
+      "label": "4.1.2.2.2.1.2 Hữu Liên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1",
+        "n4_1_2_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_1_1",
+    "data": {
+      "label": "4.1.2.2.2.1.1 Hữu Dụng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Tâm"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1",
+        "n4_1_2_2_2_1_vo1"
+      ],
+      "children": [
+        "u_thuylinh_9835",
+        "u_tuyetnhi_8803"
+      ]
+    }
+  },
+  {
+    "id": "u_tuyetnhi_8803",
+    "data": {
+      "label": "Tuyết Nhi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thuylinh_9835",
+    "data": {
+      "label": "Thùy Linh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thisen_2247",
+    "data": {
+      "label": "Thị Sen",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng ở Quỳnh Thắng, Quỳnh Lưu"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1",
+        "n4_1_2_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihiep_1640",
+    "data": {
+      "label": "Thị Hiệp",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Nam Thượng, Nam Đàn"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_1",
+        "n4_1_2_2_2_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihong_6768",
+    "data": {
+      "label": "Thị Hồng",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Hương Sơn, Tân kỳ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_2",
+        "n4_1_2_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuong_5110",
+    "data": {
+      "label": "Thị Hương",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Tân An, Tân Kỳ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_2",
+        "n4_1_2_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_8739",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Nghĩa Dũng, Tân kỳ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_2",
+        "n4_1_2_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_2_1",
+    "data": {
+      "label": "4.1.2.2.2.2.1 Hữu Tiến",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_2",
+        "n4_1_2_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_1177",
+    "data": {
+      "label": "Thị Hoa",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Đặng Sơn, Đô Lương"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_2",
+        "n4_1_2_2_2_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thinhan_8202",
+    "data": {
+      "label": "Thị Nhàn",
+      "last name": "",
+      "gender": "F",
+      "notes": "lấy chồng Đồng Văn, Tân Kỳ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_3_1",
+    "data": {
+      "label": "4.1.2.2.2.3.1 Hữu Hạ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Phượng; xóm Mỹ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3"
+      ],
+      "children": [
+        "u_quynhanh_1272"
+      ]
+    }
+  },
+  {
+    "id": "u_quynhanh_1272",
+    "data": {
+      "label": "Quỳnh Anh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_3_2",
+    "data": {
+      "label": "4.1.2.2.2.3.2 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thảo"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3"
+      ],
+      "children": [
+        "n4_1_2_2_2_3_2_1",
+        "u_giahan_8287"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_2_3_2_1",
+    "data": {
+      "label": "4.1.2.2.2.3.2.1 Hữu Hiếu",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_giahan_8287",
+    "data": {
+      "label": "Gia Hân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_2_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitan_3401",
+    "data": {
+      "label": "Thị Tân",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Hoằng Hóa Thanh Hóa"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh0_4747",
+    "data": {
+      "label": "Thị Thành (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_1",
+    "data": {
+      "label": "4.1.2.2.3.1 Hữu Thịnh (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thibinh_9530",
+    "data": {
+      "label": "Thị Bình",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Tân Mỹ"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_3",
+    "data": {
+      "label": "4.1.2.2.3.3 Hữu Thực (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_2",
+    "data": {
+      "label": "4.1.2.2.3.2 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3",
+        "n4_1_2_2_3_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_2_3_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_2_3_2_2",
+        "n4_1_2_2_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_2_vo1",
+    "data": {
+      "label": "Lê T.Tuyết",
+      "last name": "",
+      "gender": "F",
+      "notes": "Hạ Hòa, Phú Thọ"
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_2_3_2"
+      ],
+      "children": [
+        "n4_1_2_2_3_2_2",
+        "n4_1_2_2_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_2_2",
+    "data": {
+      "label": "4.1.2.2.3.2.2 Hữu Nguyên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3_2",
+        "n4_1_2_2_3_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_2_3_2_1",
+    "data": {
+      "label": "4.1.2.2.3.2.1 Hữu Kiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_2_3_2",
+        "n4_1_2_2_3_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiphiet0_6589",
+    "data": {
+      "label": "Thị Phiệt (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "u_huuthuat0_211",
+    "data": {
+      "label": "Hữu Thuật (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "u_huutao0_9619",
+    "data": {
+      "label": "Hữu Tao (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "u_huucan0_5309",
+    "data": {
+      "label": "Hữu Cận (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1",
+    "data": {
+      "label": "4.1.2.3.1 Hữu Chuyên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3"
+      ],
+      "spouses": [
+        "n4_1_2_3_1_vo1",
+        "n4_1_2_3_1_vo2"
+      ],
+      "children": [
+        "n4_1_2_3_1_2",
+        "u_thihang_4652",
+        "n4_1_2_3_1_5",
+        "n4_1_2_3_1_4",
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_vo1",
+    "data": {
+      "label": "Thị Ba",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_3_1"
+      ],
+      "children": [
+        "n4_1_2_3_1_2",
+        "u_thihang_4652",
+        "n4_1_2_3_1_5",
+        "n4_1_2_3_1_4",
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_vo2",
+    "data": {
+      "label": "..Mai",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_5",
+    "data": {
+      "label": "4.1.2.3.1.5 Hữu Sỹ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihang_4652",
+    "data": {
+      "label": "Thị Hằng",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng về Diễn Tháp, Diễn Châu"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_2",
+    "data": {
+      "label": "4.1.2.3.1.2 Hữu Lợi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_3_1_2_vo1"
+      ],
+      "children": [
+        "n4_1_2_3_1_2_1",
+        "u_thiha_9572",
+        "n4_1_2_3_1_2_2",
+        "u_thilien_8175"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_2_vo1",
+    "data": {
+      "label": "Thị Lan",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_3_1_2"
+      ],
+      "children": [
+        "n4_1_2_3_1_2_1",
+        "u_thiha_9572",
+        "n4_1_2_3_1_2_2",
+        "u_thilien_8175"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_4",
+    "data": {
+      "label": "4.1.2.3.1.4 Hữu Chung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Tuyết; Người Đô Thành, Yên Thành"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ],
+      "children": [
+        "u_khanhan_6772",
+        "n4_1_2_3_1_4_2",
+        "u_chauanh_8157",
+        "n4_1_2_3_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_1",
+    "data": {
+      "label": "4.1.2.3.1.1 Hữu Thắng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ],
+      "spouses": [
+        "n4_1_2_3_1_1_vo1"
+      ],
+      "children": [
+        "u_thihong_6486",
+        "u_thihuyen_3506",
+        "u_thiluong_8169",
+        "n4_1_2_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_1_vo1",
+    "data": {
+      "label": "Thị Lan",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_1_2_3_1_1"
+      ],
+      "children": [
+        "u_thihong_6486",
+        "u_thihuyen_3506",
+        "u_thiluong_8169",
+        "n4_1_2_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_3",
+    "data": {
+      "label": "4.1.2.3.1.3 Hữu Hợi",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần T. Bình"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1",
+        "n4_1_2_3_1_vo1"
+      ],
+      "children": [
+        "n4_1_2_3_1_3_2",
+        "n4_1_2_3_1_3_1",
+        "n4_1_2_3_1_3_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuyen_3506",
+    "data": {
+      "label": "Thị Huyền",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Dương, Công Thành"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiluong_8169",
+    "data": {
+      "label": "Thị Lương",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Lê,; Thanh Hóa"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihong_6486",
+    "data": {
+      "label": "Thị Hồng",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng về Hà Tĩnh"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_1_1",
+    "data": {
+      "label": "4.1.2.3.1.1.1 Hữu Lĩnh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị sơn"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1",
+        "n4_1_2_3_1_1_vo1"
+      ],
+      "children": [
+        "u_annhien_1460",
+        "u_thigiang_2240"
+      ]
+    }
+  },
+  {
+    "id": "u_thigiang_2240",
+    "data": {
+      "label": "Thị Giang",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_annhien_1460",
+    "data": {
+      "label": "An Nhiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_2_1",
+    "data": {
+      "label": "4.1.2.3.1.2.1 Hữu Hiếu",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_2",
+        "n4_1_2_3_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_2_2",
+    "data": {
+      "label": "4.1.2.3.1.2.2 Hữu An",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_2",
+        "n4_1_2_3_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilien_8175",
+    "data": {
+      "label": "Thị Liên",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Vịnh, Phong Niên"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_2",
+        "n4_1_2_3_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_9572",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_2",
+        "n4_1_2_3_1_2_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_3_1",
+    "data": {
+      "label": "4.1.2.3.1.3.1 Hữu Lộc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_3_2",
+    "data": {
+      "label": "4.1.2.3.1.3.2 Hữu Cảnh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_3_3",
+    "data": {
+      "label": "4.1.2.3.1.3.3 Hữu Kiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_khanhan_6772",
+    "data": {
+      "label": "Khánh An",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_chauanh_8157",
+    "data": {
+      "label": "Châu Anh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_4_2",
+    "data": {
+      "label": "4.1.2.3.1.4.2 Hữu Khang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_2_3_1_4_1",
+    "data": {
+      "label": "4.1.2.3.1.4.1 Hữu Gia Bảo",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_2_3_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_1",
+    "data": {
+      "label": "4.1.3.1.1 Hữu Đạt",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Dư"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3_1",
+        "n4_1_3_1_vo1"
+      ],
+      "children": [
+        "n4_1_3_1_1_2",
+        "n4_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_1_1",
+    "data": {
+      "label": "4.1.3.1.1.1 Hữu Đông",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hà"
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3_1_1"
+      ],
+      "children": [
+        "n4_1_2_1_1_1_2",
+        "n4_1_3_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_1_1_1",
+    "data": {
+      "label": "4.1.3.1.1.1.1 Hữu Hoàng (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_1_3_1_1_2",
+    "data": {
+      "label": "4.1.3.1.1.2 Hữu Nam (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4",
+    "data": {
+      "label": "4.2.1.4 Hữu Dũng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Diễn; Nguyễn Thị Liên"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1",
+        "n4_2_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_4_2",
+        "u_nguyenthi_1551",
+        "n4_2_1_4_1",
+        "n4_2_1_4_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_2",
+    "data": {
+      "label": "4.2.1.2 Hữu Thế",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Toàn"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1",
+        "n4_2_1_vo1"
+      ],
+      "children": [
+        "u_nguyenthi_3801"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_3801",
+    "data": {
+      "label": "Nguyễn Thị...",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3",
+    "data": {
+      "label": "4.2.1.3 Hữu Công",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Dụ"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1",
+        "n4_2_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1",
+    "data": {
+      "label": "4.2.1.1 Hữu Quận",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1",
+        "n4_2_1_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_1",
+        "n4_2_1_1_2",
+        "n4_2_1_1_5",
+        "n4_2_1_1_7",
+        "n4_2_1_1_3",
+        "n4_2_1_1_6",
+        "n4_2_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_vo1",
+    "data": {
+      "label": "T .Thân; T Tình",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1"
+      ],
+      "children": [
+        "n4_2_1_1_1",
+        "n4_2_1_1_2",
+        "n4_2_1_1_5",
+        "n4_2_1_1_7",
+        "n4_2_1_1_3",
+        "n4_2_1_1_6",
+        "n4_2_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_3",
+    "data": {
+      "label": "4.2.1.1.3 Hữu Tân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_3_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_3_vo1",
+    "data": {
+      "label": "T Liễu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1_3"
+      ],
+      "children": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_1",
+    "data": {
+      "label": "4.2.1.1.1 Hữu Nhuyện (Điến)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Dính; Thị Huệ"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "children": [
+        "u_nguyenthi_936"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_936",
+    "data": {
+      "label": "Nguyễn Thị",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_6",
+    "data": {
+      "label": "4.2.1.1.6 Hữu Tùng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_6_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_6_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_6_vo1",
+    "data": {
+      "label": "Trần T. Hoạt; Thị Thu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1_6"
+      ],
+      "children": [
+        "n4_2_1_1_6_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_4",
+    "data": {
+      "label": "4.2.1.1.4 Hữu Khoái",
+      "last name": "",
+      "gender": "M",
+      "notes": "Vương Thị Luân"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "children": [
+        "u_thithuan_8078",
+        "u_thiduan_9716",
+        "n4_2_1_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7",
+    "data": {
+      "label": "4.2.1.1.7 Hữu Bá",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_7_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_7_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_vo1",
+    "data": {
+      "label": "Trần Thị Nhân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1_7"
+      ],
+      "children": [
+        "n4_2_1_1_7_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_2",
+    "data": {
+      "label": "4.2.1.1.2 Hữu Nhuận (Mạn)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "children": [
+        "u_nguyenthi_6506"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_6506",
+    "data": {
+      "label": "Nguyễn Thị",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_5",
+    "data": {
+      "label": "4.2.1.1.5 Hữu Thung",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1",
+        "n4_2_1_1_vo1"
+      ],
+      "children": [
+        "u_nguyenthi_8689"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_8689",
+    "data": {
+      "label": "Nguyễn Thị",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_3_1",
+    "data": {
+      "label": "4.2.1.1.3.1 Hữu Mận",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Liên; Thị Giỏi"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3",
+        "n4_2_1_1_3_vo1"
+      ],
+      "children": [
+        "u_thihuong_5166",
+        "u_thihoa_8168",
+        "u_thitrong_8943",
+        "n4_2_1_1_3_1_1",
+        "u_thixuan_2577"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_8168",
+    "data": {
+      "label": "Thị Hoa",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuong_5166",
+    "data": {
+      "label": "Thị Hướng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thixuan_2577",
+    "data": {
+      "label": "Thị Xuân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thitrong_8943",
+    "data": {
+      "label": "Thị Trọng",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Tân Kỳ)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_3_1_1",
+    "data": {
+      "label": "4.2.1.1.3.1.1 Hữu Bính",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thanh"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1"
+      ],
+      "children": [
+        "n4_2_1_1_3_1_1_1",
+        "u_thiminh_5347",
+        "u_thi_9142"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_3_1_1_1",
+    "data": {
+      "label": "4.2.1.1.3.1.1.1 Hữu Nhật",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thi_9142",
+    "data": {
+      "label": "Thị..",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiminh_5347",
+    "data": {
+      "label": "Thị Minh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiduan_9716",
+    "data": {
+      "label": "Thị Duân",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Đại Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuan_8078",
+    "data": {
+      "label": "Thị Thuân",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Vĩnh, Phong Niên)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_4_1",
+    "data": {
+      "label": "4.2.1.1.4.1 Hữu Thuần",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nhàn"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4"
+      ],
+      "children": [
+        "n4_2_1_1_4_1_1",
+        "n4_2_1_1_4_1_2",
+        "u_thihong_5324"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_4_1_2",
+    "data": {
+      "label": "4.2.1.1.4.1.2 Hữu Nhị",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Phượng"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1"
+      ],
+      "children": [
+        "u_thihang_5027",
+        "u_thiha_9156",
+        "u_thihuyen_9074"
+      ]
+    }
+  },
+  {
+    "id": "u_thihang_5027",
+    "data": {
+      "label": "Thị Hằng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_9156",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuyen_9074",
+    "data": {
+      "label": "Thị Huyền",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihong_5324",
+    "data": {
+      "label": "Thị Hồng",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Viết, Nam Lĩnh, Nam Đàn)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_4_1_1",
+    "data": {
+      "label": "4.2.1.1.4.1.1 Hữu Túy",
+      "last name": "",
+      "gender": "M",
+      "notes": "Lê Thị Huệ"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1"
+      ],
+      "children": [
+        "u_thivy_2068",
+        "u_thinhi_6811"
+      ]
+    }
+  },
+  {
+    "id": "u_thivy_2068",
+    "data": {
+      "label": "Thị Vy",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thinhi_6811",
+    "data": {
+      "label": "Thị Nhi",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_6_1",
+    "data": {
+      "label": "4.2.1.1.6.1 Hữu Dần",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Hiền"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_6",
+        "n4_2_1_1_6_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_6_1_2",
+        "n4_2_1_1_6_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_6_1_1",
+    "data": {
+      "label": "4.2.1.1.6.1.1 Hữu Đạt",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_6_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_6_1_2",
+    "data": {
+      "label": "4.2.1.1.6.1.2 Hữu Bách",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_6_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1",
+    "data": {
+      "label": "4.2.1.1.7.1 Hữu Nhạ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7",
+        "n4_2_1_1_7_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_7_1_vo1"
+      ],
+      "children": [
+        "u_thitra_1629",
+        "n4_2_1_1_7_1_2",
+        "n4_2_1_1_7_1_1",
+        "u_thithuy_6291"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_vo1",
+    "data": {
+      "label": "Lê Thị Long",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1_7_1"
+      ],
+      "children": [
+        "u_thitra_1629",
+        "n4_2_1_1_7_1_2",
+        "n4_2_1_1_7_1_1",
+        "u_thithuy_6291"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuy_6291",
+    "data": {
+      "label": "Thị Thúy",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn, xóm Đình)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1",
+        "n4_2_1_1_7_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_2",
+    "data": {
+      "label": "4.2.1.1.7.1.2 Hữu Chúc",
+      "last name": "",
+      "gender": "M",
+      "notes": "Đinh Thị Thủy"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1",
+        "n4_2_1_1_7_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_1_7_1_2_1",
+        "u_thivy_6393"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_2_1",
+    "data": {
+      "label": "4.2.1.1.7.1.2.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thivy_6393",
+    "data": {
+      "label": "Thị Vy",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitra_1629",
+    "data": {
+      "label": "Thị Trà",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Mai, Tân Kỳ)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1",
+        "n4_2_1_1_7_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_1",
+    "data": {
+      "label": "4.2.1.1.7.1.1 Hữu Anh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1",
+        "n4_2_1_1_7_1_vo1"
+      ],
+      "spouses": [
+        "n4_2_1_1_7_1_1_vo1"
+      ],
+      "children": [
+        "u_thihieu_2338",
+        "n4_2_1_1_7_1_1_1",
+        "u_thithuong_6065",
+        "n4_2_1_1_7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_1_vo1",
+    "data": {
+      "label": "Trần T.Thảo",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_1_7_1_1"
+      ],
+      "children": [
+        "u_thihieu_2338",
+        "n4_2_1_1_7_1_1_1",
+        "u_thithuong_6065",
+        "n4_2_1_1_7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihieu_2338",
+    "data": {
+      "label": "Thị Hiếu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_1",
+        "n4_2_1_1_7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_1_1",
+    "data": {
+      "label": "4.2.1.1.7.1.1.1 Hữu Thế",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_1",
+        "n4_2_1_1_7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_1_7_1_1_2",
+    "data": {
+      "label": "4.2.1.1.7.1.1.2 Hữu Vụ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_1",
+        "n4_2_1_1_7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuong_6065",
+    "data": {
+      "label": "Thị Thương",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Đại Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_1_7_1_1",
+        "n4_2_1_1_7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1",
+    "data": {
+      "label": "4.2.1.3.1 Hữu Quý",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3"
+      ],
+      "spouses": [
+        "n4_2_1_3_1_vo1"
+      ],
+      "children": [
+        "u_thithuan_9104",
+        "n4_2_1_3_1_1",
+        "u_thivankhanh_4780"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_vo1",
+    "data": {
+      "label": "Nguyễn T. Thuần",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_3_1"
+      ],
+      "children": [
+        "u_thithuan_9104",
+        "n4_2_1_3_1_1",
+        "u_thivankhanh_4780"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuan_9104",
+    "data": {
+      "label": "Thị Thuận",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Thịnh Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1",
+        "n4_2_1_3_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1",
+    "data": {
+      "label": "4.2.1.3.1.1 Hữu Chân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hương; Thị Hòa"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1",
+        "n4_2_1_3_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_3_1_1_1",
+        "u_huuson0_2841",
+        "n4_2_1_3_1_1_3",
+        "n4_2_1_3_1_1_2",
+        "u_thixuan_1930",
+        "n4_2_1_3_1_1_4",
+        "u_thitam_7286"
+      ]
+    }
+  },
+  {
+    "id": "u_thixuan_1930",
+    "data": {
+      "label": "Thị Xuân",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Hồ, Đồng Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_1",
+    "data": {
+      "label": "4.2.1.3.1.1.1 Hữu Thành",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Lục"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ],
+      "children": [
+        "n4_2_1_3_1_1_1_3",
+        "n4_2_1_3_1_1_1_1",
+        "n4_2_1_3_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_huuson0_2841",
+    "data": {
+      "label": "Hữu Sơn (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_2",
+    "data": {
+      "label": "4.2.1.3.1.1.2 Hữu Kính",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hương"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ],
+      "children": [
+        "n4_2_1_3_1_1_2_2",
+        "u_thihien_2418",
+        "n4_2_1_3_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_3",
+    "data": {
+      "label": "4.2.1.3.1.1.3 Hữu Trọng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nga"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ],
+      "children": [
+        "n4_2_1_3_1_1_3_1",
+        "n4_2_1_3_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_4",
+    "data": {
+      "label": "4.2.1.3.1.1.4 Hữu Tuệ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Duyên"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ],
+      "children": [
+        "n4_2_1_3_1_1_4_2",
+        "n4_2_1_3_1_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thitam_7286",
+    "data": {
+      "label": "Thị Tâm",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Quang Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thivankhanh_4780",
+    "data": {
+      "label": "Thị Vân (Khánh)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1",
+        "n4_2_1_3_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_1_2",
+    "data": {
+      "label": "4.2.1.3.1.1.1.2 Hữu Mạnh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_1_3",
+    "data": {
+      "label": "4.2.1.3.1.1.1.3 Hữu Nhàn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_1_1",
+    "data": {
+      "label": "4.2.1.3.1.1.1.1 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_2_2",
+    "data": {
+      "label": "4.2.1.3.1.1.2.2 Hữu Cường",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihien_2418",
+    "data": {
+      "label": "Thị Hiền",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_2_1",
+    "data": {
+      "label": "4.2.1.3.1.1.2.1 Hữu Kiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_3_2",
+    "data": {
+      "label": "4.2.1.3.1.1.3.2 Hữu Đăng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_3_1",
+    "data": {
+      "label": "4.2.1.3.1.1.3.1 Hữu Hoàng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_4_1",
+    "data": {
+      "label": "4.2.1.3.1.1.4.1 Hữu Huy",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_3_1_1_4_2",
+    "data": {
+      "label": "4.2.1.3.1.1.4.2 Hữu Hiệu",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_3_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_1",
+    "data": {
+      "label": "4.2.1.4.1 Hữu Lực",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4"
+      ],
+      "spouses": [
+        "n4_2_1_4_1_vo1"
+      ],
+      "children": [
+        "u_thibinh_8721",
+        "n4_2_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_1_vo1",
+    "data": {
+      "label": "Nguyễn T. Thiên",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "spouses": [
+        "n4_2_1_4_1"
+      ],
+      "children": [
+        "u_thibinh_8721",
+        "n4_2_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_1551",
+    "data": {
+      "label": "Nguyễn Thị..",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_2",
+    "data": {
+      "label": "4.2.1.4.2 Hữu Điền (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3",
+    "data": {
+      "label": "4.2.1.4.3 Hữu Khiêm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thướng"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4"
+      ],
+      "children": [
+        "n4_2_1_4_3_2",
+        "n4_2_1_4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_1_1",
+    "data": {
+      "label": "4.2.1.4.1.1 Hữu Minh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_1",
+        "n4_2_1_4_1_vo1"
+      ],
+      "children": [
+        "n4_2_1_4_1_1_1",
+        "u_thivinh_3177",
+        "u_thihoa_7020"
+      ]
+    }
+  },
+  {
+    "id": "u_thivinh_3177",
+    "data": {
+      "label": "Thị Vinh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng Thịnh Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_7020",
+    "data": {
+      "label": "Thị Hoa",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng Hà Nội)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_1_1_1",
+    "data": {
+      "label": "4.2.1.4.1.1.1 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thibinh_8721",
+    "data": {
+      "label": "Thị Bình",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Vĩnh, Tràng Niên)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_1",
+        "n4_2_1_4_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_2",
+    "data": {
+      "label": "4.2.1.4.3.2 Hữu Danh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Kỳ"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3"
+      ],
+      "children": [
+        "u_thihoi_9352",
+        "u_thiquy_2200",
+        "n4_2_1_4_3_2_1",
+        "u_thitien_8817",
+        "n4_2_1_4_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitien_8817",
+    "data": {
+      "label": "Thị Tiến",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_2_1",
+    "data": {
+      "label": "4.2.1.4.3.2.1 Hữu Trọng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_2_2",
+    "data": {
+      "label": "4.2.1.4.3.2.2 Hữu Tấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiquy_2200",
+    "data": {
+      "label": "Thị Quý",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoi_9352",
+    "data": {
+      "label": "Thị Hợi",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Phúc Sơn"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1",
+    "data": {
+      "label": "4.2.1.4.3.1 Hữu Thành",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thanh"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3"
+      ],
+      "children": [
+        "n4_2_1_4_3_1_1",
+        "n4_2_1_4_3_1_2",
+        "n4_2_1_4_3_1_4",
+        "n4_2_1_4_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_2",
+    "data": {
+      "label": "4.2.1.4.3.1.2 Hữu Nhân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Hồ Thị Hải"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_4",
+    "data": {
+      "label": "4.2.1.4.3.1.4 Hữu Bảo",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_1",
+    "data": {
+      "label": "4.2.1.4.3.1.1 Hữu Thân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Chung"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1"
+      ],
+      "children": [
+        "n4_2_1_4_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_1_1",
+    "data": {
+      "label": "4.2.1.4.3.1.1.1 Hữu Nhật",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_3",
+    "data": {
+      "label": "4.2.1.4.3.1.3 Hữu Nghĩa",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1"
+      ],
+      "children": [
+        "n4_2_1_4_3_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_1_4_3_1_3_1",
+    "data": {
+      "label": "4.2.1.4.3.1.3.1 Hữu Tài",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_1_4_3_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1",
+    "data": {
+      "label": "4.2.3.1 Hữu Hường",
+      "last name": "",
+      "gender": "M",
+      "notes": "Hồ Thị Phương"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3"
+      ],
+      "children": [
+        "n4_2_3_1_2",
+        "u_nguyenthikhang_67",
+        "u_nguyenthithoi_787",
+        "n4_2_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1_2",
+    "data": {
+      "label": "4.2.3.1.2 Hữu Tráng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hảo"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1"
+      ],
+      "children": [
+        "n4_2_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1_1",
+    "data": {
+      "label": "4.2.3.1.1 Hữu Cường (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthithoi_787",
+    "data": {
+      "label": "Nguyễn Thị Thới",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn, xóm Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthikhang_67",
+    "data": {
+      "label": "Nguyễn Thị Khang",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1_2_1",
+    "data": {
+      "label": "4.2.3.1.2.1 Hữu Hiền",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Lý"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1_2"
+      ],
+      "children": [
+        "u_thiha_4566",
+        "u_thiha_5578",
+        "n4_2_3_1_2_1_2",
+        "n4_2_3_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_4566",
+    "data": {
+      "label": "Thị Hạ",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn, Trang Niên)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_5578",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Hải Phòng)"
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1_2_1_1",
+    "data": {
+      "label": "4.2.3.1.2.1.1 Hữu Hòa",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_2_3_1_2_1_2",
+    "data": {
+      "label": "4.2.3.1.2.1.2 Hữu Vinh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_2_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3",
+    "data": {
+      "label": "4.3.1.3 Hữu Duệ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Phước"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1"
+      ],
+      "children": [
+        "n4_3_1_3_1",
+        "n4_3_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1",
+    "data": {
+      "label": "4.3.1.3.1 Hữu Tuế",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Liên"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3"
+      ],
+      "children": [
+        "n4_3_1_3_1_1",
+        "n4_3_1_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2",
+    "data": {
+      "label": "4.3.1.3.2 Hữu Tải",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Mỵ"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3"
+      ],
+      "children": [
+        "n4_3_1_3_2_2",
+        "n4_3_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_1",
+    "data": {
+      "label": "4.3.1.1 Hữu Khuê (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_2",
+    "data": {
+      "label": "4.3.1.2 Hữu Huệ (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_2",
+    "data": {
+      "label": "4.3.1.3.1.2 Hữu Đại",
+      "last name": "",
+      "gender": "M",
+      "notes": "Bùi T. Lữ"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1"
+      ],
+      "children": [
+        "n4_3_1_3_1_2_2",
+        "n4_3_1_3_1_2_3",
+        "n4_3_1_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_2_2",
+    "data": {
+      "label": "4.3.1.3.1.2.2 Hữu Tài",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_2_3",
+    "data": {
+      "label": "4.3.1.3.1.2.3 Hữu Tú",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_2_1",
+    "data": {
+      "label": "4.3.1.3.1.2.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_1",
+    "data": {
+      "label": "4.3.1.3.1.1 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Tiến"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1"
+      ],
+      "children": [
+        "n4_3_1_3_1_1_1",
+        "n4_3_1_3_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_1_1",
+    "data": {
+      "label": "4.3.1.3.1.1.1 Hữu Hợp",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_1"
+      ],
+      "children": [
+        "n4_3_1_3_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_1_1_1",
+    "data": {
+      "label": "4.3.1.3.1.1.1.1 Hữu Quân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_1_1_2",
+    "data": {
+      "label": "4.3.1.3.1.1.2 Hữu Công",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2_2",
+    "data": {
+      "label": "4.3.1.3.2.2 Hữu Năm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Bình"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_2"
+      ],
+      "children": [
+        "n4_3_1_3_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2_2_1",
+    "data": {
+      "label": "4.3.1.3.2.2.1 Hữu Quý",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2_1",
+    "data": {
+      "label": "4.3.1.3.2.1 Hữu Hồng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hoa"
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_2"
+      ],
+      "children": [
+        "n4_3_1_3_2_1_2",
+        "n4_3_1_3_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2_1_1",
+    "data": {
+      "label": "4.3.1.3.2.1.1 Hữu Hào",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n4_3_1_3_2_1_2",
+    "data": {
+      "label": "4.3.1.3.2.1.2 Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n4_3_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_2",
+    "data": {
+      "label": "5.2 Hữu Toan (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5"
+      ]
+    }
+  },
+  {
+    "id": "n5_1",
+    "data": {
+      "label": "5.1 Hữu Tín",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn T. Chơc"
+    },
+    "rels": {
+      "parents": [
+        "n5"
+      ],
+      "children": [
+        "n5_1_2",
+        "n5_1_4",
+        "n5_1_5",
+        "n5_1_3",
+        "n5_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_1_5",
+    "data": {
+      "label": "5.1.5 Hữu Kiếng (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_1_4",
+    "data": {
+      "label": "5.1.4 Hữu Truyện (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_1_1",
+    "data": {
+      "label": "5.1.1 Hữu Tuyến (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_1_3",
+    "data": {
+      "label": "5.1.3 Hữu Vạn (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n5_1_2",
+    "data": {
+      "label": "5.1.2 Hữu Vận (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n5_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1",
+    "data": {
+      "label": "6.1 Hữu Khánh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Lương; Thị Đản"
+    },
+    "rels": {
+      "parents": [
+        "n6"
+      ],
+      "children": [
+        "n6_1_1",
+        "n6_1_2",
+        "n6_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1",
+    "data": {
+      "label": "6.1.1 Hữu Diên",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Dởn"
+    },
+    "rels": {
+      "parents": [
+        "n6_1"
+      ],
+      "children": [
+        "n6_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1",
+    "data": {
+      "label": "6.1.1.1 Hữu Miện",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_2",
+        "n6_1_1_1_1",
+        "n6_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_3",
+    "data": {
+      "label": "6.1.3 Hữu Vơn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Sính"
+    },
+    "rels": {
+      "parents": [
+        "n6_1"
+      ],
+      "children": [
+        "n6_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_3_1",
+    "data": {
+      "label": "6.1.3.1 Hữu Nhơn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_3"
+      ],
+      "children": [
+        "n6_1_3_1_1",
+        "u_thidong_2316",
+        "u_thixuan_5582",
+        "u_thithu_2139"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2",
+    "data": {
+      "label": "6.1.2 Hữu Dơn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Ái"
+    },
+    "rels": {
+      "parents": [
+        "n6_1"
+      ],
+      "children": [
+        "n6_1_2_3",
+        "n6_1_2_2",
+        "n6_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_1",
+    "data": {
+      "label": "6.1.2.1 Hữu Yêm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Lê Thị Niêm"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2"
+      ],
+      "children": [
+        "u_thilong_1802"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2",
+    "data": {
+      "label": "6.1.2.2 Hữu Thể",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Tường; Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2"
+      ],
+      "children": [
+        "n6_1_2_2_3",
+        "n6_1_2_2_1",
+        "n6_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_3",
+    "data": {
+      "label": "6.1.2.3 Hữu Trân",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Nhập về họ Văn có 4 con trai, 2 gái)"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1",
+    "data": {
+      "label": "6.1.1.1.1 Hữu Miên",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Sơn"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_1_2",
+        "n6_1_1_1_1_3",
+        "n6_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_3",
+    "data": {
+      "label": "6.1.1.1.1.3 Hữu Lý",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Minh"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_1_3_1",
+        "u_thinhan_4981"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_3_1",
+    "data": {
+      "label": "6.1.1.1.1.3.1 Hữu Nhàn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thinhan_4981",
+    "data": {
+      "label": "Thị Nhàn",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_2",
+    "data": {
+      "label": "6.1.1.1.1.2 Hữu Hợp",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hường"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_1_2_1",
+        "n6_1_1_1_1_2_3",
+        "n6_1_1_1_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_2_2",
+    "data": {
+      "label": "6.1.1.1.1.2.2 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_2_3",
+    "data": {
+      "label": "6.1.1.1.1.2.3 Hữu Trung",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_2_1",
+    "data": {
+      "label": "6.1.1.1.1.2.1 Hữu Minh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_1",
+    "data": {
+      "label": "6.1.1.1.1.1 Hữu Chung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Hà"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_1_1_2",
+        "n6_1_1_1_1_1_1",
+        "u_thihue_1025"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_1_1",
+    "data": {
+      "label": "6.1.1.1.1.1.1 Hữu Tuệ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihue_1025",
+    "data": {
+      "label": "Thị Huệ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_1_1_2",
+    "data": {
+      "label": "6.1.1.1.1.1.2 Hữu Tam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_2",
+    "data": {
+      "label": "6.1.1.1.2 Hữu Sỹ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Phần"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_2_2",
+        "n6_1_1_1_2_1",
+        "u_thihang_3866",
+        "u_thilan_4363"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_3",
+    "data": {
+      "label": "6.1.1.1.3 Hữu Tám",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1"
+      ],
+      "children": [
+        "n6_1_1_1_3_2",
+        "u_thinga_8333",
+        "n6_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilan_4363",
+    "data": {
+      "label": "Thị Lan",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_2_1",
+    "data": {
+      "label": "6.1.1.1.2.1 Hữu Nam",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Lộc"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2"
+      ],
+      "children": [
+        "u_thi_4044",
+        "n6_1_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thi_4044",
+    "data": {
+      "label": "Thị....",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_2_1_1",
+    "data": {
+      "label": "6.1.1.1.2.1.1 Hữu ...",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihang_3866",
+    "data": {
+      "label": "Thị Hằng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_2_2",
+    "data": {
+      "label": "6.1.1.1.2.2 Hữu Bắc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2"
+      ],
+      "children": [
+        "n6_1_1_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_2_2_1",
+    "data": {
+      "label": "6.1.1.1.2.2.1 Hữu..",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_3_1",
+    "data": {
+      "label": "6.1.1.1.3.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thinga_8333",
+    "data": {
+      "label": "Thị Nga",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_1_3_2",
+    "data": {
+      "label": "6.1.1.1.3.2 Hữu Hoàng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Mơ"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_3"
+      ],
+      "children": [
+        "n6_1_1_3_2_1",
+        "n6_1_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_3_2_1",
+    "data": {
+      "label": "6.1.1.3.2.1 Hữu Phước",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_1_3_2_2",
+    "data": {
+      "label": "6.1.1.3.2.2 Hữu Thiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thilong_1802",
+    "data": {
+      "label": "Thị Long",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2_2",
+    "data": {
+      "label": "6.1.2.2.2 Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Quỳnh"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2"
+      ],
+      "children": [
+        "u_nguyenthi_2718"
+      ]
+    }
+  },
+  {
+    "id": "u_nguyenthi_2718",
+    "data": {
+      "label": "Nguyễn Thị",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2_3",
+    "data": {
+      "label": "6.1.2.2.3 Hữu Kha",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Tâm"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2"
+      ],
+      "children": [
+        "n6_1_2_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2_3_1",
+    "data": {
+      "label": "6.1.2.2.3.1 Hữu",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2_1",
+    "data": {
+      "label": "6.1.2.2.1 Hữu Giang",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Yên"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2"
+      ],
+      "children": [
+        "n6_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_2_2_1_1",
+    "data": {
+      "label": "6.1.2.2.1.1 Hữu Toan",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n6_1_3_1_1",
+    "data": {
+      "label": "6.1.3.1.1 Hữu Hạ",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Liệt sĩ chống Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n6_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thidong_2316",
+    "data": {
+      "label": "Thị Đông",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thixuan_5582",
+    "data": {
+      "label": "Thị Xuân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithu_2139",
+    "data": {
+      "label": "Thị Thu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n6_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_3",
+    "data": {
+      "label": "7.3 Hữu Lăng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ],
+      "children": [
+        "n7_3_2",
+        "n7_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_3_2",
+    "data": {
+      "label": "7.3.2 Hữu Minh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_3_1",
+    "data": {
+      "label": "7.3.1 Hữu Linh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_2",
+    "data": {
+      "label": "7.2 Hữu Căng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ],
+      "children": [
+        "n7_2_2",
+        "n7_2_1",
+        "n7_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_2_2",
+    "data": {
+      "label": "7.2.2 Hữu Phỏng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_2_3",
+    "data": {
+      "label": "7.2.3 Hữu Phớt",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_2_1",
+    "data": {
+      "label": "7.2.1 Hữu Phầng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_5",
+    "data": {
+      "label": "7.5 Thị Tâng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n7_6",
+    "data": {
+      "label": "7.6 Thị Thâng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n7_7",
+    "data": {
+      "label": "7.7 Hữu bảy (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Lậm"
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ],
+      "children": [
+        "u_khongcoconthoohuutha_9258"
+      ]
+    }
+  },
+  {
+    "id": "u_khongcoconthoohuutha_9258",
+    "data": {
+      "label": "không có con, thờ ở Hữu Thặng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_7"
+      ]
+    }
+  },
+  {
+    "id": "n7_4",
+    "data": {
+      "label": "7.4 Hữu Tới",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ],
+      "children": [
+        "n7_4_3",
+        "n7_4_2",
+        "n7_4_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_4_1",
+    "data": {
+      "label": "7.4.1 Hữu Tiến",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_4_2",
+    "data": {
+      "label": "7.4.2 Hữu Luyện",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_4_3",
+    "data": {
+      "label": "7.4.3 Hữu Truyện",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1",
+    "data": {
+      "label": "7.1 Hữu Thặng (Thậng)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trùm trưởng bản thôn,tên thụy là Chất Trực; 15/02, Mộ ở đồng Mười"
+    },
+    "rels": {
+      "parents": [
+        "n7",
+        "n7_vo1"
+      ],
+      "spouses": [
+        "n7_1_vo1"
+      ],
+      "children": [
+        "n7_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_vo1",
+    "data": {
+      "label": "Trần Thị Xuyến (Xớn)",
+      "last name": "",
+      "gender": "F",
+      "notes": "mất 12/01, mộ tại xứ Hội Đồng"
+    },
+    "rels": {
+      "spouses": [
+        "n7_1"
+      ],
+      "children": [
+        "n7_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1",
+    "data": {
+      "label": "7.1.1 Hữu Thạnh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phó sở, Lý trưởng bản thôn, tên tự là Đường lý. Mất rằm tháng 5."
+    },
+    "rels": {
+      "parents": [
+        "n7_1",
+        "n7_1_vo1"
+      ],
+      "spouses": [
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "n7_1_1_6",
+        "n7_1_1_3",
+        "n7_1_1_5",
+        "u_thiho_5165",
+        "u_thithuoc_1404",
+        "u_thithich_8854",
+        "n7_1_1_2",
+        "n7_1_1_4",
+        "u_thily_2418",
+        "n7_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_vo1",
+    "data": {
+      "label": "là Nguyễn Thị Hiu",
+      "last name": "",
+      "gender": "F",
+      "notes": "mộ ở Nhà Vồ xóm 11"
+    },
+    "rels": {
+      "spouses": [
+        "n7_1_1"
+      ],
+      "children": [
+        "n7_1_1_6",
+        "n7_1_1_3",
+        "n7_1_1_5",
+        "u_thiho_5165",
+        "u_thithuoc_1404",
+        "u_thithich_8854",
+        "n7_1_1_2",
+        "n7_1_1_4",
+        "u_thily_2418",
+        "n7_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6",
+    "data": {
+      "label": "7.1.1.6 Hữu Điều",
+      "last name": "",
+      "gender": "M",
+      "notes": "Mất 26/01/1961, mộ Cồn Ich; Nguyễn Thị Duật; Mất 02/02/2002"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "n7_1_1_6_4",
+        "n7_1_1_6_2",
+        "n7_1_1_6_1",
+        "u_thihoi_5858",
+        "u_thihai_4966",
+        "n7_1_1_6_6",
+        "n7_1_1_6_5",
+        "n7_1_1_6_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thithich_8854",
+    "data": {
+      "label": "Thị Thích",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuoc_1404",
+    "data": {
+      "label": "Thị Thược",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng ở Mỹ Sơn-Đô lương)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4",
+    "data": {
+      "label": "7.1.1.4 Hữu ChiêuNguyễn Thị Duyên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "u_thiluan_1351",
+        "n7_1_1_4_2",
+        "u_thiduan_5011",
+        "u_thitan_509",
+        "n7_1_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiho_5165",
+    "data": {
+      "label": "Thị Hộ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "u_thily_2418",
+    "data": {
+      "label": "Thị Lý",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chống họ Công xóm 12"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3",
+    "data": {
+      "label": "7.1.1.3 Hữu Nghiệu",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Khoản"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "n7_1_1_3_2",
+        "u_thingoan_7656",
+        "n7_1_1_3_1",
+        "u_thico_6493",
+        "u_thi_137"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2",
+    "data": {
+      "label": "7.1.1.2 Hữu Tiệu",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thước; Nguyễn Thị Hích"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "u_thitan_5151",
+        "n7_1_1_2_1",
+        "u_thiphan_9829",
+        "u_thihuan_9802",
+        "n7_1_1_2_2",
+        "u_thisinh_9257"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5",
+    "data": {
+      "label": "7.1.1.5 Hữu Diệu",
+      "last name": "",
+      "gender": "M",
+      "notes": "Mất 20/12, mộ Nhà Vồ; Nguyễn Thị Trinh; Mất 12/01, mộ  Nhà Vồ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "u_thichinh_1404",
+        "u_thihuynh_8754",
+        "n7_1_1_5_2",
+        "u_thisinh_8225",
+        "u_huuvinh_6868",
+        "n7_1_1_5_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1",
+    "data": {
+      "label": "7.1.1.1 Hữu Thiều",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thu"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1",
+        "n7_1_1_vo1"
+      ],
+      "children": [
+        "n7_1_1_1_1",
+        "u_thimai_4065",
+        "u_thithu_1736",
+        "u_thitho_8243",
+        "n7_1_1_1_2",
+        "n7_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2",
+    "data": {
+      "label": "7.1.1.1.2 Hữu Trí",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Linh; Hồ Thị Vấn"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1",
+    "data": {
+      "label": "7.1.1.1.2.1 Hữu Tuệ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Dương"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2"
+      ],
+      "children": [
+        "n7_1_1_1_2_1_4",
+        "n7_1_1_1_2_1_1",
+        "n7_1_1_1_2_1_3",
+        "u_thithanh_4549",
+        "n7_1_1_1_2_1_5",
+        "n7_1_1_1_2_1_2",
+        "u_thihanh_8383",
+        "u_thivinh_4569",
+        "n7_1_1_1_2_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1",
+    "data": {
+      "label": "7.1.1.1.1 Hữu Trứ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Hoàng Thị An"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_4",
+        "n7_1_1_1_1_3",
+        "n7_1_1_1_1_2",
+        "n7_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_4",
+    "data": {
+      "label": "7.1.1.1.1.4 Hữu Cảnh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_4_1",
+        "n7_1_1_1_1_4_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_1",
+    "data": {
+      "label": "7.1.1.1.1.1 Hữu Thái",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nghị"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2",
+    "data": {
+      "label": "7.1.1.1.1.2 Hữu Phong",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Tiệp; (Họ Công làng Giáp Quán)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1"
+      ],
+      "children": [
+        "u_thithanh_6431",
+        "n7_1_1_1_1_2_1",
+        "n7_1_1_1_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3",
+    "data": {
+      "label": "7.1.1.1.1.3 Hữu Lạc",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Thiếu tá quân đội); Trần Thị Minh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_3_2",
+        "u_thilong_987",
+        "u_thivan0_503",
+        "n7_1_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3",
+    "data": {
+      "label": "7.1.1.1.3 Hữu Chỉ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Sâm"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_3_3",
+        "n7_1_1_1_3_2",
+        "n7_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_2",
+    "data": {
+      "label": "7.1.1.1.3.2 Hữu Mão",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Năm"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_1_3_2_1",
+        "n7_1_1_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_1",
+    "data": {
+      "label": "7.1.1.1.3.1 Hữu Kỳ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Lệ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_1_3_1_3",
+        "n7_1_1_1_3_1_2",
+        "n7_1_1_1_3_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_3",
+    "data": {
+      "label": "7.1.1.1.3.3 Hữu Hòe",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị .."
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_1_3_3_2",
+        "n7_1_1_1_3_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thimai_4065",
+    "data": {
+      "label": "Thị Mai",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithu_1736",
+    "data": {
+      "label": "Thị Thư",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thitho_8243",
+    "data": {
+      "label": "Thị Thơ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_1_1",
+    "data": {
+      "label": "7.1.1.1.1.1.1 Hữu Phúc",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Phương"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_1_1_1",
+    "data": {
+      "label": "7.1.1.1.1.1.1.1 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Mùi"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_1_1"
+      ],
+      "children": [
+        "n7_1_1_1_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_1_1_1_1",
+    "data": {
+      "label": "7.1.1.1.1.1.1.1.1 Hữu Duy",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2_2",
+    "data": {
+      "label": "7.1.1.1.1.2.2 Hữu Phú",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị..; Nguyễn Thị Nhung; (Họ Công làng Giáp Quán)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2"
+      ],
+      "children": [
+        "n7_1_1_1_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2_2_1",
+    "data": {
+      "label": "7.1.1.1.1.2.2.1 Hữu  Quý",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Vân; (Giang Sơn-Đô Lương)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2_2"
+      ],
+      "children": [
+        "n7_1_1_1_1_2_2_1_1",
+        "u_kimtan_5155"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2_2_1_1",
+    "data": {
+      "label": "7.1.1.1.1.2.2.1.1 Hữu Lạng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_kimtan_5155",
+    "data": {
+      "label": "Kim Tân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2_1",
+    "data": {
+      "label": "7.1.1.1.1.2.1 Hữu Liêm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Vân; (Họ Công làng Giáp Quán)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2"
+      ],
+      "children": [
+        "n7_1_1_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_2_1_1",
+    "data": {
+      "label": "7.1.1.1.1.2.1.1 Hữu Thọ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_6431",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Công cùng xóm)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thivan0_503",
+    "data": {
+      "label": "Thị Vân (0)",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_2",
+    "data": {
+      "label": "7.1.1.1.1.3.2 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cao Thị Dung; (Giang Sơn-ĐL)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_1_1_3_2_1",
+        "u_thihan_9872",
+        "n7_1_1_1_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_2_1",
+    "data": {
+      "label": "7.1.1.1.1.3.2.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_2_2",
+    "data": {
+      "label": "7.1.1.1.1.3.2.2 Hữu Trường",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihan_9872",
+    "data": {
+      "label": "Thị Hân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_1",
+    "data": {
+      "label": "7.1.1.1.1.3.1 Hữu Tài",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Nguyệt; (Bục Trai)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_1_1_3_1_1",
+        "n7_1_1_1_1_3_1_2",
+        "u_thitam_2178"
+      ]
+    }
+  },
+  {
+    "id": "u_thitam_2178",
+    "data": {
+      "label": "Thị Tâm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_1_2",
+    "data": {
+      "label": "7.1.1.1.1.3.1.2 Hữu Nhân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_3_1_1",
+    "data": {
+      "label": "7.1.1.1.1.3.1.1 Hữu Trọng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilong_987",
+    "data": {
+      "label": "Thị Long",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_4_2",
+    "data": {
+      "label": "7.1.1.1.1.4.2 Hữu Thắng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_1_4_1",
+    "data": {
+      "label": "7.1.1.1.1.4.1 Hữu Ngọc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_6",
+    "data": {
+      "label": "7.1.1.1.2.1.6 Hữu Chín",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thảo"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "n7_1_1_1_2_1_6_1",
+        "u_ngocnu_7082",
+        "n7_1_1_1_2_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_1",
+    "data": {
+      "label": "7.1.1.1.2.1.1 Hữu Nhung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hoa"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "u_thihuong_8328",
+        "u_thihien_2569",
+        "n7_1_1_1_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_5",
+    "data": {
+      "label": "7.1.1.1.2.1.5 Hữu Năm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hường"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "n7_1_1_1_2_1_5_1",
+        "n7_1_1_1_2_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thivinh_4569",
+    "data": {
+      "label": "Thị Vinh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_4",
+    "data": {
+      "label": "7.1.1.1.2.1.4 Hữu Chính",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hạnh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "n7_1_1_1_2_1_4_1",
+        "u_thihang_9630",
+        "n7_1_1_1_2_1_4_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihanh_8383",
+    "data": {
+      "label": "Thị Hạnh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_2",
+    "data": {
+      "label": "7.1.1.1.2.1.2 Hữu Trung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nga"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "n7_1_1_1_2_1_2_1",
+        "u_thiha_8029",
+        "n7_1_1_1_2_1_2_2",
+        "n7_1_1_1_2_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_4549",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_3",
+    "data": {
+      "label": "7.1.1.1.2.1.3 Hữu Tam",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hiền"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1"
+      ],
+      "children": [
+        "u_thithao_3505",
+        "u_thithuy_8020",
+        "n7_1_1_1_2_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuong_8328",
+    "data": {
+      "label": "Thị Hương",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihien_2569",
+    "data": {
+      "label": "Thị Hiên",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_1_1",
+    "data": {
+      "label": "7.1.1.1.2.1.1.1 Hữu Đức",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_2_1",
+    "data": {
+      "label": "7.1.1.1.2.1.2.1 Hữu Minh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_2_2",
+    "data": {
+      "label": "7.1.1.1.2.1.2.2 Hữu Sơn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_2_3",
+    "data": {
+      "label": "7.1.1.1.2.1.2.3 Hữu Nam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_8029",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_3_1",
+    "data": {
+      "label": "7.1.1.1.2.1.3.1 Hữu Lực",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuy_8020",
+    "data": {
+      "label": "Thị Thủy",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thithao_3505",
+    "data": {
+      "label": "Thị Thảo",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_4_1",
+    "data": {
+      "label": "7.1.1.1.2.1.4.1 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_4_2",
+    "data": {
+      "label": "7.1.1.1.2.1.4.2 Hữu Huế",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thihang_9630",
+    "data": {
+      "label": "Thị Hằng",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Văn xóm 11"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_5_1",
+    "data": {
+      "label": "7.1.1.1.2.1.5.1 Hữu Cường",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_5_2",
+    "data": {
+      "label": "7.1.1.1.2.1.5.2 Hữu Thắng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_6_1",
+    "data": {
+      "label": "7.1.1.1.2.1.6.1 Hữu Huy Nam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_2_1_6_2",
+    "data": {
+      "label": "7.1.1.1.2.1.6.2 Hữu Bảo Nam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_6"
+      ]
+    }
+  },
+  {
+    "id": "u_ngocnu_7082",
+    "data": {
+      "label": "Ngọc Nữ",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_2_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_1_1",
+    "data": {
+      "label": "7.1.1.1.3.1.1 Hữu Long",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_1_2",
+    "data": {
+      "label": "7.1.1.1.3.1.2 Hữu Giang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_1_3",
+    "data": {
+      "label": "7.1.1.1.3.1.3 Hữu Hòa",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_2_1",
+    "data": {
+      "label": "7.1.1.1.3.2.1 Hữu Anh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_2_2",
+    "data": {
+      "label": "7.1.1.1.3.2.2 Hữu Quyền",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_2"
+      ],
+      "children": [
+        "n7_1_1_1_3_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_2_2_1",
+    "data": {
+      "label": "7.1.1.1.3.2.2.1 Hữu Thanh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_3_1",
+    "data": {
+      "label": "7.1.1.1.3.3.1 Hữu Thế",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_1_3_3_2",
+    "data": {
+      "label": "7.1.1.1.3.3.2 Hữu Tài",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_1_3_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2",
+    "data": {
+      "label": "7.1.1.2.2 Hữu Ân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Tư"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ],
+      "children": [
+        "n7_1_1_2_2_1",
+        "n7_1_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitan_5151",
+    "data": {
+      "label": "Thị Tận",
+      "last name": "",
+      "gender": "F",
+      "notes": "lấy chồng về Thịnh Thành"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_1",
+    "data": {
+      "label": "7.1.1.2.1 Hữu Tạo",
+      "last name": "",
+      "gender": "M",
+      "notes": "Sinh 3 người con gái"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuan_9802",
+    "data": {
+      "label": "Thị Huấn",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng: Nguyễn Bá Lai"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiphan_9829",
+    "data": {
+      "label": "Thị Phấn",
+      "last name": "",
+      "gender": "F",
+      "notes": "chồng: Hồ Văn Thịnh, xóm 12, có con gái: Hồ Thị Ba, cháu gái: Hồ Thị Hà"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thisinh_9257",
+    "data": {
+      "label": "Thị Sinh",
+      "last name": "",
+      "gender": "F",
+      "notes": "lấy chồng: Trần Văn Cần, họ Trần Viêng"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_1",
+    "data": {
+      "label": "7.1.1.2.2.1 Hữu Đồng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2"
+      ],
+      "children": [
+        "n7_1_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_1_1",
+    "data": {
+      "label": "7.1.1.2.2.1.1 Hữu Đàm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Nga; (họ Văn, xóm Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2_1"
+      ],
+      "children": [
+        "n7_1_1_2_2_1_1_1",
+        "u_thuychi_9251"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_1_1_1",
+    "data": {
+      "label": "7.1.1.2.2.1.1.1 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thuychi_9251",
+    "data": {
+      "label": "Thùy Chi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_2",
+    "data": {
+      "label": "7.1.1.2.2.2 Hữu Đông",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Sáu"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2"
+      ],
+      "children": [
+        "n7_1_1_2_2_2_2",
+        "n7_1_1_2_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_2_1",
+    "data": {
+      "label": "7.1.1.2.2.2.1 Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_2_2_2_2",
+    "data": {
+      "label": "7.1.1.2.2.2.2 Hữu Nam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thico_6493",
+    "data": {
+      "label": "Thị Cơ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2",
+    "data": {
+      "label": "7.1.1.3.2 Hữu Toàn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Minh; Nguyễn Thị Hòa"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_3_2_2",
+        "n7_1_1_3_2_1",
+        "n7_1_1_3_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_2",
+    "data": {
+      "label": "7.1.1.3.2.2 Hữu Đạo",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Hiền"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2"
+      ],
+      "children": [
+        "n7_1_1_3_2_2_2",
+        "n7_1_1_3_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_3",
+    "data": {
+      "label": "7.1.1.3.2.3 Hữu Định (con bà Hòa)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thủy"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2"
+      ],
+      "children": [
+        "n7_1_1_3_2_3_2",
+        "n7_1_1_3_2_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_1",
+    "data": {
+      "label": "7.1.1.3.2.1 Hữu Dực",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Quang"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2"
+      ],
+      "children": [
+        "n7_1_1_3_2_1_1",
+        "n7_1_1_3_2_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thingoan_7656",
+    "data": {
+      "label": "Thị Ngoãn",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1",
+    "data": {
+      "label": "7.1.1.3.1 Hữu Nguộc",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Phiến"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3"
+      ],
+      "children": [
+        "n7_1_1_3_1_2",
+        "u_thimui_5915",
+        "u_thique_24",
+        "n7_1_1_3_1_1",
+        "u_thithao_6552"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2",
+    "data": {
+      "label": "7.1.1.3.1.2 Hữu Căn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Tứ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1"
+      ],
+      "children": [
+        "u_thilan_5981",
+        "n7_1_1_3_1_2_1",
+        "n7_1_1_3_1_2_3",
+        "n7_1_1_3_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thique_24",
+    "data": {
+      "label": "Thị Quế",
+      "last name": "",
+      "gender": "F",
+      "notes": "(chồng họ Văn, Tân Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thithao_6552",
+    "data": {
+      "label": "Thị Thảo",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Trần, Tân Mỹ)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_1",
+    "data": {
+      "label": "7.1.1.3.1.1 Hữu Lâm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Liệt sỹ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thimui_5915",
+    "data": {
+      "label": "Thị Mùi",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Công, xóm Động Sơn)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thi_137",
+    "data": {
+      "label": "Thị ...",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_2",
+    "data": {
+      "label": "7.1.1.3.1.2.2 Hữu Thọ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Chiến"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2"
+      ],
+      "children": [
+        "n7_1_1_3_1_2_2_1",
+        "u_thihoai_6260",
+        "n7_1_1_3_1_2_2_2",
+        "u_thithu_680"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_2_2",
+    "data": {
+      "label": "7.1.1.3.1.2.2.2 Hữu Huy",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_2_1",
+    "data": {
+      "label": "7.1.1.3.1.2.2.1 Hữu Ngọc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thithu_680",
+    "data": {
+      "label": "Thị Thu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoai_6260",
+    "data": {
+      "label": "Thị Hoài",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_3",
+    "data": {
+      "label": "7.1.1.3.1.2.3 Hữu Khanh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hoa"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2"
+      ],
+      "children": [
+        "n7_1_1_3_1_2_3_1",
+        "n7_1_1_3_1_2_3_2",
+        "u_thihue_2854"
+      ]
+    }
+  },
+  {
+    "id": "u_thihue_2854",
+    "data": {
+      "label": "Thị Huệ",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_3_2",
+    "data": {
+      "label": "7.1.1.3.1.2.3.2 Hữu Lam",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_3_1",
+    "data": {
+      "label": "7.1.1.3.1.2.3.1 Hữu Hồng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_1",
+    "data": {
+      "label": "7.1.1.3.1.2.1 Hữu Thanh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Liên"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2"
+      ],
+      "children": [
+        "u_thidieu_6541",
+        "u_thilinh_723",
+        "n7_1_1_3_1_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_1_2_1_1",
+    "data": {
+      "label": "7.1.1.3.1.2.1.1 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilinh_723",
+    "data": {
+      "label": "Thị Linh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thidieu_6541",
+    "data": {
+      "label": "Thị Diệu",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilan_5981",
+    "data": {
+      "label": "Thị Lan",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Văn, Tân Mỹ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_2_2",
+    "data": {
+      "label": "7.1.1.3.2.2.2 Hữu Trường",
+      "last name": "",
+      "gender": "M",
+      "notes": "Lê Thị Đào"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_2"
+      ],
+      "children": [
+        "u_thitham_8040",
+        "n7_1_1_3_2_2_2_2",
+        "n7_1_1_3_2_2_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_2_2_1",
+    "data": {
+      "label": "7.1.1.3.2.2.2.1 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_2_2_2",
+    "data": {
+      "label": "7.1.1.3.2.2.2.2 Hữu Dương",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thitham_8040",
+    "data": {
+      "label": "Thị Thắm",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_2_1",
+    "data": {
+      "label": "7.1.1.3.2.2.1 Hữu Thao",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_3_1",
+    "data": {
+      "label": "7.1.1.3.2.3.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_3_2",
+    "data": {
+      "label": "7.1.1.3.2.3.2 Hữu An",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_1_1",
+    "data": {
+      "label": "7.1.1.3.2.1.1 Hữu Dũng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Minh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_1"
+      ],
+      "children": [
+        "n7_1_1_3_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_1_1_1",
+    "data": {
+      "label": "7.1.1.3.2.1.1.1 Hữu Việt",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_3_2_1_2",
+    "data": {
+      "label": "7.1.1.3.2.1.2 Hữu Lương",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thành"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_3_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1",
+    "data": {
+      "label": "7.1.1.4.1 Hữu Thân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thanh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4"
+      ],
+      "children": [
+        "n7_1_1_4_1_5",
+        "n7_1_1_4_1_1",
+        "n7_1_1_4_1_2",
+        "n7_1_1_4_1_3",
+        "u_thivan_3866",
+        "n7_1_1_4_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_4",
+    "data": {
+      "label": "7.1.1.4.1.4 Hữu Bốn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hương"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ],
+      "children": [
+        "u_thitrang_207",
+        "u_thimai_627",
+        "n7_1_1_4_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thimai_627",
+    "data": {
+      "label": "Thị Mai",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thitrang_207",
+    "data": {
+      "label": "Thị Trang",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_4_1",
+    "data": {
+      "label": "7.1.1.4.1.4.1 Hữu Đức",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_1",
+    "data": {
+      "label": "7.1.1.4.1.1 Hữu Nhàn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Sáu; Thị nguyệt"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ],
+      "children": [
+        "n7_1_1_4_1_1_1",
+        "n7_1_1_4_1_1_2",
+        "n7_1_1_4_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_1_3",
+    "data": {
+      "label": "7.1.1.4.1.1.3 Hữu Chiến",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_1_1",
+    "data": {
+      "label": "7.1.1.4.1.1.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_1_2",
+    "data": {
+      "label": "7.1.1.4.1.1.2 Hữu Quang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_2",
+    "data": {
+      "label": "7.1.1.4.1.2 Hữu Hạ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Phương"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ],
+      "children": [
+        "u_thihong_4116",
+        "n7_1_1_4_1_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_2_1",
+    "data": {
+      "label": "7.1.1.4.1.2.1 Hữu Ngọc",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihong_4116",
+    "data": {
+      "label": "Thị Hồng",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Hồ, xóm Quán"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thivan_3866",
+    "data": {
+      "label": "Thị Vân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_5",
+    "data": {
+      "label": "7.1.1.4.1.5 Hữu Năm",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Tao"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ],
+      "children": [
+        "u_thihang_5824",
+        "n7_1_1_4_1_5_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_5_1",
+    "data": {
+      "label": "7.1.1.4.1.5.1 Hữu Hải",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_5"
+      ]
+    }
+  },
+  {
+    "id": "u_thihang_5824",
+    "data": {
+      "label": "Thị Hằng",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_3",
+    "data": {
+      "label": "7.1.1.4.1.3 Hữu Nhạ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hoa"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1"
+      ],
+      "children": [
+        "u_thiquyen_1587",
+        "u_thihien_8193",
+        "n7_1_1_4_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_1_3_1",
+    "data": {
+      "label": "7.1.1.4.1.3.1 Hữu Kiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thihien_8193",
+    "data": {
+      "label": "Thị Hiên",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thiquyen_1587",
+    "data": {
+      "label": "Thị Quyên",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_2",
+    "data": {
+      "label": "7.1.1.4.2 Hữu Mân",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Thươn"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4"
+      ],
+      "children": [
+        "u_thilien_1894",
+        "u_thihoa_5239",
+        "u_thilan_2290",
+        "n7_1_1_4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_2_1",
+    "data": {
+      "label": "7.1.1.4.2.1 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Tâm;Thị Minh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2"
+      ],
+      "children": [
+        "n7_1_1_4_2_1_2",
+        "n7_1_1_4_2_1_1",
+        "u_thihavi_5304"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_2_1_2",
+    "data": {
+      "label": "7.1.1.4.2.1.2 Hữu Hiền",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihavi_5304",
+    "data": {
+      "label": "Thị Hà Vi",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_4_2_1_1",
+    "data": {
+      "label": "7.1.1.4.2.1.1 Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_5239",
+    "data": {
+      "label": "Thị Hoa",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thilien_1894",
+    "data": {
+      "label": "Thị Liên",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thilan_2290",
+    "data": {
+      "label": "Thị Lân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thiduan_5011",
+    "data": {
+      "label": "Thị Duân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thitan_509",
+    "data": {
+      "label": "Thị Tân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thiluan_1351",
+    "data": {
+      "label": "Thị Luân",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_4"
+      ]
+    }
+  },
+  {
+    "id": "u_thisinh_8225",
+    "data": {
+      "label": "Thị Sinh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn xóm 7)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ]
+    }
+  },
+  {
+    "id": "u_thichinh_1404",
+    "data": {
+      "label": "Thị Chính",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn xóm Nam Đình, sống ở Phú Yên"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_2",
+    "data": {
+      "label": "7.1.1.5.2 Hữu Bình",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Khánh; Xóm 8"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ],
+      "children": [
+        "u_huuha_9458",
+        "u_thinga_4441",
+        "u_thithanh_2557",
+        "n7_1_1_5_2_1",
+        "u_thihuong_7799",
+        "u_thihai_7762"
+      ]
+    }
+  },
+  {
+    "id": "u_huuvinh_6868",
+    "data": {
+      "label": "Hữu Vịnh",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Mất khi nhỏ)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1",
+    "data": {
+      "label": "7.1.1.5.1 Hữu Khuông",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thọ 83 tuổi; Mất ngày 01/8/2013; Nguyễn Thị Thiền (Họ Văn xóm 11); Thọ 85 tuổi, mất 20/01/2017; Mộ cạnh nhau, ở Thung Nghè"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ],
+      "children": [
+        "n7_1_1_5_1_3",
+        "n7_1_1_5_1_2",
+        "u_thidien_2379",
+        "u_thithanh_4117",
+        "u_thisau_6381",
+        "n7_1_1_5_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuynh_8754",
+    "data": {
+      "label": "Thị Huỳnh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Công xóm 11)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1",
+    "data": {
+      "label": "7.1.1.5.1.1 Hữu Khuyên",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thọ 62 tuổi, mất 02/7/2018; Mộ Cồn Quán xóm 12; Nguyễn Thị Minh, họ Văn xóm Tiên Cung, Trung Sơn, Đô Lương"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ],
+      "children": [
+        "n7_1_1_5_1_1_1",
+        "n7_1_1_5_1_1_3",
+        "n7_1_1_5_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_3",
+    "data": {
+      "label": "7.1.1.5.1.1.3 Hữu Hiếu",
+      "last name": "",
+      "gender": "M",
+      "notes": "Kĩ sư  nông nghiệp; Nguyễn Thị Hường,; Can Lộc Hà Tĩnh; Nghề Kế Toán"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1"
+      ],
+      "children": [
+        "u_hanhi_5310"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_2",
+    "data": {
+      "label": "7.1.1.5.1.1.2 Hữu Chung",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử Nhân đại học;; nghề dạy học; Hồ Thị Hằng, họ Hồ, Thượng Sơn. Đô Lương. Cán bộ y tế"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1"
+      ],
+      "children": [
+        "n7_1_1_5_1_1_2_1",
+        "u_haan_7023"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_1",
+    "data": {
+      "label": "7.1.1.5.1.1.1 Hữu Cường",
+      "last name": "",
+      "gender": "M",
+      "notes": "Đặng Thị Thu Hường, họ Đặng Đình, Phúc Sơn, Anh Sơn; Cả 2 người là  Cử Nhân đại học; nghề dạy học"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1"
+      ],
+      "children": [
+        "n7_1_1_5_1_1_1_2",
+        "n7_1_1_5_1_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thisau_6381",
+    "data": {
+      "label": "Thị Sáu",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Mất 15/5/1993)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_3",
+    "data": {
+      "label": "7.1.1.5.1.3 Hữu Vinh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Yến"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ],
+      "children": [
+        "n7_1_1_5_1_3_2",
+        "n7_1_1_5_1_3_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_3_1",
+    "data": {
+      "label": "7.1.1.5.1.3.1 Hữu Tuấn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử nhân CNTT"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_3_2",
+    "data": {
+      "label": "7.1.1.5.1.3.2 Hữu Tiến",
+      "last name": "",
+      "gender": "M",
+      "notes": "Cử nhân đại học"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_4117",
+    "data": {
+      "label": "Thị Thành",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Trần xóm 11)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_2",
+    "data": {
+      "label": "7.1.1.5.1.2 Hữu Yên",
+      "last name": "",
+      "gender": "M",
+      "notes": "Sĩ quan quân đội; cán bộ xóm; Nguyễn Thị Nam; Họ Bá, xã Liên Thành; Cử nhân đại học; Nghề dạy học"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ],
+      "children": [
+        "n7_1_1_5_1_2_1",
+        "u_thuylinh_2796",
+        "u_thilinh_7857"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_2_1",
+    "data": {
+      "label": "7.1.1.5.1.2.1 Hữu Tùng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Kĩ sư xây dựng"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thilinh_7857",
+    "data": {
+      "label": "Thị Linh",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thidien_2379",
+    "data": {
+      "label": "Thị Diên",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Công xóm Giáp Quán)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1"
+      ]
+    }
+  },
+  {
+    "id": "u_haan_7023",
+    "data": {
+      "label": "Hà An",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_2_1",
+    "data": {
+      "label": "7.1.1.5.1.1.2.1 Hữu Trung Kiên",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_1_2",
+    "data": {
+      "label": "7.1.1.5.1.1.1.2 Hữu Tùng Quân",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_1_1_1_1",
+    "data": {
+      "label": "7.1.1.5.1.1.1.1 Hữu Thành Sơn",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_hanhi_5310",
+    "data": {
+      "label": "Hà Nhi",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_1_3"
+      ]
+    }
+  },
+  {
+    "id": "u_thuylinh_2796",
+    "data": {
+      "label": "Thùy Linh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Đại học ngoại ngữ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_2_1",
+    "data": {
+      "label": "7.1.1.5.2.1 Hữu Dũng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hồng; Cử nhân đại học; Cả 2 làm nghề dạy học"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ],
+      "children": [
+        "u_maiphuong_7203",
+        "u_maitrang_7302",
+        "n7_1_1_5_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_maiphuong_7203",
+    "data": {
+      "label": "Mai Phương",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_5_2_1_1",
+    "data": {
+      "label": "7.1.1.5.2.1.1 Hữu Sang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_maitrang_7302",
+    "data": {
+      "label": "Mai Trang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thinga_4441",
+    "data": {
+      "label": "Thị Nga",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng Hà Tĩnh, sống ở Nha Trang"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "u_huuha_9458",
+    "data": {
+      "label": "Hữu Hà",
+      "last name": "",
+      "gender": "M",
+      "notes": "(Mất khi nhỏ)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_2557",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Phạm Công xóm 1)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihuong_7799",
+    "data": {
+      "label": "Thị Hương",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng Phạm Bá Hải xóm 11)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thihai_7762",
+    "data": {
+      "label": "Thị Hải",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Phạm Văn xóm 11)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_5_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_5",
+    "data": {
+      "label": "7.1.1.6.5 Hữu Hài",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1",
+    "data": {
+      "label": "7.1.1.6.1 Hữu Duyệt",
+      "last name": "",
+      "gender": "M",
+      "notes": "12/4/1991, Cồn Ich; Nguyễn Thị Minh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ],
+      "children": [
+        "n7_1_1_6_1_3",
+        "n7_1_1_6_1_1",
+        "n7_1_1_6_1_2",
+        "u_thibon_9752"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoi_5858",
+    "data": {
+      "label": "Thị Hợi",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_4",
+    "data": {
+      "label": "7.1.1.6.4 Hữu Hoan",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_3",
+    "data": {
+      "label": "7.1.1.6.3 Hữu Hòa",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2",
+    "data": {
+      "label": "7.1.1.6.2 Hữu Cát",
+      "last name": "",
+      "gender": "M",
+      "notes": "Mộ Thung Nghè; Nguyễn Thị Tuyên"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ],
+      "children": [
+        "n7_1_1_6_2_1",
+        "u_thitu_8634",
+        "n7_1_1_6_2_5",
+        "n7_1_1_6_2_3",
+        "n7_1_1_6_2_2",
+        "n7_1_1_6_2_4"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_6",
+    "data": {
+      "label": "7.1.1.6.6 Hữu Tám",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "u_thihai_4966",
+    "data": {
+      "label": "Thị Hải",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1_2",
+    "data": {
+      "label": "7.1.1.6.1.2 Hữu Hùng",
+      "last name": "",
+      "gender": "M",
+      "notes": "Phạm Thị Nhung"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1"
+      ],
+      "children": [
+        "u_thibe_1758"
+      ]
+    }
+  },
+  {
+    "id": "u_thibe_1758",
+    "data": {
+      "label": "Thị Bé",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Con nuôi)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1_3",
+    "data": {
+      "label": "7.1.1.6.1.3 Hữu Ba",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Phượng"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1"
+      ],
+      "children": [
+        "u_thithuong_1905"
+      ]
+    }
+  },
+  {
+    "id": "u_thithuong_1905",
+    "data": {
+      "label": "Thị Thương",
+      "last name": "",
+      "gender": "F",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_3"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1_1",
+    "data": {
+      "label": "7.1.1.6.1.1 Hữu Doãn",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Khang,; Người cùng xóm"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1"
+      ],
+      "children": [
+        "n7_1_1_6_1_1_1",
+        "u_thihoa_33",
+        "u_thihong_3903",
+        "u_thithanh_4770"
+      ]
+    }
+  },
+  {
+    "id": "u_thithanh_4770",
+    "data": {
+      "label": "Thị Thanh",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng họ Vũ, Diễn Mỹ, Diễn Châu)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihong_3903",
+    "data": {
+      "label": "Thị Hồng",
+      "last name": "",
+      "gender": "F",
+      "notes": "(Lấy chồng họ Văn,; xóm Lô)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1_1_1",
+    "data": {
+      "label": "7.1.1.6.1.1.1 Hữu Hanh",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Thanh; (họ Bá, Liên Thành)"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1"
+      ],
+      "children": [
+        "n7_1_1_6_1_1_1_1",
+        "u_phuonglinh_9443",
+        "u_phuonganh_187"
+      ]
+    }
+  },
+  {
+    "id": "u_phuonganh_187",
+    "data": {
+      "label": "Phương Anh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_phuonglinh_9443",
+    "data": {
+      "label": "Phương Linh",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_1_1_1_1",
+    "data": {
+      "label": "7.1.1.6.1.1.1.1 Hữu Khoa",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thihoa_33",
+    "data": {
+      "label": "Thị Hoa",
+      "last name": "",
+      "gender": "F",
+      "notes": "(lấy chồng họ Văn,; Nam Đình"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thibon_9752",
+    "data": {
+      "label": "Thị Bốn",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng về Nam Thành"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_2",
+    "data": {
+      "label": "7.1.1.6.2.2 Hữu Hai (0)",
+      "last name": "",
+      "gender": "M",
+      "notes": "Liệt sĩ"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_5",
+    "data": {
+      "label": "7.1.1.6.2.5 Hữu Lục",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Bảy"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_4",
+    "data": {
+      "label": "7.1.1.6.2.4 Hữu Ngũ",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Hiền"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_3",
+    "data": {
+      "label": "7.1.1.6.2.3 Hữu Ba",
+      "last name": "",
+      "gender": "M",
+      "notes": "Nguyễn Thị Vân"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_1",
+    "data": {
+      "label": "7.1.1.6.2.1 Hữu Dương",
+      "last name": "",
+      "gender": "M",
+      "notes": "Trần Thị Linh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ],
+      "children": [
+        "u_thimai_8483",
+        "u_thilam_6607",
+        "n7_1_1_6_2_1_1",
+        "u_thiha_2555"
+      ]
+    }
+  },
+  {
+    "id": "u_thitu_8634",
+    "data": {
+      "label": "Thị Tứ",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Công"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2"
+      ]
+    }
+  },
+  {
+    "id": "u_thimai_8483",
+    "data": {
+      "label": "Thị Mai",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng về Sơn Thành"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thiha_2555",
+    "data": {
+      "label": "Thị Hà",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng về Vĩnh Lộc, Thanh Hóa"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1"
+      ]
+    }
+  },
+  {
+    "id": "u_thilam_6607",
+    "data": {
+      "label": "Thị Lam",
+      "last name": "",
+      "gender": "F",
+      "notes": "Lấy chồng họ Vĩnh"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_1_1",
+    "data": {
+      "label": "7.1.1.6.2.1.1 Hữu Giang",
+      "last name": "",
+      "gender": "M",
+      "notes": "Thị Hiền"
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1"
+      ],
+      "children": [
+        "n7_1_1_6_2_1_1_2",
+        "u_huyendieu_1200",
+        "n7_1_1_6_2_1_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_1_1_1",
+    "data": {
+      "label": "7.1.1.6.2.1.1.1 Hữu Khang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "n7_1_1_6_2_1_1_2",
+    "data": {
+      "label": "7.1.1.6.2.1.1.2 Hữu Sang",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1_1"
+      ]
+    }
+  },
+  {
+    "id": "u_huyendieu_1200",
+    "data": {
+      "label": "Huyền Diệu",
+      "last name": "",
+      "gender": "M",
+      "notes": ""
+    },
+    "rels": {
+      "parents": [
+        "n7_1_1_6_2_1_1"
+      ]
+    }
+  }
+]
