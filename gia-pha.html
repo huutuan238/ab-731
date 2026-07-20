@@ -28,6 +28,12 @@ function create(data) {
   f3Chart.setCardHtml()
     .setCardDisplay([["label"]])
     .setCardDim({h:70})
+    const f3Card = f3Chart.setCardHtml()
+    .setCardDisplay([["label"],["birthday"]])
+const f3EditTree = f3Chart.editTree()
+    .setFields(["label","birthday"])
+    .setEditFirst(true)  // true = open form on click, false = open info in click
+    .setCardClickOpen(f3Card)
 
   f3Chart.updateMainId('Q43274')  // Charles III
 
