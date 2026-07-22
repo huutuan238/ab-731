@@ -14,28 +14,31 @@
 <div id="FamilyChart" class="f3" style="width:100%;height:900px;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
 <script type="module">
 
-fetch('./gia_pha_nguyen_huu_1_100.json')
+fetch('./data.json')
   .then(res => res.json())
   .then(data => create(data))
   .catch(err => console.error(err))
 
 function create(data) {
   const f3Chart = f3.createChart('#FamilyChart', data)
-    .setTransitionTime(1000)
+  .setTransitionTime(0)        // tắt animation cho lần render đầu, chỉ bật lại sau
+  .setAncestryDepth(1)         // chỉ hiện tối đa 3 đời ông bà lên trên
+  .setProgenyDepth(2)          // chỉ hiện tối đa 3 đời con cháu xuống dưới
+    // .setTransitionTime(1000)
     .setCardXSpacing(250)
     .setCardYSpacing(150)
 
   f3Chart.setCardHtml()
-    .setCardDisplay([["label"]])
+    .setCardDisplay([["fullName"]])
     .setCardDim({h:70})
     const f3Card = f3Chart.setCardHtml()
-    .setCardDisplay([["label"],["birthday"]])
+    .setCardDisplay([["fullName"],["birthday"]])
 const f3EditTree = f3Chart.editTree()
-    .setFields(["label","birthday"])
+    .setFields(["fullName","birthday"])
     .setEditFirst(true)  // true = open form on click, false = open info in click
     .setCardClickOpen(f3Card)
 
-  f3Chart.updateMainId('Q43274')  // Charles III
+  f3Chart.updateMainId('n7_1_1_5_1')  // Charles III
 
   f3Chart.updateTree({initial: true})
 
@@ -46,7 +49,6 @@ const f3EditTree = f3Chart.editTree()
     f3Chart.updateTree({initial: animation_initial})
   }
 
-  // random person
 
   d3.select(document.querySelector("#FamilyChart"))
     .append("button")
@@ -65,7 +67,7 @@ const f3EditTree = f3Chart.editTree()
   const all_select_options = []
   data.forEach(d => {
     if (all_select_options.find(d0 => d0.value === d["id"])) return
-    all_select_options.push({label: `${d.data["label"]}`, value: d["id"]})
+    all_select_options.push({label: `${d.data["search_label"]}`, value: d["id"]})
   })
   const search_cont = d3.select(document.querySelector("#FamilyChart")).append("div")
     .attr("style", "position: absolute; top: 10px; left: 10px; width: 150px; z-index: 1000;")
