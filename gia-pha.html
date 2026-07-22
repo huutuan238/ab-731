@@ -29,12 +29,11 @@ function create(data) {
     .setCardYSpacing(150)
 
   f3Chart.setCardHtml()
-    .setCardDisplay([["fullName"]])
     .setCardDim({h:70})
     const f3Card = f3Chart.setCardHtml()
     .setCardDisplay([["fullName"],["birthday"]])
 const f3EditTree = f3Chart.editTree()
-    .setFields(["fullName","birthday"])
+    .setFields(["fullName","siblingIndex", "notes"])
     .setEditFirst(true)  // true = open form on click, false = open info in click
     .setCardClickOpen(f3Card)
 
