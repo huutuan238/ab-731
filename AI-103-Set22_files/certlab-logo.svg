@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 210 1980 350" role="img" aria-labelledby="certlab-logo-title certlab-logo-desc">
+  <title id="certlab-logo-title">CertLab</title>
+  <desc id="certlab-logo-desc">CertLab geometric extra-bold wordmark</desc>
+
+  <!-- CERT -->
+  <g fill="none" stroke="#174ea6" stroke-width="62" stroke-linecap="round" stroke-linejoin="round">
+    <!-- C: a true elliptical arc, not a polygonal trace -->
+    <path d="M280 299 A123 123 0 1 0 280 481"/>
+  </g>
+
+  <!-- R: closed silhouette matched to version 4; curves only on the bowl -->
+  <path fill="#174ea6" d="
+    M653 248
+    H805
+    C862 248 899 289 899 350
+    C899 389 882 416 852 436
+    L914 518
+    Q920 526 913 535
+    H851
+    Q848 535 845 531
+    L784 448
+    H706
+    V529
+    Q706 536 699 536
+    H651
+    Q644 536 644 529
+    V397
+    Q644 390 651 390
+    H804
+    C825 390 837 376 837 350
+    C837 324 825 310 804 310
+    H651
+    Q644 310 644 303
+    V255
+    Q644 248 653 248
+    Z"/>
+
+  <!-- E: three equal bars with consistent corner radii -->
+  <g fill="#174ea6">
+    <rect x="354" y="248" width="235" height="62" rx="7"/>
+    <rect x="354" y="362" width="235" height="61" rx="7"/>
+    <rect x="354" y="475" width="235" height="61" rx="7"/>
+  </g>
+
+  <!-- T -->
+  <g fill="#174ea6">
+    <rect x="911" y="248" width="258" height="62" rx="7"/>
+    <path d="M1006 279 H1073 V529 Q1073 536 1066 536 H1013 Q1006 536 1006 529 Z"/>
+  </g>
+
+  <!-- LAB -->
+  <g fill="none" stroke="#fe8115" stroke-width="62" stroke-linecap="round" stroke-linejoin="round">
+    <!-- L -->
+    <path d="M1227 279 V505 H1356"/>
+
+    <!-- A -->
+    <path d="M1430 505 L1550 279 L1668 505"/>
+
+    <!-- B: two smooth cubic bowls sharing the center terminal -->
+    <path d="M1745 279 H1887 C1934 279 1942 307 1942 337 C1942 370 1928 393 1887 393 H1745
+             M1745 393 H1892 C1938 393 1952 416 1952 449 C1952 482 1937 505 1892 505 H1745"/>
+  </g>
+</svg>
