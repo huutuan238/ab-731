@@ -503,7 +503,7 @@ const questions = [
       "a groundedness evaluator"
     ],
     "answers": [
-      "a groundedness evaluator"
+      "a Retrieval Augmented Generation (RAG) evaluator"
     ]
   },
   {
@@ -807,7 +807,7 @@ const questions = [
       "Step 1:Create a project.Step 2:Initialize the training dataset.Step 3:Train the object detection model."
     ],
     "answers": [
-      "Step 1:Create a project.Step 2:Upload and tag images.Step 3:Train the classifier model."
+      "Step 1:Create a project.Step 2:Upload and tag images.Step 3:Train the object detection model."
     ],
     "image": "./AI-103-Set22_files/1786414992019.png"
   },
@@ -1193,7 +1193,7 @@ const questions = [
       "global"
     ],
     "answers": [
-      "{{$conversationId}}"
+    "session"
     ]
   },
   {
@@ -1404,7 +1404,7 @@ const questions = [
       "Image Analysis"
     ],
     "answers": [
-      "Azure Content Understanding in Foundry Tools"
+      "Azure Document Intelligence in Foundry Tools"
     ]
   },
   {
@@ -1466,6 +1466,235 @@ const questions = [
 "answers": [
 "Execute independent tool calls in parallel before generating the response."
 ]
+},
+{
+  "question": "You are defining an agent in Microsoft Foundry Agent Service. The agent uses a catalogue model for reasoning, a system instruction that sets its goals, and a file search capability that reads a knowledge store. Which three components does this combination represent?",
+  "options": [
+    "Endpoint, API key, deployment name",
+    "Model, instructions, tools",
+    "Trigger, action, condition",
+    "Embedding, retriever, generator"
+  ],
+  "answers": [
+    "Model, instructions, tools"
+  ]
+},
+{
+  "question": "An agent must call your organisation's internal inventory system, which is exposed as a set of tools. You want the tool definitions maintained centrally and reusable across several agents rather than redefined in each agent. Which Foundry capability fits?",
+  "options": [
+    "Add a Model Context Protocol (MCP) server as an agent tool",
+    "Increase the model's context window",
+    "Fine-tune the model on the inventory system's API schema",
+    "Enable the code interpreter tool"
+  ],
+  "answers": [
+    "Add a Model Context Protocol (MCP) server as an agent tool"
+  ]
+},
+{
+  "question": "You have an application that uses a prebuilt Azure Language model.\nYou need to generate a summary that meets the following requirements:\n- Summarizes documents that contain multiple sentences\n- Preserves the original sentence order\n- Returns exactly three sentences\nWhich Language service feature should you use?",
+  "options": [
+    "sentiment analysis",
+    "abstractive summarization",
+    "extractive summarization",
+    "key phrase extraction"
+  ],
+  "answers": [
+    "extractive summarization"
+  ]
+},
+{
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource.\nYou deploy the GPT-4 model to the resource.\nYou need to ensure that you can upload files that will be used as grounding data for the model.\nWhich two types of resources should you create? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "Azure AI Document Intelligence",
+    "Azure AI Search",
+    "Azure SQL",
+    "Azure Blob Storage",
+    "Azure AI Bot Service"
+  ],
+  "answers": [
+    "Azure AI Search",
+    "Azure Blob Storage"
+  ]
+},
+{
+  "question": "You are developing an app that will perform a sentiment analysis of social media posts by using the Azure AI Language service.\nYou perform a test on a sample post.\nYou need to quantify the results of the test.\nWhich JSON property should you review?",
+  "options": [
+    "confidenceThreshold",
+    "sentiment",
+    "confidenceScores",
+    "relations"
+  ],
+  "answers": [
+    "confidenceScores"
+  ]
+},
+{
+  "question": "You have a Microsoft Foundry project that contains two agents named PolicyWriter and RiskReviewer. PolicyWriter generates draft updates for customer policies, and RiskReviewer reviews the drafts. In the visual builder, you need to create a workflow that meets the following requirements:\n- Finalizes low-risk updates without manual intervention\n- Ensures predictable execution across the agents\n- Requires user approval for high-risk updates\nWhat should you configure? To answer, select the appropriate options.",
+  "options": [
+    "Orchestration pattern: The sequential template that passes outputs node by-node",
+    "Orchestration pattern: The group chat template to dynamically route control between the agents",
+    "Orchestration pattern: The human-in-the-loop template that pauses execution of the workflow for input",
+    "Approval checkpoints: Add a Basic chat node.",
+    "Approval checkpoints: Add a Condition statement.",
+    "Approval checkpoints: Add an Ask a question node."
+  ],
+  "answers": [
+    "Orchestration pattern: The human-in-the-loop template that pauses execution of the workflow for input",
+    "Approval checkpoints: Add a Condition statement."
+  ],
+  "image": "./AI-103-Set22_files/no_2.png"
+},
+{
+  "question": "You have a Microsoft Foundry project that contains an agent and uses a GitHub repository. The repository contains a YAM file named File1 that defines the evaluation settings of the agent. You need to create a GitHub Actions workflow that runs the evaluation defined in File1 when a pull request (PR) is opened. How should you configure the workflow?",
+  "options": [
+    "Set project-endpoint to the endpoint of the project.",
+    "Set evaluation-config to the path of the YAML file.",
+    "Set model-deployment-name to the deployed model.",
+    "Set tenant-id to the Microsoft Entra tenant ID"
+  ],
+  "answers": [
+    "Set project-endpoint to the endpoint of the project."
+  ]
+},
+{
+  "question": "A production application authenticates to Microsoft Foundry using an API key stored in an environment variable. Your security team requires that you remove hardcoded secrets and enable per-principal auditing of every call. Which approach meets both requirements?",
+  "options": [
+    "Move the API key into Azure Key Vault and rotate it monthly",
+    "Authenticate with Microsoft Entra ID using a managed identity (keyless)",
+    "Share a single API key across services and restrict it with IP allow-listing",
+    "Embed the API key in the deployment pipeline as a masked variable"
+  ],
+  "answers": [
+    "Authenticate with Microsoft Entra ID using a managed identity (keyless)"
+  ]
+},
+{
+  "question": "You are building a voice agent for a pharmacy. It must accept spoken questions, reply with synthesised speech, and accurately recognise specialised medicine names that a general speech model often mishears. Which capability should you configure?",
+  "options": [
+    "A custom speech model for speech-to-text within the agent",
+    "Only the default text-to-speech voice",
+    "Azure Translator to convert the audio",
+    "Azure AI Document Intelligence on the audio stream"
+  ],
+  "answers": [
+    "A custom speech model for speech-to-text within the agent"
+  ]
+},
+{
+  "question": "An application must translate a high volume of standard product descriptions into 20 languages quickly, consistently, and at the lowest cost. The text is straightforward, with no domain-specific nuance. Which approach best fits?",
+  "options": [
+    "A large language model translation flow with a custom system prompt",
+    "Azure Translator in Foundry Tools",
+    "A separately fine-tuned model for each of the 20 target languages",
+    "Azure AI Document Intelligence"
+  ],
+  "answers": [
+    "Azure Translator in Foundry Tools"
+  ]
+},
+{
+  "question": "A customer support agent must answer from an internal knowledge base that is updated weekly with new product documentation, and its answers must always reflect the latest content. Which approach should you implement?",
+  "options": [
+    "Fine-tune the base model on the new documents every week",
+    "Implement retrieval-augmented generation (RAG) over an index of the documents",
+    "Raise the model temperature to improve recall of recent facts",
+    "Apply Direct Preference Optimization (DPO) to the documents"
+  ],
+  "answers": [
+    "Implement retrieval-augmented generation (RAG) over an index of the documents"
+  ]
+},
+{
+  "question": "You have a custom named entity recognition (NER) project in Azure Language in Foundry Tools for support tickets. The schema for the project contains an entity type named ContactInfo.\nIn tagged training files, ContactInfo is used for phone numbers, email addresses, and social media handles.\nModel evaluation shows low precision for ContactInfo, including false positives in which nearby text is extracted as ContactInfo.\nYou need to improve the precision of the project.\nWhat should you do before retraining the model?",
+  "options": [
+    "Lower the confidence threshold for ContactInfo.",
+    "Trigger an auto-labeling job.",
+    "Add more support tickets as training data and label more ContactInfo entities.",
+    "Replace ContactInfo by using Phone, Email, and SocialMedia entities. Relabel every matching span."
+  ],
+  "answers": [
+    "Replace ContactInfo by using Phone, Email, and SocialMedia entities. Relabel every matching span."
+  ]
+},
+{
+  "question": "You have a custom agent named Agent1.\nYou need to control access to and monitor activity for Agent1 by using Microsoft Foundry.\nWhat should you do first?",
+  "options": [
+    "Provision an Application Insights resource.",
+    "Add Agent1 to the Microsoft Foundry playground.",
+    "Add Agent1to a Microsoft Foundry project.",
+    "Create a Microsoft Foundry project."
+  ],
+  "answers": [
+    "Create a Microsoft Foundry project."
+  ]
+},
+{
+  "question": "A team wants to deploy a model from the Foundry catalogue with the fastest possible setup, pay only for the tokens they consume, and avoid provisioning any virtual machine (VM) quota. Which deployment option fits?",
+  "options": [
+    "Managed compute (managed endpoint) deployment",
+    "Serverless API deployment, also called models as a service (MaaS)",
+    "Self-hosted deployment on Azure Kubernetes Service",
+    "A local container running on a developer workstation"
+  ],
+  "answers": [
+    "Serverless API deployment, also called models as a service (MaaS)"
+  ]
+},
+{
+  "question": "You have a Microsoft Foundry project that contains an agent.\nThe agent uses a stored access key to retrieve secrets from an Azure key vault, which violates a keyless-credentials requirement.\nYou need to ensure that the agent can retrieve the secrets. The solution must follow the principle of least privilege.\nWhat should you configure? To answer, select the appropriate options in the answer area.",
+  "options": [
+    "Managed identity scope: Enable a system-assigned managed identity at the Foundry level.",
+    "Managed identity scope: Enable a system-assigned managed identity at the project level.",
+    "Managed identity scope: Create a service principal and store the principal's client secret.",
+    "Key Vault authorization method: Add an API key to application settings.",
+    "Key Vault authorization method: Add a Key Vault access policy for the secrets.",
+    "Key Vault authorization method: Assign the Key Vault Secrets User role to the managed identity."
+  ],
+  "answers": [
+    "Managed identity scope: Enable a system-assigned managed identity at the project level.",
+    "Key Vault authorization method: Assign the Key Vault Secrets User role to the managed identity."
+  ],
+  "image": "./AI-103-Set22_files/no_55.png"
+},
+{
+  "question": "You have a Microsoft Azure AI Foundry project named Project1.\nYou plan to create an app named App1 that will connect to Project1 and chat by using a generative AI model.\nYou need to connect App1 to Project1 by using the Azure AI Foundry SDK. The solution must minimize development effort.\nWhat should you configure in App1?",
+  "options": [
+    "a connection string",
+    "a SASCredentials object",
+    "an AIProjectClient object",
+    "a project scope key"
+  ],
+  "answers": [
+    "an AIProjectClient object"
+  ]
+},
+{
+  "question": "You are building a text-to-speech solution that uses Azure Speech in Foundry Tools to read instructions from the script in a text file.\nYou discover that the solution often pronounces technical terms incorrectly.\nYou need to prevent the incorrect pronunciations. The solution must minimize development effort.\nWhat should you do?",
+  "options": [
+    "From Speech Studio, train a custom neural voice",
+    "Use Speech Synthesis Markup Language (SSML) to specify phonemes.",
+    "Use Speech Synthesis Markup Language (SSML) to apply say as rules.",
+    "Use Speech Synthesis Markup Language (SSML) to adjust the prosody of the voice.",
+    "From Azure OpenAI use the Whisper model."
+  ],
+  "answers": [
+    "Use Speech Synthesis Markup Language (SSML) to specify phonemes."
+  ]
+},
+{
+  "question": "You plan to configure an evaluation in Microsoft Foundry for a Retrieval Augmented Generation (RAG) chat app.\nYou need to provide scores for groundedness, relevance, and harmful content categories.\nWhich two evaluation categories can you use? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "risk and safety metrics",
+    "fluency evaluator",
+    "similarity evaluators",
+    "AI quality (NLP) metrics",
+    "AI quality (AI assisted) metrics"
+  ],
+  "answers": [
+    "risk and safety metrics",
+    "AI quality (AI assisted) metrics"
+  ]
 }
 
 
