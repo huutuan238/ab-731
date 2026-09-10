@@ -428,11 +428,11 @@ const questions = [
         "Random sampling of a data store is a sound retrieval strategy for production Q&A."
       ],
       "answers": [
-        "Dense vector retrieval is well suited to recovering paraphrased intent against unstructured text. - Yes",
-        "Sparse term-matching retrieval recovers exact terms (such as identifiers and rare tokens) more reliably than dense alone. - Yes",
-        "Structured query retrieval is the right fit for filter-and-aggregate workloads against a relational store with schema and indexes. - Yes",
-        "Hybrid retrieval is identical to dense-only retrieval and shares the same recall characteristics. - No",
-        "Random sampling of a data store is a sound retrieval strategy for production Q&A. - No"
+        "Dense vector retrieval is well suited to recovering paraphrased intent against unstructured text.",
+        "Sparse term-matching retrieval recovers exact terms (such as identifiers and rare tokens) more reliably than dense alone.",
+        "Structured query retrieval is the right fit for filter-and-aggregate workloads against a relational store with schema and indexes.",
+        // "Hybrid retrieval is identical to dense-only retrieval and shares the same recall characteristics. - No",
+        // "Random sampling of a data store is a sound retrieval strategy for production Q&A. - No"
       ]
     },
     {
@@ -471,11 +471,11 @@ const questions = [
         "routing inbound support tickets into 30 categories with reasoning for the chosen routing"
       ],
       "answers": [
-        "drafting first-pass investigative reports from semi-structured incident logs for analyst review - Yes",
-        "computing real-time fraud scores at sub-50-millisecond latency on a streaming pipeline - No",
-        "long-context contract review with structured clause extraction and deviation flagging - Yes",
-        "replacing a vector index for semantic retrieval over a multi-million-document corpus - No",
-        "routing inbound support tickets into 30 categories with reasoning for the chosen routing - Yes"
+        "drafting first-pass investigative reports from semi-structured incident logs for analyst review",
+        // "computing real-time fraud scores at sub-50-millisecond latency on a streaming pipeline - No",
+        "long-context contract review with structured clause extraction and deviation flagging",
+        // "replacing a vector index for semantic retrieval over a multi-million-document corpus - No",
+        "routing inbound support tickets into 30 categories with reasoning for the chosen routing"
       ]
     },
     {
@@ -512,18 +512,18 @@ const questions = [
     {
       "question": "You are evaluating prompting claims in a peer's design document. For each claim, select yes if the claim reflects sound practice. Otherwise, select no.",
       "options": [
-        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt. - Yes",
-        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks. - Yes",
-        "Chain-of-thought should be the default on every task regardless of complexity. - No",
-        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria. - Yes",
-        "Behavioral differences across model versions can be ignored once a prompt has been validated on one version. - No"
+        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt.",
+        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks.",
+        "Chain-of-thought should be the default on every task regardless of complexity.",
+        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria.",
+        "Behavioral differences across model versions can be ignored once a prompt has been validated on one version."
       ],
       "answers": [
-        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt. - Yes",
-        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks. - Yes",
-        "Chain-of-thought should be the default on every task regardless of complexity. - No",
-        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria. - Yes",
-        "Behavioral differences across model versions can be ignored once a prompt has been validated on one version. - No"
+        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt.",
+        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks.",
+        // "Chain-of-thought should be the default on every task regardless of complexity. - No",
+        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria.",
+        // "Behavioral differences across model versions can be ignored once a prompt has been validated on one version. - No"
       ]
     },
     {
@@ -619,13 +619,13 @@ const questions = [
     {
       "question": "You are distinguishing functional from non-functional requirements during discovery. Which item is a non-functional requirement?",
       "options": [
-        "A. The system must extract a defined set of specific fields from invoice attachments and populate a downstream data record.",
-        "B. The system must produce a draft response that a human reviewer can edit before sending.",
-        "C. The system must classify inbound tickets into a defined set of categories.",
-        "D. The system must respond at p95 latency under 800 milliseconds at the expected request volume."
+        "The system must extract a defined set of specific fields from invoice attachments and populate a downstream data record.",
+        "The system must produce a draft response that a human reviewer can edit before sending.",
+        "The system must classify inbound tickets into a defined set of categories.",
+        "The system must respond at p95 latency under 800 milliseconds at the expected request volume."
       ],
       "answers": [
-        "D. The system must respond at p95 latency under 800 milliseconds at the expected request volume."
+        "The system must respond at p95 latency under 800 milliseconds at the expected request volume."
       ]
     },
     {
@@ -650,41 +650,41 @@ const questions = [
     {
       "question": "A pilot AI assistant for procurement specialists shows 89 percent first-response acceptance, but follow-up surveys reveal that specialists frequently override the assistant's vendor recommendations after considering criteria the assistant did not evaluate. The pilot owner wants to ship the assistant unchanged because of the strong acceptance rate. Which two Discernment-competency observations should you raise BEFORE approving the launch? (Select two.)",
       "options": [
-        "A. The acceptance rate alone proves readiness for general production use.",
-        "B. The survey response rate may not be statistically representative of all specialists.",
-        "C. The unconsidered criteria represent a scope gap in the assistant's input space.",
-        "D. Acceptance does not establish whether recommendations remain correct after specialist review.",
-        "E. The pilot duration was probably too short to demonstrate reliability across the full year."
+        "The acceptance rate alone proves readiness for general production use.",
+        "The survey response rate may not be statistically representative of all specialists.",
+        "The unconsidered criteria represent a scope gap in the assistant's input space.",
+        "Acceptance does not establish whether recommendations remain correct after specialist review.",
+        "The pilot duration was probably too short to demonstrate reliability across the full year."
       ],
       "answers": [
-        "C. The unconsidered criteria represent a scope gap in the assistant's input space.",
-        "D. Acceptance does not establish whether recommendations remain correct after specialist review."
+        "The unconsidered criteria represent a scope gap in the assistant's input space.",
+        "Acceptance does not establish whether recommendations remain correct after specialist review."
       ]
     },
     {
       "question": "A revenue projection assistant has missed its monthly cost target by 38 percent. Profiling shows three contributors: a 6,000-token policy preamble repeated on every call (45 percent of cost), retrieval of historical sales chunks averaging 3,000 tokens per call (30 percent), and inference on a flagship-tier model (25 percent). Stakeholders require that projection accuracy remain unchanged. Which two optimizations should you sequence first to reduce cost without affecting accuracy? (Select two.) Each correct answer presents part of the solution.",
       "options": [
-        "A. Reduce the number of historical sales chunks retrieved across each query run.",
-        "B. Truncate the policy preamble to remove non-essential clauses from the prompt.",
-        "C. Enable prompt caching on the static policy preamble across the recurring calls.",
-        "D. Switch the workload to a smaller, faster Claude model tier across all queries.",
-        "E. Cache common retrieved sales chunks accessed across many of the daily queries."
+        "Reduce the number of historical sales chunks retrieved across each query run.",
+        "Truncate the policy preamble to remove non-essential clauses from the prompt.",
+        "Enable prompt caching on the static policy preamble across the recurring calls.",
+        "Switch the workload to a smaller, faster Claude model tier across all queries.",
+        "Cache common retrieved sales chunks accessed across many of the daily queries."
       ],
       "answers": [
-        "C. Enable prompt caching on the static policy preamble across the recurring calls.",
-        "E. Cache common retrieved sales chunks accessed across many of the daily queries."
+        "Enable prompt caching on the static policy preamble across the recurring calls.",
+        "Cache common retrieved sales chunks accessed across many of the daily queries."
       ]
     },
     {
       "question": "A technical team is debating whether to implement a new capability for generating regulatory filings from internal data as a Claude Skill or as an MCP server. The capability requires a fixed authoring procedure with embedded examples, does not need to call live external systems, and must be portable across three Claude deployments: claude.ai, an internal API integration, and Claude Code. Which factor most strongly favors implementing the capability as a Skill?",
       "options": [
-        "A. The capability needs to query a live database for the most recent regulatory filings.",
-        "B. The capability must also be callable from a developer's command-line interface.",
-        "C. The capability requires direct authentication against the corporate identity provider.",
-        "D. The capability is procedural knowledge with no live external-system calls required."
+        "The capability needs to query a live database for the most recent regulatory filings.",
+        "The capability must also be callable from a developer's command-line interface.",
+        "The capability requires direct authentication against the corporate identity provider.",
+        "The capability is procedural knowledge with no live external-system calls required."
       ],
       "answers": [
-        "D. The capability is procedural knowledge with no live external-system calls required."
+        "The capability is procedural knowledge with no live external-system calls required."
       ]
     },
     {
@@ -724,41 +724,41 @@ const questions = [
     {
       "question": "The engineering lead at Trenova Systems, Inc. is evaluating two proposals for improving developer workflows using Claude-assisted tooling. Proposal A adds Claude Code to the IDE for inline code generation and review. Proposal B routes all code-generation requests through a shared Slack bot without IDE integration. Which two observations most accurately evaluate these proposals against workflow-improvement objectives? (Select two.)",
       "options": [
-        "A. Proposal B is superior because centralizing requests in Slack creates an auditable log of all codegeneration activity.",
-        "B. Proposal B introduces workflow friction by requiring developers to leave the IDE, undermining the productivity objective.",
-        "C. Proposal A reduces context switching by providing AI assistance at the point of development without requiring a separate tool.",
-        "D. Proposal B improves workflow velocity because Slack notifications create an asynchronous review queue.",
-        "E. Both proposals are equivalent because the model capabilities are identical regardless of the integration point."
+        "Proposal B is superior because centralizing requests in Slack creates an auditable log of all codegeneration activity.",
+        "Proposal B introduces workflow friction by requiring developers to leave the IDE, undermining the productivity objective.",
+        "Proposal A reduces context switching by providing AI assistance at the point of development without requiring a separate tool.",
+        "Proposal B improves workflow velocity because Slack notifications create an asynchronous review queue.",
+        "Both proposals are equivalent because the model capabilities are identical regardless of the integration point."
       ],
       "answers": [
-        "B. Proposal B introduces workflow friction by requiring developers to leave the IDE, undermining the productivity objective.",
-        "C. Proposal A reduces context switching by providing AI assistance at the point of development without requiring a separate tool."
+        "Proposal B introduces workflow friction by requiring developers to leave the IDE, undermining the productivity objective.",
+        "Proposal A reduces context switching by providing AI assistance at the point of development without requiring a separate tool."
       ]
     },
     {
       "question": "A document analysis service processes legal filings averaging 80,000 tokens each. Each filing is queried by attorneys an average of 14 times during a case. The current architecture sends the full filing on every query. The CFO has asked you to reduce per-query costs while preserving response quality. The security officer requires that filing contents not be stored outside Fabrikam's tenancy. Which optimization approach should you recommend?",
       "options": [
-        "A. Summarize each filing once at intake and run all subsequent queries against the summary.",
-        "B. Cache the filing as the prompt prefix for reuse across the 14 queries per case.",
-        "C. Index filings in a vector store and retrieve only the relevant passages per query.",
-        "D. Move the workload to a smaller Claude model to reduce the per-token cost paid."
+        "Summarize each filing once at intake and run all subsequent queries against the summary.",
+        "Cache the filing as the prompt prefix for reuse across the 14 queries per case.",
+        "Index filings in a vector store and retrieve only the relevant passages per query.",
+        "Move the workload to a smaller Claude model to reduce the per-token cost paid."
       ],
       "answers": [
-        "B. Cache the filing as the prompt prefix for reuse across the 14 queries per case."
+        "Cache the filing as the prompt prefix for reuse across the 14 queries per case."
       ]
     },
     {
       "question": "You are designing a test strategy for a Claude-based pipeline that handles sensitive financial data. Which two test types should be prioritized to cover both safety under attack and cross-component correctness? (Select two.)",
       "options": [
-        "A. Adversarial tests using prompt-injection and malformed-input cases.",
-        "B. Regression tests against a stable reference set of previously known-good outputs.",
-        "C. Smoke tests that verify core paths after each deployment.",
-        "D. Integration tests that verify end-to-end pipeline behavior across all components.",
-        "E. Unit tests targeting only individual prompt-template rendering logic."
+        "Adversarial tests using prompt-injection and malformed-input cases.",
+        "Regression tests against a stable reference set of previously known-good outputs.",
+        "Smoke tests that verify core paths after each deployment.",
+        "Integration tests that verify end-to-end pipeline behavior across all components.",
+        "Unit tests targeting only individual prompt-template rendering logic."
       ],
       "answers": [
-        "A. Adversarial tests using prompt-injection and malformed-input cases.",
-        "D. Integration tests that verify end-to-end pipeline behavior across all components."
+        "Adversarial tests using prompt-injection and malformed-input cases.",
+        "Integration tests that verify end-to-end pipeline behavior across all components."
       ]
     }
   ]
