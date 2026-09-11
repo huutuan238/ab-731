@@ -1219,12 +1219,12 @@ const questions = [
   {
     "question": "You are defining an SLA for a Claude-based assistant. Which SLA definition is most operationally meaningful?",
     "options": [
-      "A target tied to a stakeholder sentiment measure such as \"the team feels satisfied,\" which cannot be measured objectively or used to trigger a documented breach response.",
-      "A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, \"p95 per-request latency under 800 ms over a 28-day window.\"",
+      "A target tied to a stakeholder sentiment measure such as the team feels satisfied,which cannot be measured objectively or used to trigger a documented breach response.",
+      "A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, p95 per-request latency under 800 ms over a 28-day window.",
       "A qualitative commitment such as \"the system will be fast and reliable,\" which names no metric, threshold, or evaluation window.",
       "A target that names the metric and threshold but omits the evaluation window and breach consequence, leaving compliance periods and remediation triggers undefined."
     ],
-    "answers": ["A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, \"p95 per-request latency under 800 ms over a 28-day window.\""]
+    "answers": ["A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, p95 per-request latency under 800 ms over a 28-day window."]
   }
 ]
 
@@ -1244,7 +1244,7 @@ let quizQuestions = (
         ...q,
         options: shuffle(q.options)
     }))
-).slice(0);
+).slice(40);
 // filter question has image
 // quizQuestions = quizQuestions.filter(item => 'image' in item);
 
