@@ -628,7 +628,7 @@ const questions = [
         "The system must respond at p95 latency under 800 milliseconds at the expected request volume."
       ]
     },
-    {
+    { // TODO: add image
       "question": "You are sequencing decomposed components in an invoice-processing pipeline. For each of the decomposed components, select the execution layer it belongs to: \"Pre-Processing,\" \"Model Stage,\" or \"Post-Processing.\"",
       "options": [
         "Claude-based classification of invoice type: Model Stage",
@@ -690,35 +690,35 @@ const questions = [
     {
       "question": "You are auditing a procurement-assistant agent whose defined responsibility is to draft purchase requests for review. For each tool currently configured on the agent, select yes if the tool should remain after a leastprivilege audit. Otherwise, select no if it should be removed.",
       "options": [
-        "a read-only catalog lookup tool that returns vendor and SKU information: Yes",
-        "an inbox-send tool that emails purchase requests to vendors directly: No",
-        "a draft-write tool that creates purchase-request drafts in the review queue: Yes",
-        "a production-database admin tool unrelated to procurement: No",
-        "A read-only policy-document tool that returns the relevant procurement policies: Yes"
+        "a read-only catalog lookup tool that returns vendor and SKU information",
+        "an inbox-send tool that emails purchase requests to vendors directly",
+        "a draft-write tool that creates purchase-request drafts in the review queue",
+        "a production-database admin tool unrelated to procurement",
+        "A read-only policy-document tool that returns the relevant procurement policies"
       ],
       "answers": [
-        "a read-only catalog lookup tool that returns vendor and SKU information: Yes",
-        "an inbox-send tool that emails purchase requests to vendors directly: No",
-        "a draft-write tool that creates purchase-request drafts in the review queue: Yes",
-        "a production-database admin tool unrelated to procurement: No",
-        "A read-only policy-document tool that returns the relevant procurement policies: Yes"
+        "a read-only catalog lookup tool that returns vendor and SKU information",
+        // "an inbox-send tool that emails purchase requests to vendors directly: No",
+        "a draft-write tool that creates purchase-request drafts in the review queue",
+        // "a production-database admin tool unrelated to procurement: No",
+        "A read-only policy-document tool that returns the relevant procurement policies"
       ]
     },
     {
       "question": "You are evaluating model-selection claims used by a peer team. For each statement, select yes if the statement is generally true. Otherwise, select no.",
       "options": [
-        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.: Yes",
-        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.: Yes",
-        "The most capable model is always the right choice regardless of the workload profile.: No",
-        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.: Yes",
-        "Selecting a model based on which version was most recently announced is the right basis for production decisions.: No"
+        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.",
+        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.",
+        "The most capable model is always the right choice regardless of the workload profile.",
+        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.",
+        "Selecting a model based on which version was most recently announced is the right basis for production decisions."
       ],
       "answers": [
-        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.: Yes",
-        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.: Yes",
-        "The most capable model is always the right choice regardless of the workload profile.: No",
-        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.: Yes",
-        "Selecting a model based on which version was most recently announced is the right basis for production decisions.: No"
+        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.",
+        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.",
+        // "The most capable model is always the right choice regardless of the workload profile.: No",
+        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.",
+        // "Selecting a model based on which version was most recently announced is the right basis for production decisions.: No"
       ]
     },
     {
