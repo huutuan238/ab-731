@@ -421,19 +421,16 @@ const questions = [
     {
       "question": "You are evaluating retrieval-strategy claims used by a peer team. For each claim, select yes if the statement is generally accurate. Otherwise, select no.",
       "options": [
-        "Dense vector retrieval is well suited to recovering paraphrased intent against unstructured text.",
-        "Sparse term-matching retrieval recovers exact terms (such as identifiers and rare tokens) more reliably than dense alone.",
-        "Structured query retrieval is the right fit for filter-and-aggregate workloads against a relational store with schema and indexes.",
-        "Hybrid retrieval is identical to dense-only retrieval and shares the same recall characteristics.",
-        "Random sampling of a data store is a sound retrieval strategy for production Q&A."
+        "Yes-Yes-Yes-No-No",
+        "Yes-No-Yes-No-No",
+        "No-Yes-Yes-No-No",
+        "Yes-No-No-No-No",
+        "Yes-Yes-Yes-No-Yes",
       ],
       "answers": [
-        "Dense vector retrieval is well suited to recovering paraphrased intent against unstructured text.",
-        "Sparse term-matching retrieval recovers exact terms (such as identifiers and rare tokens) more reliably than dense alone.",
-        "Structured query retrieval is the right fit for filter-and-aggregate workloads against a relational store with schema and indexes.",
-        // "Hybrid retrieval is identical to dense-only retrieval and shares the same recall characteristics. - No",
-        // "Random sampling of a data store is a sound retrieval strategy for production Q&A. - No"
-      ]
+        "Yes-Yes-Yes-No-No",
+      ],
+       "image": "./CCAR-P/no17.png"
     },
     {
       "question": "A Claude-based research assistant begins producing responses that confidently contradict its retrieved source documents despite no change to the retrieval pipeline. Which two diagnostic actions most directly identify the root cause of this behavior? (Select two.)",
@@ -770,7 +767,7 @@ const questions = [
       "Add a retrieval step that fetches the full source corpus into the context window before generation.",
       "Expand the system prompt to include additional few-shot examples on every request."
     ],
-    "answer": [
+    "answers": [
       "Enable prompt caching on the static system-prompt prefix to reduce billable input tokens on repeated calls.",
       "Route straightforward query types to a smaller, faster Claude model and reserve the full model for complex cases."
     ]
@@ -784,7 +781,7 @@ const questions = [
       "Document the identified gaps along with recommended remediations and residual risk for signoff.",
       "Inventory the vendor-provided compliance tooling and confirm which compliance affordances are in place."
     ],
-    "answer": [
+    "answers": [
       "Identify the applicability of the regulation based on data types, jurisdiction, and audience.",
       "Inventory the vendor-provided compliance tooling and confirm which compliance affordances are in place."
     ]
@@ -798,7 +795,7 @@ const questions = [
       "Communicate to users that the assistant does not fabricate output as a matter of design.",
       "Treat the incident as an anecdotal isolated case and take no further investigative action."
     ],
-    "answer": [
+    "answers": [
       "Sample recent summaries to estimate the fabrication frequency across the population.",
       "Review whether citation-grounding controls exist anywhere in the current generation pipeline."
     ]
@@ -812,7 +809,7 @@ const questions = [
       "Define the quality bar, latency tolerance, and expected volume for the workload.",
       "Sign off the production rollout plan with the platform and security teams."
     ],
-    "answer": [
+    "answers": [
       "Choose a candidate model based on the requirements profile and known capabilities.",
       "Define the quality bar, latency tolerance, and expected volume for the workload."
     ]
@@ -825,7 +822,7 @@ const questions = [
       "Alert definitions and triage steps only, without escalation paths, rollback procedures, or references to dashboards and logs for on-call use.",
       "Escalation paths and rollback procedures only, without alert definitions, triage steps, or dashboard references to guide initial incident response."
     ],
-    "answer": "Common alerts and their triage steps, escalation paths, rollback procedures, and references to the relevant dashboards and logs."
+    "answers": ["Common alerts and their triage steps, escalation paths, rollback procedures, and references to the relevant dashboards and logs."]
   },
   {
     "question": "You are designing a feedback session for a deployment in flight. Which structure best supports productive stakeholder feedback?",
@@ -835,7 +832,7 @@ const questions = [
       "Distribute artifacts at the session start rather than in advance, so stakeholders review materials in real time without preparation before the discussion begins.",
       "End the session without recording decisions, follow-up items, action owners, or dates, relying on participant memory to carry the session's outcomes forward."
     ],
-    "answer": "Define a focused agenda, share the artifacts in advance, capture decisions and follow-ups in writing, and confirm action owners and dates."
+    "answers": ["Define a focused agenda, share the artifacts in advance, capture decisions and follow-ups in writing, and confirm action owners and dates."]
   },
   {
     "question": "You are integrating AI-assisted tooling into the team's documentation workflow. The team wants generated documentation that stays grounded in the actual code. Which integration approach best fits this requirement?",
@@ -845,22 +842,21 @@ const questions = [
       "Configure subagents that read the relevant code files via filesystem and code-search tools, generate the documentation, and emit changes through the team's normal review workflow.",
       "Disable all filesystem and code-search tools so the subagents cannot read any repository code, accepting that documentation generation will be entirely disconnected from the actual implementation."
     ],
-    "answer": "Configure subagents that read the relevant code files via filesystem and code-search tools, generate the documentation, and emit changes through the team's normal review workflow."
+    "answers": ["Configure subagents that read the relevant code files via filesystem and code-search tools, generate the documentation, and emit changes through the team's normal review workflow."]
   },
   {
     "question": "You are reviewing a peer's end-to-end design for a Claude-based platform expected to scale to thousands of concurrent users. For each statement, indicate Yes if it reflects sound architectural practice. Otherwise, select No.",
     "options": [
-      "Authentication and authorization run before retrieval so retrieval can filter by identity.",
-      "An asynchronous queue absorbs bursty traffic between intake and the model invocation layer.",
-      "Tax computation is encoded directly in the system prompt rather than in code.",
-      "Conversation logs include unredacted government identifiers to maximize signal for tuning."
+      "Yes-Yes-No-No",
+      "No-Yes-No-No",
+      "Yes-Yes-No-Yes",
+      "Yes-No-No-No",
+      "Yes-Yes-Yes-No",
     ],
-    "answer": [
-      "Authentication and authorization run before retrieval so retrieval can filter by identity.: Yes",
-      "An asynchronous queue absorbs bursty traffic between intake and the model invocation layer.: Yes",
-      "Tax computation is encoded directly in the system prompt rather than in code.: No",
-      "Conversation logs include unredacted government identifiers to maximize signal for tuning.: No"
-    ]
+    "answers": [
+      "Yes-Yes-No-No",
+    ],
+    "image": "./CCAR-P/no49.png"
   },
   {
     "question": "You are presenting an architectural decision to a mixed audience that includes an executive sponsor and the engineering leads who will implement the decision. Which presentation strategy best serves both audiences?",
@@ -870,7 +866,7 @@ const questions = [
       "Skip the rationale, alternatives, and trade-off discussion entirely and simply announce the chosen decision, leaving both audiences without the context needed to implement or validate it.",
       "Present a single undifferentiated narrative that addresses technical and business concerns with equal weight throughout, treating both audiences as requiring the same depth on every section."
     ],
-    "answer": "Lead with the decision, the business outcomes it serves, and the trade-offs accepted; follow with the technical rationale, alternatives, and implementation implications for the engineering audience."
+    "answers": ["Lead with the decision, the business outcomes it serves, and the trade-offs accepted; follow with the technical rationale, alternatives, and implementation implications for the engineering audience."]
   },
   {
     "question": "You are selecting a pattern for a compliance Q & A assistant that must answer policy questions with citations to the authoritative internal source set. Latency, cost, and audit predictability are prioritized. Which pattern is the best fit?",
@@ -880,7 +876,7 @@ const questions = [
       "A pure agent loop with open web-browsing tools to surface the most current policy information, without constraining retrieval to the authoritative internal corpus.",
       "A static prompt with the entire policy corpus concatenated into every request."
     ],
-    "answer": "Augmented LLM with retrieval-augmented generation over the indexed authoritative corpus and citation rendering on each answer."
+    "answers": ["Augmented LLM with retrieval-augmented generation over the indexed authoritative corpus and citation rendering on each answer."]
   },
   {
     "question": "A security team is evaluating two proposed controls. Control A adds an outbound tool allowlist with destination restrictions and per-call review. Control B scores responses against a stable adversarial evaluation set after each model-version change. Which two risk categories are correctly matched to these controls? (Select two.)",
@@ -891,7 +887,7 @@ const questions = [
       "Control B - data exfiltration via outbound tool calls",
       "Control B - silent quality drift after a model-version upgrade"
     ],
-    "answer": [
+    "answers": [
       "Control A - data exfiltration via outbound tool calls",
       "Control B - silent quality drift after a model-version upgrade"
     ]
@@ -904,7 +900,7 @@ const questions = [
       "Nowhere in the pipeline; rely on the model's general refusal behavior to reject unauthorized document access without any enforced access control.",
       "After the response is generated, by post-filtering content that should not have been retrieved."
     ],
-    "answer": "At the retrieval layer, before any role-restricted content reaches the prompt-construction step or the model."
+    "answers": ["At the retrieval layer, before any role-restricted content reaches the prompt-construction step or the model."]
   },
   {
     "question": "You are designing a content moderation classifier that processes high volumes of usergenerated comments under a tight per-message latency budget using well-defined classification labels. Which model selection best aligns with the workload?",
@@ -914,7 +910,7 @@ const questions = [
       "Sonnet, because larger general-purpose models are preferred even when workload latency requirements are strict.",
       "Sonnet with extended thinking enabled, because deeper reasoning should be applied to every moderation request to improve edge-case handling."
     ],
-    "answer": "Haiku, because its latency and cost profile align with high-volume classification workloads that require limited reasoning depth."
+    "answers": ["Haiku, because its latency and cost profile align with high-volume classification workloads that require limited reasoning depth."]
   },
   {
     "question": "A Claude architect is implementing safety controls for a customer-facing advice assistant that must never provide regulated investment recommendations. Which two guardrail implementations most directly enforce this constraint? (Select two.)",
@@ -925,7 +921,7 @@ const questions = [
       "Log all user queries to a SIEM for post-hoc compliance review.",
       "Define explicit out-of-scope categories in the system prompt with fixed refusal phrasing for investment advice requests."
     ],
-    "answer": [
+    "answers": [
       "Add an output classifier that detects and blocks responses containing regulated investmentrecommendation language.",
       "Define explicit out-of-scope categories in the system prompt with fixed refusal phrasing for investment advice requests."
     ]
@@ -938,7 +934,7 @@ const questions = [
       "Acknowledge the request, describe the scope and timeline implications transparently, and propose options-defer it, descope something else, or extend the timeline-for the stakeholder to choose.",
       "Accept the additional scope into the current release without describing the timeline or descoping implications, allowing the delivery plan to absorb unacknowledged changes until they surface as delays."
     ],
-    "answer": "Acknowledge the request, describe the scope and timeline implications transparently, and propose options-defer it, descope something else, or extend the timeline-for the stakeholder to choose."
+    "answers": ["Acknowledge the request, describe the scope and timeline implications transparently, and propose options-defer it, descope something else, or extend the timeline-for the stakeholder to choose."]
   },
   {
     "question": "You are assessing data-exfiltration risk in a Claude-based assistant that has tools for both internal-document retrieval and outbound HTTP calls. Which scenario most directly indicates a data-exfiltration risk?",
@@ -948,7 +944,7 @@ const questions = [
       "Adversarial content in a retrieved document instructs the model to call the outbound HTTP tool and send sensitive content to an attacker-controlled URL.",
       "The internal-document retrieval tool returns a document that the user is authorized to view."
     ],
-    "answer": "Adversarial content in a retrieved document instructs the model to call the outbound HTTP tool and send sensitive content to an attacker-controlled URL."
+    "answers": ["Adversarial content in a retrieved document instructs the model to call the outbound HTTP tool and send sensitive content to an attacker-controlled URL."]
   },
   {
     "question": "You are building an ethics-review checklist for deployments supported by artificial intelligence. Which two checks belong on the list? (Select two.) Each correct answer presents a complete solution.",
@@ -959,7 +955,7 @@ const questions = [
       "Restrict ethics review to outputs that exceed a defined model-confidence threshold.",
       "Confirm that latency and throughput targets are met across supported user populations."
     ],
-    "answer": [
+    "answers": [
       "Verify that outputs do not rely on generalizations about people that the underlying data does not support.",
       "Confirm that high-impact decisions retain human accountability rather than being attributed to the model."
     ]
@@ -973,7 +969,7 @@ const questions = [
       "Periodic refresh of the system prompt wording to keep refusal language current and clear.",
       "Adversarial-input coverage in the evaluation set with regression tracking on guardrail performance."
     ],
-    "answer": [
+    "answers": [
       "Per-role tool allow-lists enforced at the orchestration layer before any tool call executes.",
       "Adversarial-input coverage in the evaluation set with regression tracking on guardrail performance."
     ]
@@ -986,7 +982,7 @@ const questions = [
       "Inverse sampling that reviews only high-confidence routine outputs and skips low-confidence and high-impact outputs.",
       "Universal review of every output regardless of confidence or throughput impact."
     ],
-    "answer": "Risk-stratified sampling that reviews all low-confidence and high-impact outputs and a smaller random sample of high-confidence routine outputs."
+    "answers": ["Risk-stratified sampling that reviews all low-confidence and high-impact outputs and a smaller random sample of high-confidence routine outputs."]
   },
   {
     "question": "A business sponsor has requested an AI solution to \"improve customer experience.\" The sponsor cannot articulate which customer journey is failing, which metric reflects the failure, or which decisions the AI should support. The sponsor is asking you to begin design work next week. Which delegation-competency action should you take first?",
@@ -996,7 +992,7 @@ const questions = [
       "Propose a fixed scope that you commit to by default based on your own assumptions.",
       "Facilitate a structured discovery to define the failing decision and the target metric."
     ],
-    "answer": "Facilitate a structured discovery to define the failing decision and the target metric."
+    "answers": ["Facilitate a structured discovery to define the failing decision and the target metric."]
   },
   {
     "question": "A loan pre-qualification assistant shows 94 percent approval recommendations that match the human underwriter decision. The fairness team has reviewed approval rate parity across protected groups and reported no significant difference. A board member has asked whether this evidence is sufficient to declare the assistant fair. Which two Discernment-competency findings should you report? (Select two.) Each correct answer presents part of the solution.",
@@ -1007,7 +1003,7 @@ const questions = [
       "The fairness team's review process likely missed at least some of the protected groups studied.",
       "A larger sample is needed before any meaningful fairness claim can be made about the model."
     ],
-    "answer": [
+    "answers": [
       "Approval rate parity does not by itself assess error rate parity across protected groups.",
       "Match with human underwriters does not establish freedom from underwriter-introduced bias."
     ]
@@ -1020,7 +1016,7 @@ const questions = [
       "Increase retrieval depth to the corpus maximum to improve recall regardless of latency.",
       "Switch every turn to the heaviest available model to maximize output quality, accepting that the increased model latency will worsen the per-turn SLO rather than improve it."
     ],
-    "answer": "Reduce retrieval depth to the top-k passages that historically cover the answer, and cache stable system-prompt content."
+    "answers": ["Reduce retrieval depth to the top-k passages that historically cover the answer, and cache stable system-prompt content."]
   },
   {
     "question": "You are building a feedback-and-alignment routine for a multi-stakeholder deployment. Which two practices belong in the routine? (Select two.) Each correct answer presents a complete solution.",
@@ -1031,7 +1027,7 @@ const questions = [
       "Set a regular cadence for revisiting expectations and assumptions as conditions evolve over time.",
       "Reconcile divergent stakeholder positions explicitly rather than papering over them in the moment."
     ],
-    "answer": [
+    "answers": [
       "Set a regular cadence for revisiting expectations and assumptions as conditions evolve over time.",
       "Reconcile divergent stakeholder positions explicitly rather than papering over them in the moment."
     ]
@@ -1045,7 +1041,7 @@ const questions = [
       "The document includes the architect's contact information for questions arising during implementation.",
       "The document lists all Claude models that were evaluated but does not specify which was selected or why."
     ],
-    "answer": [
+    "answers": [
       "The document specifies integration contracts, configuration schemas, and expected input/output shapes for each component.",
       "The document includes a decision log that records the rationale for key architectural choices and the alternatives rejected."
     ]
@@ -1058,7 +1054,7 @@ const questions = [
       "Increase temperature so output randomness masks the contradiction.",
       "Keep both instructions and rely on the model to decide which one to follow on each request."
     ],
-    "answer": "Remove or rewrite the gap-filling instruction so the prompt consistently constrains the model to source-supported content."
+    "answers": ["Remove or rewrite the gap-filling instruction so the prompt consistently constrains the model to source-supported content."]
   },
   {
     "question": "You are comparing patterns for a batch document-classification job that follows fixed steps: extract metadata, classify, summarize, and persist. Which pattern is the best fit and why?",
@@ -1068,7 +1064,7 @@ const questions = [
       "An agentic pattern, because agents are categorically more accurate than workflows and therefore always preferable regardless of step predictability.",
       "A workflow pattern, because the steps are well-defined and predictable per-request token cost is preferred over flexibility."
     ],
-    "answer": "A workflow pattern, because the steps are well-defined and predictable per-request token cost is preferred over flexibility."
+    "answers": ["A workflow pattern, because the steps are well-defined and predictable per-request token cost is preferred over flexibility."]
   },
   {
     "question": "A managed agent deployment for claims triage has grown from 6 tools to 34 tools over 18 months as product teams added capabilities. Triage accuracy has declined from 91 percent to 78 percent, and average tool-selection latency has increased by 2.3 seconds. A junior engineer has proposed adding a tool-router agent in front of the current agent to filter the tool list per request. Which two findings should you present to justify capability decomposition before adding the router? (Select two.) Each correct answer presents part of the solution.",
@@ -1079,7 +1075,7 @@ const questions = [
       "The router pattern is well documented across publicly available agent literature.",
       "The proposed router introduces an additional model call on every incoming request."
     ],
-    "answer": [
+    "answers": [
       "The 34 tools serve four distinct claim-workflow domains within the triage scope.",
       "The proposed router introduces an additional model call on every incoming request."
     ]
@@ -1092,7 +1088,7 @@ const questions = [
       "Managed configuration applied centrally and marked as non-overridable",
       "Project scope (.claude/settings.json) committed to the repository"
     ],
-    "answer": "Managed configuration applied centrally and marked as non-overridable"
+    "answers": ["Managed configuration applied centrally and marked as non-overridable"]
   },
   {
     "question": "A Claude architect is auditing configuration scope assignments. Which two statements correctly identify an appropriate use of user-scope configuration versus other scopes? (Select two.)",
@@ -1103,7 +1099,7 @@ const questions = [
       "Defining MCP server endpoints shared by all contributors to a specific repository.",
       "Storing API authentication keys so they are not committed to version control."
     ],
-    "answer": [
+    "answers": [
       "Persisting personal editor theme preferences that follow an engineer across projects.",
       "Saving a preferred Claude response language that applies to all repositories the engineer uses."
     ]
@@ -1117,7 +1113,7 @@ const questions = [
       "Whether the integration must be portable across multiple AI clients in the ecosystem.",
       "Whether the interaction is stateless and latency-sensitive or stateful and longer-running."
     ],
-    "answer": [
+    "answers": [
       "Whether the integration must be portable across multiple AI clients in the ecosystem.",
       "Whether the interaction is stateless and latency-sensitive or stateful and longer-running."
     ]
@@ -1130,7 +1126,7 @@ const questions = [
       "A bespoke streaming protocol layered over an unrelated asynchronous message bus.",
       "An agent-to-agent handoff that introduces another Claude-based agent in front of the pricing service."
     ],
-    "answer": "A direct API call to the existing endpoint with the appropriate scoped credentials."
+    "answers": ["A direct API call to the existing endpoint with the appropriate scoped credentials."]
   },
   {
     "question": "A Claude architect observes that after a recent model-version upgrade, grounded responses began including claims not supported by the retrieved source documents. Which mitigation is most directly targeted at this failure mode?",
@@ -1140,7 +1136,7 @@ const questions = [
       "Replace the shared API key with per-user OAuth tokens to restrict data access.",
       "Treat retrieved data as untrusted and apply input classifiers at ingestion time."
     ],
-    "answer": "Constrain responses to source-supported content, require citations, and add a verification step."
+    "answers": ["Constrain responses to source-supported content, require citations, and add a verification step."]
   },
   {
     "question": "You are defining escalation criteria for ambiguous cases in an automated workflow. Which set of criteria best supports consistent escalation?",
@@ -1150,7 +1146,7 @@ const questions = [
       "Escalation at the discretion of whoever is available when the team's on-call engineer has spare capacity, without a defined threshold, category, or ambiguity criterion.",
       "A confidence score below a defined threshold, presence of high-impact decision categories, ambiguity flags raised by content classifiers, and the user's explicit request for review."
     ],
-    "answer": "A confidence score below a defined threshold, presence of high-impact decision categories, ambiguity flags raised by content classifiers, and the user's explicit request for review."
+    "answers": ["A confidence score below a defined threshold, presence of high-impact decision categories, ambiguity flags raised by content classifiers, and the user's explicit request for review."]
   },
   {
     "question": "After a prompt-template update, several previously passing test cases now produce unexpected outputs. Which test type is specifically designed to detect this category of failure?",
@@ -1160,7 +1156,7 @@ const questions = [
       "Regression tests scored against a stable reference set of known-good behavior.",
       "Smoke tests that confirm high-level system availability after the change."
     ],
-    "answer": "Regression tests scored against a stable reference set of known-good behavior."
+    "answers": ["Regression tests scored against a stable reference set of known-good behavior."]
   },
   {
     "question": "A Claude architect at a health services organization is defining evaluation metrics for a clinical-summary pipeline. The pipeline must remain within a per-query cost ceiling and must never surface patient data to unauthorized roles. Which two metrics directly address these requirements? (Select two.)",
@@ -1171,7 +1167,7 @@ const questions = [
       "Per-query token cost measured against the defined cost ceiling",
       "Response latency at the 95th percentile across a one-week sample window"
     ],
-    "answer": [
+    "answers": [
       "Role-based access-control enforcement rate measured on a red-team dataset",
       "Per-query token cost measured against the defined cost ceiling"
     ]
@@ -1184,7 +1180,7 @@ const questions = [
       "An architecture overview and sequence diagrams for the dominant flows, without interface contracts, configuration-parameter tables, or operational runbooks for the delivery team to follow.",
       "An architecture overview and a list of known limitations, without component-level diagrams, interface contracts, configuration parameters, or operational runbooks to support implementation."
     ],
-    "answer": "Component responsibilities, contracts between components, sequence diagrams of the dominant flows, configuration parameters with defaults, and operational runbooks."
+    "answers": ["Component responsibilities, contracts between components, sequence diagrams of the dominant flows, configuration parameters with defaults, and operational runbooks."]
   },
   {
     "question": "You are identifying the highest-impact optimization for a deployment whose token cost is dominated by a long, repeated system prompt and a large retrieved context per request. Which optimization most directly targets the dominant cost driver?",
@@ -1194,7 +1190,7 @@ const questions = [
       "Move the long, repeated system prompt into a cacheable prefix and trim retrieved context to the spans relevant to each query.",
       "Switch every request to the heaviest available model to maximize output quality, accepting that higher per-request inference cost compounds rather than addresses the dominant cost driver."
     ],
-    "answer": "Move the long, repeated system prompt into a cacheable prefix and trim retrieved context to the spans relevant to each query."
+    "answers": ["Move the long, repeated system prompt into a cacheable prefix and trim retrieved context to the spans relevant to each query."]
   },
   {
     "question": "You are defining transparency practices for a customer-facing assistant whose responses are materially shaped by AI. Which transparency practice most directly supports responsible deployment?",
@@ -1204,7 +1200,7 @@ const questions = [
       "Disclose AI involvement to end users in line with the organization's transparency policy and provide a documented path to reach a human when needed.",
       "Disclose AI involvement only to internal staff and operators while withholding that information from the end users whose interactions are materially shaped by the AI system."
     ],
-    "answer": "Disclose AI involvement to end users in line with the organization's transparency policy and provide a documented path to reach a human when needed."
+    "answers": ["Disclose AI involvement to end users in line with the organization's transparency policy and provide a documented path to reach a human when needed."]
   },
   {
     "question": "An engineering organization is adopting Claude Code across 200 developers. A team lead proposes that AI-generated pull requests bypass standard code review for changes under 50 lines because small changes are considered low risk and review capacity is constrained. Which two Diligence-competency objections should you raise? (Select two.) Each correct answer presents part of the solution.",
@@ -1215,7 +1211,7 @@ const questions = [
       "AI-generated pull requests should be rejected by default across the organization.",
       "Line count is a poor proxy for the actual risk introduced by a code change."
     ],
-    "answer": [
+    "answers": [
       "Removing review eliminates the verification mechanism required for AI-generated output across the workflow.",
       "Line count is a poor proxy for the actual risk introduced by a code change."
     ]
@@ -1228,7 +1224,7 @@ const questions = [
       "A qualitative commitment such as \"the system will be fast and reliable,\" which names no metric, threshold, or evaluation window.",
       "A target that names the metric and threshold but omits the evaluation window and breach consequence, leaving compliance periods and remediation triggers undefined."
     ],
-    "answer": "A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, \"p95 per-request latency under 800 ms over a 28-day window.\""
+    "answers": ["A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, \"p95 per-request latency under 800 ms over a 28-day window.\""]
   }
 ]
 
