@@ -1225,6 +1225,436 @@ const questions = [
       "A target that names the metric and threshold but omits the evaluation window and breach consequence, leaving compliance periods and remediation triggers undefined."
     ],
     "answers": ["A measurable target with a defined metric, threshold, evaluation window, and consequence for breach- for example, p95 per-request latency under 800 ms over a 28-day window."]
+  },
+  // 80
+  {
+    "question": "A Claude architect is designing a HIPAA-compliant pipeline that processes patient records. Which two design decisions directly support HIPAA compliance requirements? (Select two.)",
+    "options": [
+      "Setting max_tokens to a low value to minimize the volume of text generated per request.",
+      "Selecting the highest-capability Claude model to maximize diagnostic accuracy.",
+      "Enforcing role-based access controls so that PHI is retrievable only by authorized personnel.",
+      "Ensuring patient data is never included in training feedback loops sent to the model provider without a BAA in place.",
+      "Using streaming responses to reduce perceived latency for clinical users."
+    ],
+    "answers": [
+      "Enforcing role-based access controls so that PHI is retrievable only by authorized personnel.",
+      "Ensuring patient data is never included in training feedback loops sent to the model provider without a BAA in place."
+    ]
+  },
+  {
+    "question": "You are designing a human-in-the-loop validation workflow for a new Claude-based deployment and must complete the design steps before piloting the workflow. Which two steps must be completed BEFORE piloting the workflow with a representative subset of traffic? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Define the sampling strategy and the escalation criteria at each oversight point in the pipeline.",
+      "Iterate the workflow design based on observed pilot findings before broader rollout to production.",
+      "Onboard the reviewer pool with role-specific training on the check criteria and escalation procedures.",
+      "Document the workflow with check criteria, escalation paths, and service-level agreements (SLAs) for each step.",
+      "Identify the decision points in the pipeline that require human oversight by impact and reversibility."
+    ],
+    "answers": [
+      "Define the sampling strategy and the escalation criteria at each oversight point in the pipeline.",
+      "Identify the decision points in the pipeline that require human oversight by impact and reversibility."
+    ]
+  },
+  {
+    "question": "You are compiling team-setup practices for a Claude Code rollout across an engineering organization. Which two practices belong on the list? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Use project scope for team-shared Model Context Protocol (MCP) servers and permission rules under version control.",
+      "Apply managed configuration centrally for security-critical settings that must not be overridden by individual engineers.",
+      "Use local scope for security-critical permission rules so each engineer can adapt them to ongoing work.",
+      "Use user scope for team-shared MCP servers so every engineer on the team has consistent access.",
+      "Use project scope for personal editor preferences so the preferences apply consistently within the project."
+    ],
+    "answers": [
+      "Use project scope for team-shared Model Context Protocol (MCP) servers and permission rules under version control.",
+      "Apply managed configuration centrally for security-critical settings that must not be overridden by individual engineers."
+    ]
+  },
+  {
+    "question": "You are reviewing a customer-support agent's configuration. Each candidate tool falls into one of four categories: (1) required to complete defined tasks, (2) frequently used and reduces handoffs, (3) occasionally useful for unrelated work, (4) speculative future utility. Which categories should typically remain in the agent configuration?",
+    "options": [
+      "Only category 3, because occasionally useful tools for unrelated work provide broader coverage and should take priority over tools required for the agent's defined tasks.",
+      "Only category 4, because speculative future-utility tools provide the most flexibility and should be configured even when no defined task currently requires them.",
+      "Categories 1 and 2 only, because they map to defined tasks and the agent's regular hand-offs.",
+      "All four categories, because broader tool access is categorically better for agent performance regardless of whether the tools map to defined tasks or regular hand-offs."
+    ],
+    "answers": ["Categories 1 and 2 only, because they map to defined tasks and the agent's regular hand-offs."]
+  },
+  {
+    "question": "You are documenting an architectural decision to support future audit and onboarding. Which artifact is the strongest fit?",
+    "options": [
+      "A slide deck in a presentation folder with no accompanying written rationale.",
+      "A code comment in a single file that contains an opinion of one engineer.",
+      "An Architecture Decision Record that states the context, the decision, the alternatives considered, the consequences, and the date and authors.",
+      "A short verbal note shared during a hallway conversation with no written record."
+    ],
+    "answers": ["An Architecture Decision Record that states the context, the decision, the alternatives considered, the consequences, and the date and authors."]
+  },
+  {
+    "question": "During an architectural review, the security team identifies a risk that adversarial content injected into retrieved documents could manipulate the model's behavior. Which mitigation most directly addresses this threat?",
+    "options": [
+      "Treat all retrieved content as untrusted input and apply input classifiers with output validation.",
+      "Require citations for each claim and constrain responses to source-supported content.",
+      "Restrict outbound tool calls to an approved destination allow-list.",
+      "Score outputs against a stable adversarial evaluation set on each model-version change."
+    ],
+    "answers": ["Treat all retrieved content as untrusted input and apply input classifiers with output validation."]
+  },
+  {
+    "question": "You are evaluating an evaluation set used to score a Claude-based hiring-support tool. The set is drawn from one geographic region and one tenure band. Which response is most appropriate?",
+    "options": [
+      "Discard all quantitative evaluation and replace it with qualitative impressions collected from a small, convenience-selected group that may not represent the tool's full user population.",
+      "Expand the evaluation set to cover the geographic regions and tenure bands the tool will serve, and rescore the system on the expanded set before broader release.",
+      "Reduce the evaluation set further to a single demographic subgroup to simplify score interpretation, narrowing coverage rather than expanding it to match the intended user population.",
+      "Continue using the narrow evaluation set drawn from one region and one tenure band because the existing benchmark scores are already high on that subset."
+    ],
+    "answers": ["Expand the evaluation set to cover the geographic regions and tenure bands the tool will serve, and rescore the system on the expanded set before broader release."]
+  },
+  {
+    "question": "You must present an architectural recommendation to deploy a Claude-based contract review assistant to a steering committee that includes the CFO, the general counsel, and the CIO. Each stakeholder cares about different aspects of the decision. How should you structure the recommendation document?",
+    "options": [
+      "Lead with the technical architecture diagram and the full component list before any other section.",
+      "Lead with detailed cost projections across the full multi-year horizon before the rationale section.",
+      "Present the same dense narrative throughout with no stakeholder differentiation in any section.",
+      "Lead with the architectural decision, then address each stakeholder's primary concerns directly."
+    ],
+    "answers": ["Lead with the architectural decision, then address each stakeholder's primary concerns directly."]
+  },
+  {
+    "question": "You are compiling a diagnostic toolkit for Claude Code operational issues. Which two diagnostic actions belong in the toolkit? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Increase the model sampling temperature so that intermittent issues surface more frequently for analysis.",
+      "File a support ticket with vendor support before any local reproduction or evidence collection.",
+      "Reproduce the issue with a minimal reproduction case that isolates one variable at a time.",
+      "Roll back to the previous Claude Code version immediately to confirm whether the issue is version specific.",
+      "List the configured Model Context Protocol (MCP) servers and inspect server status to identify connection failures."
+    ],
+    "answers": [
+      "Reproduce the issue with a minimal reproduction case that isolates one variable at a time.",
+      "List the configured Model Context Protocol (MCP) servers and inspect server status to identify connection failures."
+    ]
+  },
+  {
+    "question": "A Claude Architect is reviewing a post-deployment performance report for an AI-assisted legal-document summarization system. The report includes these observations: * Average summarization time decreased from 47 minutes to 6 minutes per document. * Associates spend less time on summaries, but overall billable output has not measurably changed. * Infrastructure costs increased by 22% because redundant retry logic generated additional API calls. * Some summaries require attorney correction, adding an average of 8 minutes of review per document. Which analysis correctly attributes each observation to the appropriate business-value pillar?",
+    "options": [
+      "Observations 1 and 2 both indicate efficiency gains; Observation 3 is a solution-cost issue; Observation 4 is a performance-SLA issue.",
+      "Observation 1 is a transformation outcome; Observation 2 is an efficiency gain; Observation 3 is a performance-SLA degradation; Observation 4 is a solution-cost issue.",
+      "Observations 1 and 4 together indicate a net performance-SLA improvement; Observation 2 is a transformation gap; Observation 3 is a productivity drain from over-engineering.",
+      "Observation 1 indicates an efficiency gain; Observation 2 shows that productivity has not yet been realized; Observation 3 is a solution-cost issue; Observation 4 is an efficiency loss that partially offsets Observation 1."
+    ],
+    "answers": ["Observation 1 indicates an efficiency gain; Observation 2 shows that productivity has not yet been realized; Observation 3 is a solution-cost issue; Observation 4 is an efficiency loss that partially offsets Observation 1."]
+  },
+  {
+    "question": "You are supporting an engineer whose newly added MCP server does not appear in their Claude Code session. Which diagnostic step should be tried first?",
+    "options": [
+      "Disable every MCP server in the configuration to isolate the issue, removing all tool access rather than confirming whether the new server is registered.",
+      "Switch the team to a different Claude product family unrelated to the existing workflow, abandoning the current configuration rather than diagnosing the registration issue.",
+      "Verify the MCP server is registered using the listing command, then reconnect the session if needed, since configuration changes typically require a restart to take effect.",
+      "Reinstall the developer's operating system from scratch, discarding all local configuration and tool state before attempting any targeted diagnostic steps."
+    ],
+    "answers": ["Verify the MCP server is registered using the listing command, then reconnect the session if needed, since configuration changes typically require a restart to take effect."]
+  },
+  {
+    "question": "You are a solution architect designing a Claude-based assistant with access to 60 internal tools across multiple business domains. Loading every tool definition on every request increases token usage and time to first response. Which design pattern best addresses this issue without sacrificing capability breadth?",
+    "options": [
+      "Apply progressive tool discovery so a curated initial subset is exposed and additional tools are loaded on demand based on the task.",
+      "Use a separate model call to summarize all 60 tool definitions before each user turn.",
+      "Increase the maximum context length and load all 60 tool definitions on every request, accepting the higher token cost and latency as necessary for full capability.",
+      "Hard-code a fixed set of five tools per request to reduce token usage, regardless of whether those tools are relevant to the current task."
+    ],
+    "answers": ["Apply progressive tool discovery so a curated initial subset is exposed and additional tools are loaded on demand based on the task."]
+  },
+  {
+    "question": "The compliance team at a firm has approved a Claude Skill that generates client-facing investment summaries. The Skill includes the firm's required disclaimers and prohibited-language list. A product manager has asked whether additional guardrails are needed at the application layer or whether the Skill alone is sufficient. Which two guardrail responsibilities should remain at the application layer rather than the Skill? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Log every generated summary to the firm's compliance audit trail for retention.",
+      "Verify the requesting user is authorized to generate investment summaries at all.",
+      "Format output sections according to the firm's standardized house style guidelines.",
+      "Apply the disclaimer template that the compliance team has standardized firm-wide.",
+      "Apply the prohibited-language list that the compliance team maintains and updates."
+    ],
+    "answers": [
+      "Log every generated summary to the firm's compliance audit trail for retention.",
+      "Verify the requesting user is authorized to generate investment summaries at all."
+    ]
+  },
+  {
+    "question": "You are supporting an EU-based deployment with GDPR obligations. Which combination of measures best supports the deployment's GDPR posture?",
+    "options": [
+      "enterprise-tier deployment with a signed Data Processing Addendum, defined data-retention configuration, redaction of personal data not needed for the task, and documented data-subjectrights handling",
+      "disabling all data-retention configuration, redaction controls, and data-subject-rights handling to simplify day-to-day operations, accepting the resulting GDPR compliance exposure",
+      "using a personal Claude account tier for processing EU personal data at scale, with no signed Data Processing Addendum and no documented data-subject-rights handling procedure",
+      "pasting full EU personal data into every prompt to \"give Claude complete context\" without considering purpose limitation, data minimization, or the organization's Data Processing Addendum obligations"
+    ],
+    "answers": ["enterprise-tier deployment with a signed Data Processing Addendum, defined data-retention configuration, redaction of personal data not needed for the task, and documented data-subjectrights handling"]
+  },
+  {
+    "question": "You are reviewing instrumentation in a multi-agent system. Which two findings constitute valid observability gaps in the instrumentation? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Trace spans for each agent step are exported to the shared distributed-tracing backend.",
+      "Latency and token usage on every span are emitted to the central metrics pipeline.",
+      "Tool-call payloads and outcomes are recorded with redaction applied to known sensitive fields.",
+      "Model identity and version on each turn are not recorded with the turn artifacts.",
+      "Request-scoped correlation identifiers do not propagate across agent and tool calls."
+    ],
+    "answers": [
+      "Model identity and version on each turn are not recorded with the turn artifacts.",
+      "Request-scoped correlation identifiers do not propagate across agent and tool calls."
+    ]
+  },
+  {
+    "question": "When communicating an architectural decision to a security and compliance reviewer, which content set is most aligned with that audience's primary concerns?",
+    "options": [
+      "Feature delivery schedule, roadmap dependencies, and scope boundaries for the product manager.",
+      "Implementation timeline, component interfaces, and deployment sequence for the engineering team.",
+      "Threat model, control mappings, residual-risk acceptance criteria, and audit traceability.",
+      "Decision rationale, business outcomes, and high-level risk summary for executive review."
+    ],
+    "answers": ["Threat model, control mappings, residual-risk acceptance criteria, and audit traceability."]
+  },
+  {
+    "question": "You are defining when to introduce a project subagent versus relying on Claude Code's general capabilities. Which scenario most directly justifies a dedicated subagent?",
+    "options": [
+      "The team has a recurring specialized task, such as database schema review, that requires a focused system prompt, narrow tool permissions, and a specific model selection across many sessions.",
+      "The team has a one-time ad hoc question that will not recur and does not require a focused system prompt, narrow tool permissions, or dedicated model selection.",
+      "The team has no recurring specialized tasks and uses Claude Code only for isolated generalpurpose work that does not justify a dedicated system prompt or tool scope.",
+      "The team wants every Claude Code interaction to use the same generic system prompt with no task- specific specialization, narrow tool permissions, or dedicated model selection."
+    ],
+    "answers": ["The team has a recurring specialized task, such as database schema review, that requires a focused system prompt, narrow tool permissions, and a specific model selection across many sessions."]
+  },
+  {
+    "question": "You are identifying signals that a deployment should re-enter design rather than continue iterating in place. Which signal most directly indicates the need for a new design cycle?",
+    "options": [
+      "A minor copy edit is requested in a customer-facing string within the existing UI, which can be handled as a localized content change without altering component responsibilities or contracts.",
+      "A dashboard alert threshold needs a small numerical adjustment to reduce false-positive noise, which can be handled as an operational configuration change without a new design cycle.",
+      "A runbook step requires a clarification edit to improve on-call guidance accuracy, which can be handled as a documentation update without changes to component responsibilities or core contracts.",
+      "The system's current architecture cannot meet the new requirements without changes to component responsibilities or core contracts."
+    ],
+    "answers": ["The system's current architecture cannot meet the new requirements without changes to component responsibilities or core contracts."]
+  },
+  {
+    "question": "You are rolling out monitoring for a Claude-based deployment and must complete the specification steps before instrumenting the deployment. Which two steps must be completed BEFORE instrumenting the deployment to emit metrics and traces? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Define the metrics and the slices the deployment will monitor across normal and adversarial traffic.",
+      "Tune the alert thresholds based on observed normal-state distributions to reduce false positives.",
+      "Define the service-level objectives (SLOs) and the error budgets the deployment will be held to.",
+      "Build the dashboards that surface metrics across slices at the cadence the team operates on.",
+      "Document the dashboards, alerts, and runbooks for the on-call rotation that will respond."
+    ],
+    "answers": [
+      "Define the metrics and the slices the deployment will monitor across normal and adversarial traffic.",
+      "Define the service-level objectives (SLOs) and the error budgets the deployment will be held to."
+    ]
+  },
+  {
+    "question": "You are integrating Claude Code into a team workflow and must complete the design and configuration steps before piloting the integrated workflow with a small group. Which two steps must be completed BEFORE piloting the integrated workflow? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Document the integrated workflow with handoff criteria, permission boundaries, and on-call runbooks.",
+      "Identify the workflow steps where AI-assisted tooling adds value and where human authority must remain.",
+      "Negotiate the workflow change with affected teams and obtain formal sign-off from each manager.",
+      "Iterate the integrated workflow based on pilot findings before broader rollout to the team.",
+      "Configure the project-scope MCP servers, permissions, subagents, and persistent project context."
+    ],
+    "answers": [
+      "Identify the workflow steps where AI-assisted tooling adds value and where human authority must remain.",
+      "Configure the project-scope MCP servers, permissions, subagents, and persistent project context."
+    ]
+  },
+  {
+    "question": "You are preparing a HIPAA-eligible deployment for a healthcare customer. Which configuration supports HIPAA compliance using Anthropic-offered tools?",
+    "options": [
+      "Claude Free with no contractual addendum, since consumer products meet HIPAA requirements out of the box.",
+      "Claude Enterprise with a signed Business Associate Agreement, Zero Data Retention enabled, and audit logging configured for compliance tracking.",
+      "Disabling all audit logging so that no PHI is recorded in any log store, on the assumption that the absence of logs satisfies HIPAA requirements without a signed BAA.",
+      "An ad-hoc personal Claude account used by individual clinicians for PHI-related tasks, with no Business Associate Agreement, no Zero Data Retention, and no audit logging configured."
+    ],
+    "answers": ["Claude Enterprise with a signed Business Associate Agreement, Zero Data Retention enabled, and audit logging configured for compliance tracking."]
+  },
+  {
+    "question": "You are listing characteristics of strong architectural-decision communication. Which two characteristics belong on the list? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Ownership and review cadence for revisiting the decision when conditions or assumptions change.",
+      "Distribution to a standing review forum with mandatory attendance from senior engineering leaders.",
+      "Omission of rejected alternatives to keep the decision document focused and concise for readers.",
+      "Alternatives considered along with the criteria that were used to evaluate each alternative.",
+      "Use of a consistent template across the team to standardize the visual presentation of decisions."
+    ],
+    "answers": [
+      "Ownership and review cadence for revisiting the decision when conditions or assumptions change.",
+      "Alternatives considered along with the criteria that were used to evaluate each alternative."
+    ]
+  },
+  {
+    "question": "You are integrating Claude Code into a workflow that runs against a production database. Which guardrail design most directly preserves safety on data-modifying operations?",
+    "options": [
+      "Allow Claude Code to write directly to the production database without subagent scoping, readonly credential defaults, or human confirmation gates on data-modifying operations.",
+      "Configure the database MCP server with a fully privileged credential that can perform any read or write operation, and allow all operations to proceed without explicit human confirmation.",
+      "Disable all logging and auditing on database operations through the MCP server to reduce alert noise, removing the observability needed to detect unintended data modifications.",
+      "Configure the database MCP server with a read-only credential by default, restrict the subagent's tool list to read-only operations, and require explicit human confirmation on any operation that would modify data."
+    ],
+    "answers": ["Configure the database MCP server with a read-only credential by default, restrict the subagent's tool list to read-only operations, and require explicit human confirmation on any operation that would modify data."]
+  },
+  {
+    "question": "You are building an evaluation pipeline for a Claude-based deployment and must complete the specification steps before running the deployment against the dataset. Which two steps must be completed BEFORE running the deployment against the evaluation dataset? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Publish the aggregated metrics to a dashboard and gate releases on threshold checks.",
+      "Curate and label the evaluation dataset to match the defined slices.",
+      "Review failure cases with subject matter experts to refine the scoring rubric.",
+      "Define the metrics and slices the framework will report across representative, edge, and adversarial cases.",
+      "Score the deployment outputs against the reference labels and aggregate the metrics."
+    ],
+    "answers": [
+      "Curate and label the evaluation dataset to match the defined slices.",
+      "Define the metrics and slices the framework will report across representative, edge, and adversarial cases."
+    ]
+  },
+  {
+    "question": "You are identifying signals that a deployment should re-enter design rather than continue iterating in place. Which signal most directly indicates the need for a new design cycle?",
+    "options": [
+      "A runbook step requires a clarification edit to improve on-call guidance accuracy, which can be handled as a documentation update without changes to component responsibilities or core contracts.",
+      "A dashboard alert threshold needs a small numerical adjustment to reduce false-positive noise, which can be handled as an operational configuration change without a new design cycle.",
+      "A minor copy edit is requested in a customer-facing string within the existing UI, which can be handled as a localized content change without altering component responsibilities or contracts.",
+      "The system's current architecture cannot meet the new requirements without changes to component responsibilities or core contracts."
+    ],
+    "answers": ["The system's current architecture cannot meet the new requirements without changes to component responsibilities or core contracts."]
+  },
+  {
+    "question": "You are rolling out a standardized Claude Code configuration to an engineering team and must complete the planning steps before piloting the configuration. Which two steps must be completed BEFORE piloting the configuration with a small group of engineers? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Define the project-scope baseline covering Model Context Protocol (MCP) servers, permission rules, and subagents.",
+      "Onboard every engineer in the organization to the new configuration through mandatory training sessions.",
+      "Roll out the stabilized configuration to additional teams with documentation and a defined support channel.",
+      "Identify the team workflows, security boundaries, and which decisions belong to managed configuration versus project scope.",
+      "Iterate the configuration based on the pilot findings and stabilize the baseline before broader rollout."
+    ],
+    "answers": [
+      "Define the project-scope baseline covering Model Context Protocol (MCP) servers, permission rules, and subagents.",
+      "Identify the team workflows, security boundaries, and which decisions belong to managed configuration versus project scope."
+    ]
+  },
+  {
+    "question": "A healthcare organization is evaluating two Claude-powered AI architectures for a clinical documentation assistant. Architecture X produces higher output quality scores but costs $0.18 per documentation session and averages 4.2 seconds per response. Architecture Y scores slightly lower on quality metrics but costs $0.09 per session and averages 2.1 seconds per response. The stated SLA requires responses under 3 seconds, and the annual volume is projected at 2 million documentation sessions. Which evaluation approach correctly applies business value pillar analysis to this decision?",
+    "options": [
+      "Select Architecture Y based solely on the 50% cost reduction, since solution cost is the most important value pillar in healthcare budget-constrained environments.",
+      "Select Architecture X because the higher quality scores justify the cost premium, and any SLA gap can be addressed through infrastructure optimization after deployment.",
+      "Eliminate Architecture X on SLA grounds, then evaluate Architecture Y against the efficiency and solution cost pillars by calculating annual cost difference and assessing whether the quality delta materially impacts clinical workflow productivity.",
+      "Recommend a hybrid approach using Architecture X for complex cases and Architecture Y for routine cases, without additional analysis, since this preserves quality where it matters most."
+    ],
+    "answers": ["Eliminate Architecture X on SLA grounds, then evaluate Architecture Y against the efficiency and solution cost pillars by calculating annual cost difference and assessing whether the quality delta materially impacts clinical workflow productivity."]
+  },
+  {
+    "question": "You are a solution architect designing a Claude-based assistant with access to 60 internal tools across multiple business domains. Loading every tool definition on every request increases token usage and time to first response. Which design pattern best addresses this issue without sacrificing capability breadth?",
+    "options": [
+      "Apply progressive tool discovery so a curated initial subset is exposed and additional tools are loaded on demand based on the task.",
+      "Use a separate model call to summarize all 60 tool definitions before each user turn.",
+      "Increase the maximum context length and load all 60 tool definitions on every request, accepting the higher token cost and latency as necessary for full capability.",
+      "Hard-code a fixed set of five tools per request to reduce token usage, regardless of whether those tools are relevant to the current task."
+    ],
+    "answers": ["Apply progressive tool discovery so a curated initial subset is exposed and additional tools are loaded on demand based on the task."]
+  },
+  {
+    "question": "You are listing characteristics of robust guardrail design for an enterprise deployment. Which two characteristics belong on the list? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Centralized log retention for guardrail violations with quarterly review by the security team.",
+      "Periodic refresh of the system prompt wording to keep refusal language current and clear.",
+      "User feedback channels that route reported guardrail failures into the product backlog for triage.",
+      "Per-role tool allow-lists enforced at the orchestration layer before any tool call executes.",
+      "Adversarial-input coverage in the evaluation set with regression tracking on guardrail performance."
+    ],
+    "answers": [
+      "Per-role tool allow-lists enforced at the orchestration layer before any tool call executes.",
+      "Adversarial-input coverage in the evaluation set with regression tracking on guardrail performance."
+    ]
+  },
+  {
+    "question": "You are explaining the precedence of Claude Code configuration scopes to the team. Which precedence ordering, from highest to lowest, is correct?",
+    "options": [
+      "Local > managed > user > command-line arguments > project",
+      "Project > user > managed > local > command-line arguments",
+      "Managed > command-line arguments > local > project > user",
+      "User > project > local > command-line arguments > managed"
+    ],
+    "answers": ["Managed > command-line arguments > local > project > user"]
+  },
+  {
+    "question": "A Claude architect is leading the discovery phase for a new AI-powered customer service solution. Which two activities are characteristic of structured discovery and requirement gathering for a Claude-based deployment? (Select two.)",
+    "options": [
+      "Facilitating stakeholder workshops to surface latency, accuracy, and compliance constraints before scoping begins.",
+      "Selecting the Claude model tier based on the architect's prior project experience before stakeholder input is collected.",
+      "Generating an initial prototype and iterating based on user reaction rather than written requirements.",
+      "Documenting explicit success criteria and failure thresholds that will gate production deployment.",
+      "Deferring constraint documentation until the integration design phase to avoid scope creep."
+    ],
+    "answers": [
+      "Facilitating stakeholder workshops to surface latency, accuracy, and compliance constraints before scoping begins.",
+      "Documenting explicit success criteria and failure thresholds that will gate production deployment."
+    ]
+  },
+  {
+    "question": "You are classifying token-management tactics by where each tactic applies in the request lifecycle: \"Input Preparation,\" \"Prompt Construction,\" or \"Output Handling.\"",
+    "options": [
+      "Persist the validated output for downstream consumption and audit: [Output Handling]",
+      "Order the prompt sections so cacheable content sits before per-request content: [Prompt Construction]",
+      "Summarize prior conversation history when full history is no longer needed: [Input Preparation]",
+      "Validate the model's structured output against the expected schema: [Output Handling]",
+      "Move stable repeated content into a cacheable prefix at the head of the prompt: [Prompt Construction]",
+      "Trim retrieved passages to spans relevant to the user's question: [Input Preparation]"
+    ],
+    "answers": {
+      "Persist the validated output for downstream consumption and audit": "Output Handling",
+      "Order the prompt sections so cacheable content sits before per-request content": "Prompt Construction",
+      "Summarize prior conversation history when full history is no longer needed": "Input Preparation",
+      "Validate the model's structured output against the expected schema": "Output Handling",
+      "Move stable repeated content into a cacheable prefix at the head of the prompt": "Prompt Construction",
+      "Trim retrieved passages to spans relevant to the user's question": "Input Preparation"
+    }
+  },
+  {
+    "question": "A customer support team has proposed delegating customer refund decisions to a Claude-driven workflow with no human review for refunds under 50 USD. The team's reasoning is that small refunds are low-risk and human review would erase the efficiency gain. Which Delegation-competency principle should guide your response?",
+    "options": [
+      "Delegation should always include human review on every decision the workflow produces.",
+      "Delegation scope should reflect the type of risk involved, not the transaction size alone.",
+      "Delegation scope should be set primarily by maximizing efficiency gains across the workflow.",
+      "Delegation should be avoided entirely wherever financial transactions occur in the workflow."
+    ],
+    "answers": ["Delegation scope should reflect the type of risk involved, not the transaction size alone."]
+  },
+  {
+    "question": "You are identifying inefficiency in a Claude Code workflow where each engineer manually re-explains the project's conventions and architecture in every session. Which adjustment most directly removes this inefficiency?",
+    "options": [
+      "Forbid the use of Claude Code on the project entirely to avoid the session-initialization overhead, accepting that the team loses all AI-assisted development productivity for this codebase.",
+      "Capture the project's conventions and architecture in a project-scoped CLAUDE.md (or equivalent persistent project-context file) committed to the repository, so each session loads it automatically.",
+      "Tell each engineer to retype the project conventions and architecture context more quickly at the start of each session, reducing time lost without eliminating the repeated manual effort.",
+      "Remove all documented project conventions and architectural standards so engineers have nothing to re-explain at session start, accepting the loss of consistency and shared coding standards."
+    ],
+    "answers": ["Capture the project's conventions and architecture in a project-scoped CLAUDE.md (or equivalent persistent project-context file) committed to the repository, so each session loads it automatically."]
+  },
+  {
+    "question": "The compliance team has authored a regulatory disclosure procedure that must be applied identically across customer service, sales, and onboarding workflows. The procedure changes when regulators issue updates, currently four to six times per year. You are designing how the procedure will be packaged for use by Claude across all three workflows. Which two design decisions should you include? (Select two.) Each correct answer presents part of the solution.",
+    "options": [
+      "Package the procedure as a Claude Skill owned directly by the compliance team.",
+      "Embed the procedure text into each workflow's system prompt at integration time.",
+      "Store the procedure in a shared retrieval corpus accessed by all three workflows.",
+      "Have each workflow team rewrite the procedure for its own context.",
+      "Reference the same Claude Skill from all three workflow integrations."
+    ],
+    "answers": [
+      "Package the procedure as a Claude Skill owned directly by the compliance team.",
+      "Reference the same Claude Skill from all three workflow integrations."
+    ]
+  },
+  {
+    "question": "You are compiling continuity practices that span the deployment lifecycle. Which two practices belong on the list? (Select two.) Each correct answer presents a complete solution.",
+    "options": [
+      "Maintain a stakeholder register and notify the listed parties at every phase transition event.",
+      "Carry the evaluation framework and reference set forward across iterations rather than rebuilding each time.",
+      "Archive every phase deliverable in long-term storage to preserve a record of what was produced.",
+      "Capture lessons learned at the end of each phase and surface them as inputs to the next phase.",
+      "Lock decisions made in early phases to prevent revisiting them as later phases begin."
+    ],
+    "answers": [
+      "Carry the evaluation framework and reference set forward across iterations rather than rebuilding each time.",
+      "Capture lessons learned at the end of each phase and surface them as inputs to the next phase."
+    ]
   }
 ]
 
