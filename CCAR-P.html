@@ -461,19 +461,17 @@ const questions = [
     {
       "question": "You are a solution architect evaluating candidate use cases for a Claude-based program. For each scenario, select Yes if Claude is appropriate as the primary solution at the architectural level. Otherwise, select No.",
       "options": [
-        "drafting first-pass investigative reports from semi-structured incident logs for analyst review",
-        "computing real-time fraud scores at sub-50-millisecond latency on a streaming pipeline",
-        "long-context contract review with structured clause extraction and deviation flagging",
-        "replacing a vector index for semantic retrieval over a multi-million-document corpus",
-        "routing inbound support tickets into 30 categories with reasoning for the chosen routing"
+        "Yes-No-Yes-No-Yes",
+        "No-No-Yes-Yes-Yes",
+        "Yes-Yes-Yes-No-Yes",
+        "Yes-No-No-No-Yes",
+        "Yes-No-No-Yes-Yes",
+        "No-No-No-Yes-No",
       ],
       "answers": [
-        "drafting first-pass investigative reports from semi-structured incident logs for analyst review",
-        // "computing real-time fraud scores at sub-50-millisecond latency on a streaming pipeline - No",
-        "long-context contract review with structured clause extraction and deviation flagging",
-        // "replacing a vector index for semantic retrieval over a multi-million-document corpus - No",
-        "routing inbound support tickets into 30 categories with reasoning for the chosen routing"
-      ]
+        "Yes-No-Yes-No-Yes",
+      ],
+      "image": "./CCAR-P/no20.png"
     },
     {
       "question": "You are an architect supporting the iteration phase of a deployed Claude-based system. Which activity most directly fits this phase?",
@@ -490,38 +488,33 @@ const questions = [
     {
       "question": "You are classifying chunking strategies by the corpus type each is best suited to. For each chunking strategy, select the appropriate corpus type: \"Long Structured Documents,\" \"Heterogeneous Short Records,\" or \"Code or Hierarchical Specifications.\"",
       "options": [
-        "function-level or section-level chunking for code modules: Code or Hierarchical Specifications",
-        "tree-aware chunking that follows code or specification hierarchy: Code or Hierarchical Specifications",
-        "per-record chunking where each record is one chunk: Heterogeneous Short Records",
-        "semantic chunking along clause or paragraph boundaries: Long Structured Documents",
-        "fixed-size chunking with overlap for short records of similar length: Heterogeneous Short Records",
-        "hierarchical chunking that mirrors document section structure: Long Structured Documents"
+        "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents",
+        "Code or Hierarchical Specifications-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents-Long Structured Documents-Long Structured Documents",
+        "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
+        "Code or Hierarchical Specifications-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
+        "Long Structured Documents-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
+        "Long Structured Documents-Code or Hierarchical Specifications-Code or Hierarchical Specifications-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
+        
       ],
       "answers": [
-        "function-level or section-level chunking for code modules: Code or Hierarchical Specifications",
-        "tree-aware chunking that follows code or specification hierarchy: Code or Hierarchical Specifications",
-        "per-record chunking where each record is one chunk: Heterogeneous Short Records",
-        "semantic chunking along clause or paragraph boundaries: Long Structured Documents",
-        "fixed-size chunking with overlap for short records of similar length: Heterogeneous Short Records",
-        "hierarchical chunking that mirrors document section structure: Long Structured Documents"
-      ]
+        "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents",
+      ],
+      "image": "./CCAR-P/no22.png"
     },
     {
       "question": "You are evaluating prompting claims in a peer's design document. For each claim, select yes if the claim reflects sound practice. Otherwise, select no.",
       "options": [
-        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt.",
-        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks.",
-        "Chain-of-thought should be the default on every task regardless of complexity.",
-        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria.",
-        "Behavioral differences across model versions can be ignored once a prompt has been validated on one version."
+        "Yes-Yes-No-Yes-No",
+        "Yes-No-No-Yes-Yes",
+        "No-Yes-No-Yes-No",
+        "Yes-Yes-Yes-No-No",
+        "Yes-No-No-Yes-No",
+        "Yes-No-Yes-Yes-No",
       ],
       "answers": [
-        "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt.",
-        "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks.",
-        // "Chain-of-thought should be the default on every task regardless of complexity. - No",
-        "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria.",
-        // "Behavioral differences across model versions can be ignored once a prompt has been validated on one version. - No"
-      ]
+        "Yes-Yes-No-Yes-No",
+      ],
+      "image": "./CCAR-P/no23.png"
     },
     {
       "question": "You are assessing a Claude-based system whose dominant risk is silent quality drift on safety-relevant outputs after a model-version upgrade. Which assessment activity most directly addresses this risk?",
@@ -1660,7 +1653,7 @@ let quizQuestions = (
         ...q,
         options: shuffle(q.options)
     }))
-).slice(0);
+).slice(63);
 quizQuestions = shuffle(quizQuestions)
 // filter question has image
 // quizQuestions = quizQuestions.filter(item => 'image' in item);
