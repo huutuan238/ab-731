@@ -625,24 +625,21 @@ const questions = [
         "The system must respond at p95 latency under 800 milliseconds at the expected request volume."
       ]
     },
-    { // TODO: add image
+    {
       "question": "You are sequencing decomposed components in an invoice-processing pipeline. For each of the decomposed components, select the execution layer it belongs to: \"Pre-Processing,\" \"Model Stage,\" or \"Post-Processing.\"",
       "options": [
-        "Claude-based classification of invoice type: Model Stage",
-        "persistence of validated records to the system of record: Post-Processing",
-        "schema validation of the extracted fields: Post-Processing",
-        "Claude-based extraction of structured invoice fields: Model Stage",
-        "PII redaction on extracted text prior to model invocation: Pre-Processing",
-        "optical character recognition on scanned invoice images: Pre-Processing"
+        "Model Stage->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
+        "Model Stage->Model Stage>->Post-Processing->Model Stage>Pre-Processing->Post-Processing",
+        "Model Stage->Post-Processing->Pre-Processing->Model Stage>Pre-Processing->Post-Processing",
+        "Post-Processing->Pre-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
+        "Pre-Processing->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Model Stage",
+        "Post-Processing>Post-Processing->Model Stage->Model Stage>Pre-Processing->Pre-Processing",
+        "Pre-Processing->Post-Processing->Post-Processing->Model Stage>Model Stage->Pre-Processing",
       ],
       "answers": [
-        "Claude-based classification of invoice type: Model Stage",
-        "persistence of validated records to the system of record: Post-Processing",
-        "schema validation of the extracted fields: Post-Processing",
-        "Claude-based extraction of structured invoice fields: Model Stage",
-        "PII redaction on extracted text prior to model invocation: Pre-Processing",
-        "optical character recognition on scanned invoice images: Pre-Processing"
-      ]
+        "Model Stage->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
+      ],
+      "image": "./CCAR-P/no32.png"
     },
     {
       "question": "A pilot AI assistant for procurement specialists shows 89 percent first-response acceptance, but follow-up surveys reveal that specialists frequently override the assistant's vendor recommendations after considering criteria the assistant did not evaluate. The pilot owner wants to ship the assistant unchanged because of the strong acceptance rate. Which two Discernment-competency observations should you raise BEFORE approving the launch? (Select two.)",
@@ -687,36 +684,30 @@ const questions = [
     {
       "question": "You are auditing a procurement-assistant agent whose defined responsibility is to draft purchase requests for review. For each tool currently configured on the agent, select yes if the tool should remain after a leastprivilege audit. Otherwise, select no if it should be removed.",
       "options": [
-        "a read-only catalog lookup tool that returns vendor and SKU information",
-        "an inbox-send tool that emails purchase requests to vendors directly",
-        "a draft-write tool that creates purchase-request drafts in the review queue",
-        "a production-database admin tool unrelated to procurement",
-        "A read-only policy-document tool that returns the relevant procurement policies"
+        "Yes-No-Yes-No-Yes",
+        "Yes-Yes-Yes-No-Yes",
+        "No-No-Yes-No-Yes",
+        "No-No-No-No-Yes",
+        "Yes-Yes-Yes-No-No",
       ],
       "answers": [
-        "a read-only catalog lookup tool that returns vendor and SKU information",
-        // "an inbox-send tool that emails purchase requests to vendors directly: No",
-        "a draft-write tool that creates purchase-request drafts in the review queue",
-        // "a production-database admin tool unrelated to procurement: No",
-        "A read-only policy-document tool that returns the relevant procurement policies"
-      ]
+        "Yes-No-Yes-No-Yes",
+      ],
+      "image": "./CCAR-P/no36.png"
     },
     {
       "question": "You are evaluating model-selection claims used by a peer team. For each statement, select yes if the statement is generally true. Otherwise, select no.",
       "options": [
-        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.",
-        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.",
-        "The most capable model is always the right choice regardless of the workload profile.",
-        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.",
-        "Selecting a model based on which version was most recently announced is the right basis for production decisions."
+          "Yes-Yes-No-Yes-No",
+          "Yes-No-No-Yes-Yes",
+          "No-Yes-No-Yes-No",
+          "Yes-Yes-No-No-No",
+          "Yes-No-No-Yes-Yes",
       ],
       "answers": [
-        "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.",
-        "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.",
-        // "The most capable model is always the right choice regardless of the workload profile.: No",
-        "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.",
-        // "Selecting a model based on which version was most recently announced is the right basis for production decisions.: No"
-      ]
+        "Yes-Yes-No-Yes-No",
+      ],
+      "image": "./CCAR-P/no37.png"
     },
     {
       "question": "The engineering lead at Trenova Systems, Inc. is evaluating two proposals for improving developer workflows using Claude-assisted tooling. Proposal A adds Claude Code to the IDE for inline code generation and review. Proposal B routes all code-generation requests through a shared Slack bot without IDE integration. Which two observations most accurately evaluate these proposals against workflow-improvement objectives? (Select two.)",
@@ -1592,21 +1583,16 @@ const questions = [
   {
     "question": "You are classifying token-management tactics by where each tactic applies in the request lifecycle: \"Input Preparation,\" \"Prompt Construction,\" or \"Output Handling.\"",
     "options": [
-      "Persist the validated output for downstream consumption and audit: [Output Handling]",
-      "Order the prompt sections so cacheable content sits before per-request content: [Prompt Construction]",
-      "Summarize prior conversation history when full history is no longer needed: [Input Preparation]",
-      "Validate the model's structured output against the expected schema: [Output Handling]",
-      "Move stable repeated content into a cacheable prefix at the head of the prompt: [Prompt Construction]",
-      "Trim retrieved passages to spans relevant to the user's question: [Input Preparation]"
+      "Input Preparation-Prompt Construction-Output Handling-Output Handling-Output Handling-Prompt Construction",
+      "Output Handling-Prompt Construction-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
+      "Output Handling-Input Preparation-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
+      "Prompt ConstructionInput Preparation-Prompt Construction-Output Handling-Prompt Construction-Input Preparation",
     ],
-    "answers": {
-      "Persist the validated output for downstream consumption and audit": "Output Handling",
-      "Order the prompt sections so cacheable content sits before per-request content": "Prompt Construction",
-      "Summarize prior conversation history when full history is no longer needed": "Input Preparation",
-      "Validate the model's structured output against the expected schema": "Output Handling",
-      "Move stable repeated content into a cacheable prefix at the head of the prompt": "Prompt Construction",
-      "Trim retrieved passages to spans relevant to the user's question": "Input Preparation"
-    }
+    "answers": [
+    "Output Handling-Prompt Construction-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
+  ],
+  "image": "./CCAR-P/no112.png"
+
   },
   {
     "question": "A customer support team has proposed delegating customer refund decisions to a Claude-driven workflow with no human review for refunds under 50 USD. The team's reasoning is that small refunds are low-risk and human review would erase the efficiency gain. Which Delegation-competency principle should guide your response?",
@@ -1674,7 +1660,8 @@ let quizQuestions = (
         ...q,
         options: shuffle(q.options)
     }))
-).slice(40);
+).slice(0);
+quizQuestions = shuffle(quizQuestions)
 // filter question has image
 // quizQuestions = quizQuestions.filter(item => 'image' in item);
 
