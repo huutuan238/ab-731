@@ -246,18 +246,18 @@ const quizData = [
     ]
   },
   {
+    "type": "yesno",
     "question": "You are evaluating retrieval-strategy claims used by a peer team. For each claim, select yes if the statement is generally accurate. Otherwise, select no.",
-    "options": [
-      "Yes-Yes-Yes-No-No",
-      "Yes-No-Yes-No-No",
-      "No-Yes-Yes-No-No",
-      "Yes-No-No-No-No",
-      "Yes-Yes-Yes-No-Yes",
+    "statements": [
+      "Dense vector retrieval is well suited to recovering paraphrased intent against unstructured text.",
+      "Sparse term-matching retrieval recovers exact terms (such as identifiers and rare tokens) more reliably than dense alone.",
+      "Structured query retrieval is the right fit for filter-and-aggregate workloads against a relational store with schema and indexes.",
+      "Hybrid retrieval is identical to dense-only retrieval and shares the same recall characteristics.",
+      "Random sampling of a data store is a sound retrieval strategy for production Q&A."
     ],
     "answers": [
-      "Yes-Yes-Yes-No-No",
+      "Yes", "Yes", "Yes", "No", "No",
     ],
-     "image": "./CCAR-P/no17.png"
   },
   {
     "question": "A Claude-based research assistant begins producing responses that confidently contradict its retrieved source documents despite no change to the retrieval pipeline. Which two diagnostic actions most directly identify the root cause of this behavior? (Select two.)",
@@ -286,19 +286,18 @@ const quizData = [
     ]
   },
   {
+    "type": "yesno",
     "question": "You are a solution architect evaluating candidate use cases for a Claude-based program. For each scenario, select Yes if Claude is appropriate as the primary solution at the architectural level. Otherwise, select No.",
-    "options": [
-      "Yes-No-Yes-No-Yes",
-      "No-No-Yes-Yes-Yes",
-      "Yes-Yes-Yes-No-Yes",
-      "Yes-No-No-No-Yes",
-      "Yes-No-No-Yes-Yes",
-      "No-No-No-Yes-No",
+    "statements": [
+      "drafting first-pass investigative reports from semi-structured incident logs for analyst review",
+      "computing real-time fraud scores at sub-50-millisecond latency on a streaming pipeline",
+      "long-context contract review with structured clause extraction and deviation flagging",
+      "replacing a vector index for semantic retrieval over a multi-million-document corpus",
+      "routing inbound support tickets into 30 categories with reasoning for the chosen routing"
     ],
     "answers": [
-      "Yes-No-Yes-No-Yes",
+      "Yes", "No", "Yes","No", "Yes",
     ],
-    "image": "./CCAR-P/no20.png"
   },
   {
     "question": "You are an architect supporting the iteration phase of a deployed Claude-based system. Which activity most directly fits this phase?",
@@ -313,35 +312,41 @@ const quizData = [
     ]
   },
   {
+    "type": "dropdown",
     "question": "You are classifying chunking strategies by the corpus type each is best suited to. For each chunking strategy, select the appropriate corpus type: \"Long Structured Documents,\" \"Heterogeneous Short Records,\" or \"Code or Hierarchical Specifications.\"",
-    "options": [
-      "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents",
-      "Code or Hierarchical Specifications-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents-Long Structured Documents-Long Structured Documents",
-      "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
-      "Code or Hierarchical Specifications-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
-      "Long Structured Documents-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
-      "Long Structured Documents-Code or Hierarchical Specifications-Code or Hierarchical Specifications-Long Structured Documents-Code or Hierarchical Specifications-Long Structured Documents",
-      
+    "statements": [
+      "function-level or section-level chunking for code modules",
+      "tree-aware chunking that follows code or specification hierarchy",
+      "per-record chunking where each record is one chunk",
+      "semantic chunking along clause or paragraph boundaries: Long Structured Documents",
+      "fixed-size chunking with overlap for short records of similar length",
+      "hierarchical chunking that mirrors document section structure"
+    ],
+    "dropdowns": [
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
+      ["Long Structured Documents", "Heterogeneous Short Records", "Code or Hierarchical Specifications"],
     ],
     "answers": [
-      "Code or Hierarchical Specifications-Code or Hierarchical Specifications-Heterogeneous Short Records-Long Structured Documents-Heterogeneous Short Records-Long Structured Documents",
+      "Code or Hierarchical Specifications", "Code or Hierarchical Specifications", "Heterogeneous Short Records", "Long Structured Documents", "Heterogeneous Short Records", "Long Structured Documents",
     ],
-    "image": "./CCAR-P/no22.png"
   },
   {
+    "type": "yesno",
     "question": "You are evaluating prompting claims in a peer's design document. For each claim, select yes if the claim reflects sound practice. Otherwise, select no.",
-    "options": [
-      "Yes-Yes-No-Yes-No",
-      "Yes-No-No-Yes-Yes",
-      "No-Yes-No-Yes-No",
-      "Yes-Yes-Yes-No-No",
-      "Yes-No-No-Yes-No",
-      "Yes-No-Yes-Yes-No",
+    "statements": [
+      "Zero-shot is appropriate as a starting point for closed-set classification when categories and descriptions are provided in the prompt.",
+      "Adding a few-shot example set with exact field names anchors output formatting on extraction tasks.",
+      "Chain-of-thought should be the default on every task regardless of complexity.",
+      "Leading-question framing is best mitigated by asking for an even-handed comparison with stated criteria.",
+      "Behavioral differences across model versions can be ignored once a prompt has been validated on one version."
     ],
     "answers": [
-      "Yes-Yes-No-Yes-No",
+      "Yes", "Yes", "No","Yes", "No",
     ],
-    "image": "./CCAR-P/no23.png"
   },
   {
     "question": "You are assessing a Claude-based system whose dominant risk is silent quality drift on safety-relevant outputs after a model-version upgrade. Which assessment activity most directly addresses this risk?",
@@ -446,20 +451,32 @@ const quizData = [
     ]
   },
   {
+    "type": "dropdown",
     "question": "You are sequencing decomposed components in an invoice-processing pipeline. For each of the decomposed components, select the execution layer it belongs to: \"Pre-Processing,\" \"Model Stage,\" or \"Post-Processing.\"",
-    "options": [
-      "Model Stage->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
-      "Model Stage->Model Stage>->Post-Processing->Model Stage>Pre-Processing->Post-Processing",
-      "Model Stage->Post-Processing->Pre-Processing->Model Stage>Pre-Processing->Post-Processing",
-      "Post-Processing->Pre-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
-      "Pre-Processing->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Model Stage",
-      "Post-Processing>Post-Processing->Model Stage->Model Stage>Pre-Processing->Pre-Processing",
-      "Pre-Processing->Post-Processing->Post-Processing->Model Stage>Model Stage->Pre-Processing",
+    "statements": [
+      "Claude-based classification of invoice type",
+      "persistence of validated records to the system of record",
+      "schema validation of the extracted fields",
+      "Claude-based extraction of structured invoice fields",
+      "PII redaction on extracted text prior to model invocation",
+      "optical character recognition on scanned invoice images"
+    ],
+    "dropdowns": [
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
+      ["Pre-Processing", "Model Stage", "Post-Processing"],
     ],
     "answers": [
-      "Model Stage->Post-Processing->Post-Processing->Model Stage>Pre-Processing->Pre-Processing",
+      "Model Stage",
+      "Post-Processing",
+      "Post-Processing",
+      "Model Stage",
+      "Pre-Processing",
+      "Pre-Processing",
     ],
-    "image": "./CCAR-P/no32.png"
   },
   {
     "question": "A pilot AI assistant for procurement specialists shows 89 percent first-response acceptance, but follow-up surveys reveal that specialists frequently override the assistant's vendor recommendations after considering criteria the assistant did not evaluate. The pilot owner wants to ship the assistant unchanged because of the strong acceptance rate. Which two Discernment-competency observations should you raise BEFORE approving the launch? (Select two.)",
@@ -502,32 +519,32 @@ const quizData = [
     ]
   },
   {
+    "type": "yesno",
     "question": "You are auditing a procurement-assistant agent whose defined responsibility is to draft purchase requests for review. For each tool currently configured on the agent, select yes if the tool should remain after a leastprivilege audit. Otherwise, select no if it should be removed.",
-    "options": [
-      "Yes-No-Yes-No-Yes",
-      "Yes-Yes-Yes-No-Yes",
-      "No-No-Yes-No-Yes",
-      "No-No-No-No-Yes",
-      "Yes-Yes-Yes-No-No",
+    "statements": [
+      "a read-only catalog lookup tool that returns vendor and SKU information",
+      "an inbox-send tool that emails purchase requests to vendors directly",
+      "a draft-write tool that creates purchase-request drafts in the review queue",
+      "a production-database admin tool unrelated to procurement",
+      "A read-only policy-document tool that returns the relevant procurement policies"
     ],
     "answers": [
-      "Yes-No-Yes-No-Yes",
+      "Yes", "No", "Yes","No", "Yes",
     ],
-    "image": "./CCAR-P/no36.png"
   },
   {
+    "type": "yesno",
     "question": "You are evaluating model-selection claims used by a peer team. For each statement, select yes if the statement is generally true. Otherwise, select no.",
-    "options": [
-        "Yes-Yes-No-Yes-No",
-        "Yes-No-No-Yes-Yes",
-        "No-Yes-No-Yes-No",
-        "Yes-Yes-No-No-No",
-        "Yes-No-No-Yes-Yes",
+    "statements": [
+      "Heavier-reasoning models typically consume more of the rate limit and run more slowly than lighter models on the same input.",
+      "A representative-sample evaluation on the target workload is the right basis for confirming a model selection.",
+      "The most capable model is always the right choice regardless of the workload profile.",
+      "Tiered routing can serve routine traffic with a lighter model while reserving a heavier model for traffic that needs its capability.",
+      "Selecting a model based on which version was most recently announced is the right basis for production decisions."
     ],
     "answers": [
-      "Yes-Yes-No-Yes-No",
+      "Yes", "Yes", "No","Yes", "No",
     ],
-    "image": "./CCAR-P/no37.png"
   },
   {
     "question": "The engineering lead at Trenova Systems, Inc. is evaluating two proposals for improving developer workflows using Claude-assisted tooling. Proposal A adds Claude Code to the IDE for inline code generation and review. Proposal B routes all code-generation requests through a shared Slack bot without IDE integration. Which two observations most accurately evaluate these proposals against workflow-improvement objectives? (Select two.)",
@@ -656,18 +673,17 @@ const quizData = [
   "answers": ["Configure subagents that read the relevant code files via filesystem and code-search tools, generate the documentation, and emit changes through the team's normal review workflow."]
 },
 {
+  "type": "yesno",
   "question": "You are reviewing a peer's end-to-end design for a Claude-based platform expected to scale to thousands of concurrent users. For each statement, indicate Yes if it reflects sound architectural practice. Otherwise, select No.",
-  "options": [
-    "Yes-Yes-No-No",
-    "No-Yes-No-No",
-    "Yes-Yes-No-Yes",
-    "Yes-No-No-No",
-    "Yes-Yes-Yes-No",
+  "statements": [
+    "Authentication and authorization run before retrieval so retrieval can filter by identity.",
+    "An asynchronous queue absorbs bursty traffic between intake and the model invocation layer.",
+    "Tax computation is encoded directly in the system prompt rather than in code.",
+    "Conversation logs include unredacted government identifiers to maximize signal for tuning."
   ],
   "answers": [
-    "Yes-Yes-No-No",
+    "Yes", "Yes", "No", "No",
   ],
-  "image": "./CCAR-P/no49.png"
 },
 {
   "question": "You are presenting an architectural decision to a mixed audience that includes an executive sponsor and the engineering leads who will implement the decision. Which presentation strategy best serves both audiences?",
@@ -1401,18 +1417,27 @@ const quizData = [
   ]
 },
 {
+  "type": "dropdown",
   "question": "You are classifying token-management tactics by where each tactic applies in the request lifecycle: \"Input Preparation,\" \"Prompt Construction,\" or \"Output Handling.\"",
-  "options": [
-    "Input Preparation-Prompt Construction-Output Handling-Output Handling-Output Handling-Prompt Construction",
-    "Output Handling-Prompt Construction-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
-    "Output Handling-Input Preparation-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
-    "Prompt ConstructionInput Preparation-Prompt Construction-Output Handling-Prompt Construction-Input Preparation",
+  "statements": [
+    "Persist the validated output for downstream consumption and audit",
+    "Order the prompt sections so cacheable content sits before per-request content",
+    "Summarize prior conversation history when full history is no longer needed",
+    "Validate the model's structured output against the expected schema",
+    "Move stable repeated content into a cacheable prefix at the head of the prompt",
+    "Trim retrieved passages to spans relevant to the user's question"
+  ],
+  "dropdowns": [
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
+    ["Input Preparation", "Prompt Construction", "Output Handling"],
   ],
   "answers": [
-  "Output Handling-Prompt Construction-Input Preparation-Output Handling-Prompt Construction-Input Preparation",
-],
-"image": "./CCAR-P/no112.png"
-
+   "Output Handling", "Prompt Construction", "Input Preparation", "Output Handling", "Prompt Construction", "Input Preparation",
+  ],
 },
 {
   "question": "A customer support team has proposed delegating customer refund decisions to a Claude-driven workflow with no human review for refunds under 50 USD. The team's reasoning is that small refunds are low-risk and human review would erase the efficiency gain. Which Delegation-competency principle should guide your response?",
